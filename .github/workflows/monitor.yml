@@ -1,0 +1,69 @@
+name: 교육 및 인턴 모집 감시
+
+on:
+  schedule:
+    # 한국시간 09:00, 13:00, 18:00 (UTC 00:00, 04:00, 09:00)
+    - cron: "0 0,4,9 * * *"
+  workflow_dispatch:
+    inputs:
+      send_test:
+        description: "이메일 수신 테스트 알림 보내기"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: training-alert-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+
+      - name: 사이트 확인
+        id: monitor
+        run: npm run check
+
+      - name: 기준선 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update monitoring state"
+            git push
+          fi
+
+      - name: 새 모집 알림 생성
+        if: steps.monitor.outputs.alert == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "새 교육·인턴 모집 알림 ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body-file alert.md \
+            --assignee "${{ github.repository_owner }}"
+
+      - name: 이메일 수신 테스트 알림 생성
+        if: github.event_name == 'workflow_dispatch' && inputs.send_test
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "[자동화 테스트] 교육·인턴 모집 알림" \
+            --body "GitHub Actions 봇이 발송한 이메일 수신 테스트입니다. 새 공고가 발견된 것은 아닙니다." \
+            --assignee "${{ github.repository_owner }}"
