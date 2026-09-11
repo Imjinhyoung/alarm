@@ -1,11 +1,11 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-11T06:35:09.869Z",
+  "checkedAt": "2026-09-11T07:05:05.466Z",
   "sites": {
     "boottent": {
       "items": [],
-      "failures": 2,
+      "failures": 3,
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "lastError": "감시할 모집·교육 항목을 찾지 못했습니다."
@@ -162,7 +162,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "ae5c05c919fb9fa4c1cd",
@@ -244,7 +244,8 @@
           "period": "2026-03-03 ~ 2026-03-23 ~ 2026-03-03 ~ 2026-03-23",
           "context": "마감 [수원일자리센터] 2026맞춤형 직무훈련 프로그램 『반도체 실무 인재 양성과정』참여자 모집 안내 모집기간 : 2026-03-03 ~ 2026-03-23"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
