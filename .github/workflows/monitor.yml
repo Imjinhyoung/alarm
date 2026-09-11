@@ -4,6 +4,8 @@ on:
   schedule:
     # 한국시간 09:00, 13:00, 18:00 (UTC 00:00, 04:00, 09:00)
     - cron: "0 0,4,9 * * *"
+    # 한국시간 16:34 (UTC 07:34)
+    - cron: "34 7 * * *"
   workflow_dispatch:
     inputs:
       send_test:
