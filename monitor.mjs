@@ -70,14 +70,6 @@ const sites = [
     selectors: ["a", "h2"],
     accept: /인턴십|인턴 모집/,
     reject: /연구인턴십$/
-  },
-  {
-    id: "semi",
-    name: "SEMI Korea Program",
-    url: "https://semikrprogram.com/",
-    selectors: ["a", "img[alt]", "h2", "h3"],
-    accept: /SEMI.*(교육|과정|프로그램|Program)/i,
-    reject: /PAST EVENTS|지난 행사/
   }
 ];
 
