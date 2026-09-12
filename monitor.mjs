@@ -44,7 +44,8 @@ const sites = [
     url: "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
     selectors: ["a[href*='view.do']"],
     accept: /./,
-    reject: /개인정보|이용약관/
+    reject: /개인정보|이용약관/,
+    notifyFailure: false
   },
   {
     id: "ekcdi",
@@ -204,7 +205,7 @@ async function main() {
       } catch (error) {
         const failures = (oldSite.failures ?? 0) + 1;
         next.sites[site.id] = { ...oldSite, name: site.name, url: site.url, failures, lastError: String(error.message ?? error) };
-        if (previous.initialized && failures === 3) {
+        if (site.notifyFailure !== false && previous.initialized && failures === 3) {
           alerts.push({ site, changes: [{ type: "연속 3회 확인 실패", item: { title: String(error.message ?? error), url: site.url, status: "점검 필요", period: "" } }] });
         }
       } finally {
