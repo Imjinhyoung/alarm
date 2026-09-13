@@ -1,11 +1,11 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-13T08:37:51.984Z",
+  "checkedAt": "2026-09-13T13:32:19.488Z",
   "sites": {
     "boottent": {
       "items": [],
-      "failures": 10,
+      "failures": 11,
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "lastError": "감시할 모집·교육 항목을 찾지 못했습니다."
