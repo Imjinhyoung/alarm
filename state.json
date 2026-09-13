@@ -1,11 +1,11 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-12T12:30:52.499Z",
+  "checkedAt": "2026-09-13T02:05:57.185Z",
   "sites": {
     "boottent": {
       "items": [],
-      "failures": 8,
+      "failures": 9,
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "lastError": "감시할 모집·교육 항목을 찾지 못했습니다."
@@ -162,7 +162,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 6,
+      "failures": 7,
       "items": [
         {
           "key": "ae5c05c919fb9fa4c1cd",
