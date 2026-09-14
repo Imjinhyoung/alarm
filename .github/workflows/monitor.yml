@@ -32,7 +32,7 @@ jobs:
           node-version: "22"
 
       - run: npm install --no-audit --no-fund
-      # KST 09:17, 13:17, 18:17 (UTC 00:17, 04:17, 09:17)
+      - run: npx playwright install --with-deps chromium
 
       - name: 사이트 확인
         id: monitor
