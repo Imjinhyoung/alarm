@@ -2,8 +2,8 @@ name: 교육 및 인턴 모집 감시
 
 on:
   schedule:
-    # 한국시간 09:00, 13:00, 18:00 (UTC 00:00, 04:00, 09:00)
-    - cron: "0 0,4,9 * * *"
+    # 09:17, 13:17, 18:17
+    - cron: "17 0,4,9 * * *"
   workflow_dispatch:
     inputs:
       send_test:
@@ -32,7 +32,7 @@ jobs:
           node-version: "22"
 
       - run: npm install --no-audit --no-fund
-      - run: npx playwright install --with-deps chromium
+      # KST 09:17, 13:17, 18:17 (UTC 00:17, 04:17, 09:17)
 
       - name: 사이트 확인
         id: monitor
