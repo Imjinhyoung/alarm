@@ -69,8 +69,47 @@ const sites = [
     selectors: ["a", "h2"],
     accept: /인턴십|인턴 모집/,
     reject: /연구인턴십$/
+  },
+  {
+    id: "skku_eee_notice",
+    group: "school",
+    name: "성균관대 전자전기공학부 학부공지",
+    url: "https://eee.skku.edu/eee/notice.do",
+    selectors: ["a[href*='mode=view']"],
+    accept: /./,
+    reject: /개인정보|이메일무단|네티즌윤리/
+  },
+  {
+    id: "skku_eee_total",
+    group: "school",
+    name: "성균관대 전자전기공학부 통합공지",
+    url: "https://eee.skku.edu/eee/notice_total.do",
+    selectors: ["a[href*='mode=view']"],
+    accept: /./,
+    reject: /개인정보|이메일무단|네티즌윤리/
+  },
+  {
+    id: "skku_ice_notice",
+    group: "school",
+    name: "성균관대 정보통신대학 학부공지",
+    url: "https://ice.skku.edu/ice/notice.do",
+    selectors: ["a[href*='mode=view']"],
+    accept: /./,
+    reject: /개인정보|이메일무단|네티즌윤리/
+  },
+  {
+    id: "skku_ase_notice",
+    group: "school",
+    name: "성균관대 차세대반도체공학연계전공 공지",
+    url: "https://ase.skku.edu/ase/notice.do",
+    selectors: ["a[href*='mode=view']"],
+    accept: /./,
+    reject: /개인정보|이메일무단|네티즌윤리/
   }
 ];
+
+const siteGroup = process.env.SITE_GROUP || "training";
+const activeSites = sites.filter(site => (site.group || "training") === siteGroup);
 
 const clean = value => String(value ?? "")
   .replace(/\s+/g, " ")
@@ -134,7 +173,7 @@ async function collect(page, site) {
     try {
       const parsed = new URL(href);
       for (const key of [...parsed.searchParams.keys()]) {
-        if (key === "card" || key === "pvs" || key.startsWith("utm_")) parsed.searchParams.delete(key);
+        if (["card", "pvs", "article.offset", "articleLimit"].includes(key) || key.startsWith("utm_")) parsed.searchParams.delete(key);
       }
       href = parsed.toString();
     } catch {
@@ -161,7 +200,7 @@ async function collect(page, site) {
 
 async function main() {
   const previous = JSON.parse(await fs.readFile(STATE_PATH, "utf8"));
-  const next = { version: 1, initialized: true, checkedAt: new Date().toISOString(), sites: {} };
+  const next = { version: 1, initialized: true, checkedAt: new Date().toISOString(), sites: { ...(previous.sites ?? {}) } };
   const alerts = [];
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
@@ -172,14 +211,15 @@ async function main() {
   });
 
   try {
-    for (const site of sites) {
+    for (const site of activeSites) {
       const oldSite = previous.sites?.[site.id] ?? { items: [], failures: 0 };
+      const siteInitialized = Array.isArray(previous.sites?.[site.id]?.items);
       const page = await context.newPage();
       try {
         const items = await collect(page, site);
         const oldItems = new Map((oldSite.items ?? []).map(item => [item.key, item]));
         const changes = [];
-        if (previous.initialized) {
+        if (siteInitialized) {
           for (const item of items) {
             const old = oldItems.get(item.key);
             if (!old) {
@@ -196,7 +236,7 @@ async function main() {
       } catch (error) {
         const failures = (oldSite.failures ?? 0) + 1;
         next.sites[site.id] = { ...oldSite, name: site.name, url: site.url, failures, lastError: String(error.message ?? error) };
-        if (previous.initialized && failures === 3) {
+        if (siteInitialized && failures === 3) {
           alerts.push({ site, changes: [{ type: "연속 3회 확인 실패", item: { title: String(error.message ?? error), url: site.url, status: "점검 필요", period: "" } }] });
         }
       } finally {
@@ -208,7 +248,7 @@ async function main() {
   }
 
   await fs.writeFile(STATE_PATH, `${JSON.stringify(next, null, 2)}\n`, "utf8");
-  const lines = ["# 교육·인턴 모집 변경 알림", ""];
+  const lines = [siteGroup === "school" ? "# 학교 공지사항 새 글 알림" : "# 교육·인턴 모집 변경 알림", ""];
   for (const alert of alerts) {
     lines.push(`## ${alert.site.name}`, "");
     for (const { type, item } of alert.changes) {
