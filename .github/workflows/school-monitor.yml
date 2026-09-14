@@ -1,0 +1,55 @@
+name: 성균관대 공지사항 감시
+
+on:
+  schedule:
+    # 한국시간 11:47, 15:47 (UTC 02:47, 06:47)
+    - cron: "47 2,6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: training-alert-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+
+      - name: 학교 공지 확인
+        id: monitor
+        env:
+          SITE_GROUP: school
+        run: npm run check
+
+      - name: 기준선 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update monitoring state"
+            git push
+          fi
+
+      - name: 새 학교 공지 알림 생성
+        if: steps.monitor.outputs.alert == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "새 학교 공지 알림 ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --body-file alert.md \
+            --assignee "${{ github.repository_owner }}"
