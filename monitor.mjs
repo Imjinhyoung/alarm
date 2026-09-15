@@ -10,7 +10,7 @@ const sites = [
     id: "boottent",
     name: "부트텐트 반도체·디스플레이",
     url: "https://boottent.com/camps?industries=003&tagCodes=300",
-    selectors: ["#default-bootcamp-list a[href*='/camps/']"],
+    selectors: ["#default-bootcamp-list tr:has(> th a[href*='/camps/'])"],
     accept: /./,
     reject: /부트캠프 리스트|추천|비교정리/
   },
@@ -119,7 +119,7 @@ const clean = value => String(value ?? "")
 const digest = value => crypto.createHash("sha256").update(value).digest("hex").slice(0, 20);
 
 function statusOf(text) {
-  const match = text.match(/접수\s?가능|접수중|모집중|모집전|접수\s?대기|모집마감|마감|종료|Closed/i);
+  const match = text.match(/접수\s?가능|접수\s?중|모집\s?중|모집\s?전|접수\s?대기|모집\s?마감|마감|종료|Closed/i);
   return match ? clean(match[0]).toLowerCase() : "";
 }
 
@@ -160,8 +160,9 @@ async function collect(page, site) {
     return nodes.map(element => {
       const imageAlt = [...element.querySelectorAll?.("img[alt]") ?? []].map(img => img.alt).join(" ");
       const ownAlt = element instanceof HTMLImageElement ? element.alt : "";
-      const title = normalize(element.innerText || element.getAttribute?.("aria-label") || element.getAttribute?.("title") || ownAlt || imageAlt);
-      const href = element.href || element.closest?.("a")?.href || "";
+      const nestedHeading = element.querySelector?.("h2")?.innerText || "";
+      const title = normalize(nestedHeading || element.innerText || element.getAttribute?.("aria-label") || element.getAttribute?.("title") || ownAlt || imageAlt);
+      const href = element.href || element.closest?.("a")?.href || element.querySelector?.("a[href*='/camps/']")?.href || "";
       return { title, href, context: nearestUsefulText(element) };
     });
   }, { selectors: site.selectors });
