@@ -1,11 +1,11 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-14T09:51:55.750Z",
+  "checkedAt": "2026-09-15T00:42:07.703Z",
   "sites": {
     "boottent": {
       "items": [],
-      "failures": 12,
+      "failures": 13,
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "lastError": "감시할 모집·교육 항목을 찾지 못했습니다."
@@ -37,7 +37,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.09.01 ~ 2026.09.14 ~ 2026.09.28 ~ 2026.09.28",
-          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 50/50 ) 모집마감"
+          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 49/50 ) 모집마감"
         },
         {
           "key": "c8ff4b90a6e366bc7da9",
