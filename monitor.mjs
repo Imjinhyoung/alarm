@@ -138,7 +138,10 @@ function isWaiting(status) {
 
 async function collect(page, site) {
   await page.goto(site.url, { waitUntil: "domcontentloaded", timeout: 60000 });
-  await page.waitForTimeout(site.id === "boottent" || site.id === "hace" ? 7000 : 2500);
+  if (site.id === "boottent") {
+    await page.locator(site.selectors[0]).first().waitFor({ state: "attached", timeout: 30000 });
+  }
+  await page.waitForTimeout(site.id === "hace" ? 7000 : 2500);
 
   const raw = await page.evaluate(({ selectors }) => {
     const nodes = [...new Set(selectors.flatMap(selector => [...document.querySelectorAll(selector)]))];
