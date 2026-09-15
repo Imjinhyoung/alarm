@@ -222,7 +222,8 @@ async function main() {
         const items = await collect(page, site);
         const oldItems = new Map((oldSite.items ?? []).map(item => [item.key, item]));
         const changes = [];
-        if (siteInitialized) {
+        const recoveringWithoutBaseline = (oldSite.failures ?? 0) > 0 && (oldSite.items?.length ?? 0) === 0;
+        if (siteInitialized && !recoveringWithoutBaseline) {
           for (const item of items) {
             const old = oldItems.get(item.key);
             if (!old) {
