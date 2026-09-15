@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-15T00:46:43.340Z",
+  "checkedAt": "2026-09-15T04:54:05.299Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
@@ -125,7 +125,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.09.01 ~ 2026.09.14 ~ 2026.09.28 ~ 2026.09.28",
-          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 49/50 ) 모집마감"
+          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 45/50 ) 모집마감"
         },
         {
           "key": "c8ff4b90a6e366bc7da9",
@@ -250,8 +250,16 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 1,
+      "failures": 0,
       "items": [
+        {
+          "key": "61367d6b20639fdf5fbb",
+          "title": "모집예정 [수원일자리센터] 2026년 맞춤형 취업지원 「건축 마감 타일 전문 기술인 양성과정」 참여자 모집 모집기간 : 2026-09-16 ~ 2026-10-01",
+          "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/view.do?cpage=1&rows=10&conditional=&keyword=&pcategory=&pstatus=&bbs_seq=7231",
+          "status": "마감",
+          "period": "2026-09-16 ~ 2026-10-01 ~ 2026-09-16 ~ 2026-10-01",
+          "context": "모집예정 [수원일자리센터] 2026년 맞춤형 취업지원 「건축 마감 타일 전문 기술인 양성과정」 참여자 모집 모집기간 : 2026-09-16 ~ 2026-10-01"
+        },
         {
           "key": "ae5c05c919fb9fa4c1cd",
           "title": "마감 [수원일자리센터] 2026년 맞춤형 취업지원 「반도체장비요소기술 양성과정」 참여자 모집 모집기간 : 2026-08-12 ~ 2026-08-27",
@@ -323,17 +331,8 @@
           "status": "마감",
           "period": "2026-02-19 ~ 2026-03-27 ~ 2026-02-19 ~ 2026-03-27",
           "context": "마감 [마감임박]여성대상『사회복지사 핵심실무』,『온라인 쇼핑몰 창업 과정』교육생 모집 모집기간 : 2026-02-19 ~ 2026-03-27"
-        },
-        {
-          "key": "0cb54602bb1789c684b1",
-          "title": "마감 [수원일자리센터] 2026맞춤형 직무훈련 프로그램 『반도체 실무 인재 양성과정』참여자 모집 안내 모집기간 : 2026-03-03 ~ 2026-03-23",
-          "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/view.do?cpage=1&rows=10&conditional=&keyword=&pcategory=&pstatus=&bbs_seq=5129",
-          "status": "마감",
-          "period": "2026-03-03 ~ 2026-03-23 ~ 2026-03-03 ~ 2026-03-23",
-          "context": "마감 [수원일자리센터] 2026맞춤형 직무훈련 프로그램 『반도체 실무 인재 양성과정』참여자 모집 안내 모집기간 : 2026-03-03 ~ 2026-03-23"
         }
-      ],
-      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
