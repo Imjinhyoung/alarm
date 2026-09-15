@@ -1,14 +1,102 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-15T00:42:07.703Z",
+  "checkedAt": "2026-09-15T00:46:43.340Z",
   "sites": {
     "boottent": {
-      "items": [],
-      "failures": 13,
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
-      "lastError": "감시할 모집·교육 항목을 찾지 못했습니다."
+      "failures": 0,
+      "items": [
+        {
+          "key": "a272d33a11cd1d611005",
+          "title": "더인에듀 반도체 제조공정 및 장비 실무자 양성과정 17기",
+          "url": "https://boottent.com/camps/thein-semiconductor_20260912171752307",
+          "status": "모집 중",
+          "period": "",
+          "context": "더인에듀 반도체 제조공정 및 장비 실무자 양성과정 17기 공정·수율·패키징 모집 중 26.09.16 국비 482,780원 오프라인 서울 26.09.21 약 6주 26.10.30 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 개론 반도체 소자 반도체 8대공정 반도체 계측 반도체 테스트 반도체 장비 실습 운영 더인에듀 모아 보기 →"
+        },
+        {
+          "key": "75aa6944534f6b6154b4",
+          "title": "코멘토 AI 반도체: CPU와 AI가속기 설계 실습 (AI시대에 맞는 AI반도체 개발 역량 갖추기)",
+          "url": "https://boottent.com/camps/comento-aisemiconductor_20251209164942",
+          "status": "모집 중",
+          "period": "",
+          "context": "코멘토 AI 반도체: CPU와 AI가속기 설계 실습 (AI시대에 맞는 AI반도체 개발 역량 갖추기) 반도체 설계·검증 모집 중 26.09.17 17:00 KDC 42,350원 온라인 26.09.18 약 5주 26.10.26 파트타임 개별 자유 학습 / 일4시간 학습 권장 Verilog CPU설계 Python AI반도체 CNN 회로설계 Testbench Logic시뮬레이션 Low-passFilter 운영 코멘토 모아 보기 →"
+        },
+        {
+          "key": "9075d57e54b71fd6c1dc",
+          "title": "코멘토 데이터기반 반도체 Photo 공정: 미세공정의 키, Photo공정 실무 체험",
+          "url": "https://boottent.com/camps/comento-semiconductordata_20251209165602",
+          "status": "모집 중",
+          "period": "",
+          "context": "코멘토 데이터기반 반도체 Photo 공정: 미세공정의 키, Photo공정 실무 체험 공정·수율·패키징 모집 중 26.09.17 KDC 16,940원 온라인 26.09.18 약 5주 26.10.26 파트타임 개별 자유 학습 / 일4시간 학습 권장 반도체공정기술 DATA 수율이슈해결 Photo공정엔지니어 운영 코멘토 모아 보기 →"
+        },
+        {
+          "key": "b397a74b72263cb3af4c",
+          "title": "한국반도체아카데미 반도체 산업 및 업무프로세스의 이해 (미취업자)",
+          "url": "https://boottent.com/camps/ksia-semiconductorprocess_20260731101020211",
+          "status": "모집 중",
+          "period": "",
+          "context": "한국반도체아카데미 반도체 산업 및 업무프로세스의 이해 (미취업자) 공정·수율·패키징 모집 중 26.09.18 무료 오프라인 경기 26.09.21 약 2주 26.10.02 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 산업이해 업무프로세스 상품기획 설계 공정 소자 PE PKG 수율 운영 한국반도체아카데미 모아 보기 →"
+        },
+        {
+          "key": "17c85327a23e3ec325e7",
+          "title": "혁신융합대학 2026 COSS 차세대반도체 Microcontroller(MCU) 응용경진대회",
+          "url": "https://boottent.com/camps/disu-cossmcu_20260814081905923",
+          "status": "모집 중",
+          "period": "",
+          "context": "혁신융합대학 2026 COSS 차세대반도체 Microcontroller(MCU) 응용경진대회 반도체 설계·검증 모집 중 26.09.18 무료 온·오프라인 혼합 대면 있음 광주 26.10.08 약 6주 26.11.20 풀타임 개별 자유 학습 / 일0시간 학습 권장 마이크로컨트롤러 MCU AVR STM32 RP2040 임베디드 반도체 시스템 설계 시스템 제작 운영 차세대반도체 혁신융합대학 모아 보기 →"
+        },
+        {
+          "key": "abf941f074fe92130830",
+          "title": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel)",
+          "url": "https://boottent.com/camps/letuinedu-scexcel_20251001113129",
+          "status": "모집 중",
+          "period": "",
+          "context": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel) 공정·수율·패키징 모집 중 26.09.20 KDC 39,930원 온라인 26.09.21 약 3주 26.10.11 파트타임 개별 자유 학습 / 일2시간 학습 권장 반도체 공정 품질관리 데이터분석 운영 렛유인에듀 모아 보기 →"
+        },
+        {
+          "key": "969ad744042575bdf738",
+          "title": "성균관대학교 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프",
+          "url": "https://boottent.com/camps/youthleap-skkudisplay_20260724033208311",
+          "status": "모집 중",
+          "period": "",
+          "context": "성균관대학교 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프 공정·수율·패키징 모집 중 26.09.23 국비 무료 오프라인 경기 26.08.18 약 2개월 26.10.23 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 디스플레이 소재 소자 공정 TFT 광학 회로 Ellipsometer 연구프로젝트 운영 성균관대학교 모아 보기 →"
+        },
+        {
+          "key": "8227fa7e97877596112b",
+          "title": "대한상공회의소 ARM코어기반 반도체설계제어 2회",
+          "url": "https://boottent.com/camps/gjkorchamhrd-semiconductor_20260109172551",
+          "status": "모집 중",
+          "period": "",
+          "context": "대한상공회의소 ARM코어기반 반도체설계제어 2회 반도체 설계·검증 모집 중 26.09.24 KDT 50만원 오프라인 광주 26.09.29 약 6.5개월 27.04.02 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 ARM SoC FPGA Verilog RTL PCB 임베디드 반도체설계 MCU RTOS 리눅스 BSP 정규직 기회 운영 대한상공회의소 광주인력개발원 모아 보기 →"
+        },
+        {
+          "key": "9d08bd1dcc101b86f6ed",
+          "title": "SK하이닉스 청년 Hy-Po 2026 하반기 10기",
+          "url": "https://boottent.com/camps/skhynix-hypo_20260910090436394",
+          "status": "모집 중",
+          "period": "",
+          "context": "SK하이닉스 청년 Hy-Po 2026 하반기 10기 공정·수율·패키징 모집 중 26.09.28 15:00 K-뉴딜 아카데미 무료 오프라인 서울 26.11.18 약 2.5개월 27.01.29 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 반도체재료 물성 DRAM NAND 소자동작원리 전공정 후공정 제조공정 장비 TroubleShooting VR 반도체직무 현업이슈 비즈니스매너 직장생활가이드 문서작성 기획 주관 sk하이닉스 모아 보기 →"
+        },
+        {
+          "key": "7d6ae73e648bfcf054aa",
+          "title": "한국반도체아카데미 전력반도체 소자공정 및 패키징 실습교육 - 기초",
+          "url": "https://boottent.com/camps/ksia-busansemiconductoradvanced_20260912061922718",
+          "status": "모집 중",
+          "period": "",
+          "context": "한국반도체아카데미 전력반도체 소자공정 및 패키징 실습교육 - 기초 공정·수율·패키징 모집 중 26.10.02 무료 오프라인 부산 26.10.12 약 2주 26.10.23 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 전력반도체 소자공정 패키징 3D 모델링 구조해석 증착 식각 이온주입 운영 한국반도체아카데미 모아 보기 →"
+        },
+        {
+          "key": "fa1123d2c7b034cf3605",
+          "title": "한국반도체아카데미 반도체 RTL 전문가 양성 4주 집중과정 3차",
+          "url": "https://boottent.com/camps/ksia-rtl_20260831080416380",
+          "status": "모집 중",
+          "period": "",
+          "context": "한국반도체아카데미 반도체 RTL 전문가 양성 4주 집중과정 3차 반도체 설계·검증 모집 중 26.10.02 무료 오프라인 서울 26.10.14 약 4주 26.11.10 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 RTL 설계 Verilog HDL FPGA SoC AMBA BUS 디지털 회로 Vivado Zynq 운영 한국반도체아카데미 모아 보기 →"
+        }
+      ]
     },
     "ksia": {
       "name": "KSIA 예비취업자 교육",
@@ -162,7 +250,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "ae5c05c919fb9fa4c1cd",
@@ -244,7 +332,8 @@
           "period": "2026-03-03 ~ 2026-03-23 ~ 2026-03-03 ~ 2026-03-23",
           "context": "마감 [수원일자리센터] 2026맞춤형 직무훈련 프로그램 『반도체 실무 인재 양성과정』참여자 모집 안내 모집기간 : 2026-03-03 ~ 2026-03-23"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
@@ -522,20 +611,12 @@
       "failures": 0,
       "items": [
         {
-          "key": "96cd6d0c8dae7ee13a53",
-          "title": "2026학년도 하계 연구 인턴십 2026-04-22 10:00:00 ~ 2026-05-04 15:00:00",
-          "url": "https://intern.ust.ac.kr/home",
-          "status": "",
-          "period": "2026-04-22 10:00:00 ~ 2026-05-04 15:00:00 ~ 2026-04-22 10:00:00 ~ 2026-05-04 15:00:00",
-          "context": "Logout 연구인턴십 국내 유일의 국가연구소대학원 UST에서 당신의 꿈을 실현하세요! ※ 현재 진행중인 인턴십 전형 ※ 2026학년도 하계 연구 인턴십 2026-04-22 10:00:00 ~ 2026-05-04 15:00:00"
-        },
-        {
           "key": "4a0838f424aa41ad0aa1",
           "title": "2026학년도 하계 연구 인턴십",
           "url": "https://intern.ust.ac.kr/home",
           "status": "",
           "period": "2026-04-22 10:00:00 ~ 2026-05-04 15:00:00",
-          "context": "연구인턴십 국내 유일의 국가연구소대학원 UST에서 당신의 꿈을 실현하세요! ※ 현재 진행중인 인턴십 전형 ※ 2026학년도 하계 연구 인턴십 2026-04-22 10:00:00 ~ 2026-05-04 15:00:00"
+          "context": "Logout 연구인턴십 국내 유일의 국가연구소대학원 UST에서 당신의 꿈을 실현하세요! ※ 현재 진행중인 인턴십 전형 ※ 2026학년도 하계 연구 인턴십 2026-04-22 10:00:00 ~ 2026-05-04 15:00:00"
         }
       ]
     },
