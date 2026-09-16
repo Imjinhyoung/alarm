@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-16T07:54:58.775Z",
+  "checkedAt": "2026-09-16T14:12:26.190Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
@@ -133,7 +133,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.09.01 ~ 2026.09.14 ~ 2026.09.28 ~ 2026.09.28",
-          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 42/50 ) 모집마감"
+          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 41/50 ) 모집마감"
         },
         {
           "key": "c8ff4b90a6e366bc7da9",
@@ -242,7 +242,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "9fc25068520f31a2dacf",
@@ -324,7 +324,8 @@
           "period": "2026-04-02 ~ 2026-04-14 ~ 2026-04-02 ~ 2026-04-14",
           "context": "마감 [수원일자리센터] 2026맞춤형 직무훈련 프로그램 『물류현장 3톤 미만 지게차 운전자 양성과정』참여자 모집 안내 모집기간 : 2026-04-02 ~ 2026-04-14"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
