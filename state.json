@@ -1,29 +1,13 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-17T14:17:59.252Z",
+  "checkedAt": "2026-09-18T04:42:47.002Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "9075d57e54b71fd6c1dc",
-          "title": "코멘토 데이터기반 반도체 Photo 공정: 미세공정의 키, Photo공정 실무 체험",
-          "url": "https://boottent.com/camps/comento-semiconductordata_20251209165602",
-          "status": "모집 중",
-          "period": "",
-          "context": "코멘토 데이터기반 반도체 Photo 공정: 미세공정의 키, Photo공정 실무 체험 공정·수율·패키징 모집 중 26.09.17 KDC 16,940원 온라인 26.09.18 약 5주 26.10.26 파트타임 개별 자유 학습 / 일4시간 학습 권장 반도체공정기술 DATA 수율이슈해결 Photo공정엔지니어 운영 코멘토 모아 보기 →"
-        },
-        {
-          "key": "b397a74b72263cb3af4c",
-          "title": "한국반도체아카데미 반도체 산업 및 업무프로세스의 이해 (미취업자)",
-          "url": "https://boottent.com/camps/ksia-semiconductorprocess_20260731101020211",
-          "status": "모집 중",
-          "period": "",
-          "context": "한국반도체아카데미 반도체 산업 및 업무프로세스의 이해 (미취업자) 공정·수율·패키징 모집 중 26.09.18 무료 오프라인 경기 26.09.21 약 2주 26.10.02 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 산업이해 업무프로세스 상품기획 설계 공정 소자 PE PKG 수율 운영 한국반도체아카데미 모아 보기 →"
-        },
         {
           "key": "17c85327a23e3ec325e7",
           "title": "혁신융합대학 2026 COSS 차세대반도체 Microcontroller(MCU) 응용경진대회",
@@ -49,12 +33,28 @@
           "context": "성균관대학교 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프 공정·수율·패키징 모집 중 26.09.23 국비 무료 오프라인 경기 26.08.18 약 2개월 26.10.23 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 디스플레이 소재 소자 공정 TFT 광학 회로 Ellipsometer 연구프로젝트 운영 성균관대학교 모아 보기 →"
         },
         {
+          "key": "75aa6944534f6b6154b4",
+          "title": "코멘토 AI 반도체: CPU와 AI가속기 설계 실습 (AI시대에 맞는 AI반도체 개발 역량 갖추기)",
+          "url": "https://boottent.com/camps/comento-aisemiconductor_20251209164942",
+          "status": "모집 중",
+          "period": "",
+          "context": "코멘토 AI 반도체: CPU와 AI가속기 설계 실습 (AI시대에 맞는 AI반도체 개발 역량 갖추기) 반도체 설계·검증 모집 중 26.09.24 17:00 KDC 42,350원 온라인 26.09.25 약 5주 26.11.02 파트타임 개별 자유 학습 / 일4시간 학습 권장 Verilog CPU설계 Python AI반도체 CNN 회로설계 Testbench Logic시뮬레이션 Low-passFilter 운영 코멘토 모아 보기 →"
+        },
+        {
           "key": "8227fa7e97877596112b",
           "title": "대한상공회의소 ARM코어기반 반도체설계제어 2회",
           "url": "https://boottent.com/camps/gjkorchamhrd-semiconductor_20260109172551",
           "status": "모집 중",
           "period": "",
           "context": "대한상공회의소 ARM코어기반 반도체설계제어 2회 반도체 설계·검증 모집 중 26.09.24 KDT 50만원 오프라인 광주 26.09.29 약 6.5개월 27.04.02 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 ARM SoC FPGA Verilog RTL PCB 임베디드 반도체설계 MCU RTOS 리눅스 BSP 정규직 기회 운영 대한상공회의소 광주인력개발원 모아 보기 →"
+        },
+        {
+          "key": "9075d57e54b71fd6c1dc",
+          "title": "코멘토 데이터기반 반도체 Photo 공정: 미세공정의 키, Photo공정 실무 체험",
+          "url": "https://boottent.com/camps/comento-semiconductordata_20251209165602",
+          "status": "모집 중",
+          "period": "",
+          "context": "코멘토 데이터기반 반도체 Photo 공정: 미세공정의 키, Photo공정 실무 체험 공정·수율·패키징 모집 중 26.09.24 KDC 16,940원 온라인 26.09.25 약 5주 26.11.02 파트타임 개별 자유 학습 / 일4시간 학습 권장 반도체공정기술 DATA 수율이슈해결 Photo공정엔지니어 운영 코멘토 모아 보기 →"
         },
         {
           "key": "9d08bd1dcc101b86f6ed",
@@ -117,7 +117,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.09.01 ~ 2026.09.14 ~ 2026.09.28 ~ 2026.09.28",
-          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 40/50 ) 모집마감"
+          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 38/50 ) 모집마감"
         },
         {
           "key": "c8ff4b90a6e366bc7da9",
@@ -182,6 +182,14 @@
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
       "items": [
+        {
+          "key": "fcd1c9f3976135933278",
+          "title": "접수 완료",
+          "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
+          "status": "",
+          "period": "2026-09-14 09:00 ~ 2026-09-18 13:00 ~ 2026-10-06 10:00 ~ 2026-10-12 17:40",
+          "context": "2026 10 2026년 10월 K-ISRC 연합교육 - AI반도체기본공정교육 모집안내(학생) 무료교육 2026년 10월 AI반도체기본공정교육 모집안내(이론) 담당자 :한정훈 접수기간 :2026-09-14 09:00~ 2026-09-18 13:00 교육기간 :2026-10-06 10:00~ 2026-10-12 17:40 2026년 10월 AI반도체기본공정교육 모집안내(실습) 담당자 :한정훈 접수기간 :2026-09-14 09:00~ 2026-09-18 13:00 교육기간 :2026-10-13 09:00~ 2026-10-16 18:00 접수 완료 신청하기"
+        },
         {
           "key": "ece7ffe7304904d2f572",
           "title": "교육 완료",
