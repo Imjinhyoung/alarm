@@ -1,21 +1,13 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-18T13:36:08.947Z",
+  "checkedAt": "2026-09-19T04:37:16.189Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "17c85327a23e3ec325e7",
-          "title": "혁신융합대학 2026 COSS 차세대반도체 Microcontroller(MCU) 응용경진대회",
-          "url": "https://boottent.com/camps/disu-cossmcu_20260814081905923",
-          "status": "모집 중",
-          "period": "",
-          "context": "혁신융합대학 2026 COSS 차세대반도체 Microcontroller(MCU) 응용경진대회 반도체 설계·검증 모집 중 26.09.18 무료 온·오프라인 혼합 대면 있음 광주 26.10.08 약 6주 26.11.20 풀타임 개별 자유 학습 / 일0시간 학습 권장 마이크로컨트롤러 MCU AVR STM32 RP2040 임베디드 반도체 시스템 설계 시스템 제작 운영 차세대반도체 혁신융합대학 모아 보기 →"
-        },
         {
           "key": "abf941f074fe92130830",
           "title": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel)",
@@ -234,7 +226,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "9fc25068520f31a2dacf",
@@ -316,7 +308,8 @@
           "period": "2026-04-02 ~ 2026-04-14 ~ 2026-04-02 ~ 2026-04-14",
           "context": "마감 [수원일자리센터] 2026맞춤형 직무훈련 프로그램 『물류현장 3톤 미만 지게차 운전자 양성과정』참여자 모집 안내 모집기간 : 2026-04-02 ~ 2026-04-14"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
