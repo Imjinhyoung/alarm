@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-21T08:12:36.637Z",
+  "checkedAt": "2026-09-21T15:54:14.166Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
@@ -71,6 +71,14 @@
           "status": "모집 중",
           "period": "",
           "context": "한국반도체아카데미 반도체 RTL 전문가 양성 4주 집중과정 3차 반도체 설계·검증 모집 중 26.10.02 무료 오프라인 서울 26.10.14 약 4주 26.11.10 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 RTL 설계 Verilog HDL FPGA SoC AMBA BUS 디지털 회로 Vivado Zynq 운영 한국반도체아카데미 모아 보기 →"
+        },
+        {
+          "key": "abf941f074fe92130830",
+          "title": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel)",
+          "url": "https://boottent.com/camps/letuinedu-scexcel_20251001113129",
+          "status": "모집 중",
+          "period": "",
+          "context": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel) 공정·수율·패키징 모집 중 26.10.04 KDC 39,930원 온라인 26.10.05 약 3주 26.10.25 파트타임 개별 자유 학습 / 일2시간 학습 권장 반도체 공정 품질관리 데이터분석 운영 렛유인에듀 모아 보기 →"
         }
       ]
     },
@@ -125,7 +133,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.09.01 ~ 2026.09.14 ~ 2026.09.28 ~ 2026.09.28",
-          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 37/50 ) 모집마감"
+          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 36/50 ) 모집마감"
         },
         {
           "key": "c8ff4b90a6e366bc7da9",
@@ -226,7 +234,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 2,
+      "failures": 0,
       "items": [
         {
           "key": "9fc25068520f31a2dacf",
@@ -308,8 +316,7 @@
           "period": "2026-04-02 ~ 2026-04-14 ~ 2026-04-02 ~ 2026-04-14",
           "context": "마감 [수원일자리센터] 2026맞춤형 직무훈련 프로그램 『물류현장 3톤 미만 지게차 운전자 양성과정』참여자 모집 안내 모집기간 : 2026-04-02 ~ 2026-04-14"
         }
-      ],
-      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
