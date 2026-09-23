@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-23T07:58:25.096Z",
+  "checkedAt": "2026-09-23T14:14:27.119Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
@@ -266,15 +266,15 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 2,
+      "failures": 0,
       "items": [
         {
           "key": "9fc25068520f31a2dacf",
-          "title": "모집중 [수원일자리센터] 새빛 취업지원 중장년 스마트 재취업+ AI 3기 모집기간 : 2026-09-15 ~ 2026-09-22",
+          "title": "마감 [수원일자리센터] 새빛 취업지원 중장년 스마트 재취업+ AI 3기 모집기간 : 2026-09-15 ~ 2026-09-22",
           "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/view.do?cpage=1&rows=10&conditional=&keyword=&pcategory=&pstatus=&bbs_seq=7232",
-          "status": "모집중",
+          "status": "마감",
           "period": "2026-09-15 ~ 2026-09-22 ~ 2026-09-15 ~ 2026-09-22",
-          "context": "모집중 [수원일자리센터] 새빛 취업지원 중장년 스마트 재취업+ AI 3기 모집기간 : 2026-09-15 ~ 2026-09-22"
+          "context": "마감 [수원일자리센터] 새빛 취업지원 중장년 스마트 재취업+ AI 3기 모집기간 : 2026-09-15 ~ 2026-09-22"
         },
         {
           "key": "61367d6b20639fdf5fbb",
@@ -348,8 +348,7 @@
           "period": "2026-04-02 ~ 2026-04-14 ~ 2026-04-02 ~ 2026-04-14",
           "context": "마감 [수원일자리센터] 2026맞춤형 직무훈련 프로그램 『물류현장 3톤 미만 지게차 운전자 양성과정』참여자 모집 안내 모집기간 : 2026-04-02 ~ 2026-04-14"
         }
-      ],
-      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
