@@ -1,21 +1,13 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-24T07:49:34.578Z",
+  "checkedAt": "2026-09-24T14:12:53.942Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "75aa6944534f6b6154b4",
-          "title": "코멘토 AI 반도체: CPU와 AI가속기 설계 실습 (AI시대에 맞는 AI반도체 개발 역량 갖추기)",
-          "url": "https://boottent.com/camps/comento-aisemiconductor_20251209164942",
-          "status": "모집 중",
-          "period": "",
-          "context": "코멘토 AI 반도체: CPU와 AI가속기 설계 실습 (AI시대에 맞는 AI반도체 개발 역량 갖추기) 반도체 설계·검증 모집 중 26.09.24 17:00 KDC 42,350원 온라인 26.09.25 약 5주 26.11.02 파트타임 개별 자유 학습 / 일4시간 학습 권장 Verilog CPU설계 Python AI반도체 CNN 회로설계 Testbench Logic시뮬레이션 Low-passFilter 운영 코멘토 모아 보기 →"
-        },
         {
           "key": "8227fa7e97877596112b",
           "title": "대한상공회의소 ARM코어기반 반도체설계제어 2회",
