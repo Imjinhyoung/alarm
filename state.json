@@ -1,21 +1,13 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-23T14:14:27.119Z",
+  "checkedAt": "2026-09-24T04:49:48.816Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "969ad744042575bdf738",
-          "title": "성균관대학교 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프",
-          "url": "https://boottent.com/camps/youthleap-skkudisplay_20260724033208311",
-          "status": "모집 중",
-          "period": "",
-          "context": "성균관대학교 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프 공정·수율·패키징 모집 중 26.09.23 국비 무료 오프라인 경기 26.08.18 약 2개월 26.10.23 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 디스플레이 소재 소자 공정 TFT 광학 회로 Ellipsometer 연구프로젝트 운영 성균관대학교 모아 보기 →"
-        },
         {
           "key": "75aa6944534f6b6154b4",
           "title": "코멘토 AI 반도체: CPU와 AI가속기 설계 실습 (AI시대에 맞는 AI반도체 개발 역량 갖추기)",
