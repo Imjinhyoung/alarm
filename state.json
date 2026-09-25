@@ -1,29 +1,13 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-24T14:12:53.942Z",
+  "checkedAt": "2026-09-25T04:57:20.865Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "8227fa7e97877596112b",
-          "title": "대한상공회의소 ARM코어기반 반도체설계제어 2회",
-          "url": "https://boottent.com/camps/gjkorchamhrd-semiconductor_20260109172551",
-          "status": "모집 중",
-          "period": "",
-          "context": "대한상공회의소 ARM코어기반 반도체설계제어 2회 반도체 설계·검증 모집 중 26.09.24 KDT 50만원 오프라인 광주 26.09.29 약 6.5개월 27.04.02 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 ARM SoC FPGA Verilog RTL PCB 임베디드 반도체설계 MCU RTOS 리눅스 BSP 정규직 기회 운영 대한상공회의소 광주인력개발원 모아 보기 →"
-        },
-        {
-          "key": "9075d57e54b71fd6c1dc",
-          "title": "코멘토 데이터기반 반도체 Photo 공정: 미세공정의 키, Photo공정 실무 체험",
-          "url": "https://boottent.com/camps/comento-semiconductordata_20251209165602",
-          "status": "모집 중",
-          "period": "",
-          "context": "코멘토 데이터기반 반도체 Photo 공정: 미세공정의 키, Photo공정 실무 체험 공정·수율·패키징 모집 중 26.09.24 KDC 16,940원 온라인 26.09.25 약 5주 26.11.02 파트타임 개별 자유 학습 / 일4시간 학습 권장 반도체공정기술 DATA 수율이슈해결 Photo공정엔지니어 운영 코멘토 모아 보기 →"
-        },
         {
           "key": "abb09f38fc5e69c19b67",
           "title": "한국반도체아카데미 반도체 제조공정 및 소부장 기술의 이해 (미취업자)",
