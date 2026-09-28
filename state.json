@@ -1,21 +1,13 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-09-28T08:57:57.274Z",
+  "checkedAt": "2026-09-28T17:40:01.163Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "9d08bd1dcc101b86f6ed",
-          "title": "SK하이닉스 청년 Hy-Po 2026 하반기 10기",
-          "url": "https://boottent.com/camps/skhynix-hypo_20260910090436394",
-          "status": "모집 중",
-          "period": "",
-          "context": "SK하이닉스 청년 Hy-Po 2026 하반기 10기 공정·수율·패키징 모집 중 26.09.28 15:00 K-뉴딜 아카데미 무료 오프라인 서울 26.11.18 약 2.5개월 27.01.29 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 반도체재료 물성 DRAM NAND 소자동작원리 전공정 후공정 제조공정 장비 TroubleShooting VR 반도체직무 현업이슈 비즈니스매너 직장생활가이드 문서작성 기획 주관 sk하이닉스 모아 보기 →"
-        },
         {
           "key": "06bf1220ffffe8e19ac6",
           "title": "한국반도체아카데미 반도체 IP-SoC 통합 설계 이해",
@@ -93,7 +85,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집중",
           "period": "2026.09.28 ~ 2026.10.02 ~ 2026.10.19 ~ 2026.10.23",
-          "context": "인하대학교 반도체 패키징 엔지니어 양성 (예비취업자-기초) 모집기간2026.09.28 ~ 2026.10.02 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 20/80 ) 모집중"
+          "context": "인하대학교 반도체 패키징 엔지니어 양성 (예비취업자-기초) 모집기간2026.09.28 ~ 2026.10.02 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 31/80 ) 모집중"
         },
         {
           "key": "39a30296b21b69c41cb4",
@@ -125,7 +117,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.09.01 ~ 2026.09.14 ~ 2026.09.28 ~ 2026.09.28",
-          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 29/50 ) 모집마감"
+          "context": "전북대학교 전력반도체 소자제작 및 측정분석 1차 모집기간2026.09.01 ~ 2026.09.14 교육기간2026.09.28 ~ 2026.09.28 신청현황 ( 28/50 ) 모집마감"
         },
         {
           "key": "c8ff4b90a6e366bc7da9",
