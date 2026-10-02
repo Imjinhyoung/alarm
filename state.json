@@ -1,29 +1,13 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-02T09:01:11.283Z",
+  "checkedAt": "2026-10-02T15:48:53.671Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "7d6ae73e648bfcf054aa",
-          "title": "한국반도체아카데미 전력반도체 소자공정 및 패키징 실습교육 - 기초",
-          "url": "https://boottent.com/camps/ksia-busansemiconductoradvanced_20260912061922718",
-          "status": "모집 중",
-          "period": "",
-          "context": "한국반도체아카데미 전력반도체 소자공정 및 패키징 실습교육 - 기초 공정·수율·패키징 모집 중 26.10.02 무료 오프라인 부산 26.10.12 약 2주 26.10.23 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 전력반도체 소자공정 패키징 3D 모델링 구조해석 증착 식각 이온주입 운영 한국반도체아카데미 모아 보기 →"
-        },
-        {
-          "key": "fa1123d2c7b034cf3605",
-          "title": "한국반도체아카데미 반도체 RTL 전문가 양성 4주 집중과정 3차",
-          "url": "https://boottent.com/camps/ksia-rtl_20260831080416380",
-          "status": "모집 중",
-          "period": "",
-          "context": "한국반도체아카데미 반도체 RTL 전문가 양성 4주 집중과정 3차 반도체 설계·검증 모집 중 26.10.02 무료 오프라인 서울 26.10.14 약 4주 26.11.10 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 RTL 설계 Verilog HDL FPGA SoC AMBA BUS 디지털 회로 Vivado Zynq 운영 한국반도체아카데미 모아 보기 →"
-        },
         {
           "key": "abf941f074fe92130830",
           "title": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel)",
@@ -72,6 +56,22 @@
       "failures": 0,
       "items": [
         {
+          "key": "39a30296b21b69c41cb4",
+          "title": "이미지없음",
+          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
+          "status": "모집마감",
+          "period": "2026.08.09 ~ 2026.08.20 ~ 2026.08.18 ~ 2026.10.23",
+          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.08.09 ~ 2026.08.20 교육기간2026.08.18 ~ 2026.10.23 신청현황 ( 인원제한 없음 ) 모집마감"
+        },
+        {
+          "key": "1122b3a66ff42a160804",
+          "title": "HEMT 제작 실습 및 분석",
+          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
+          "status": "모집중",
+          "period": "2026.10.02 ~ 2026.10.03 ~ 2026.10.19 ~ 2026.10.23",
+          "context": "전북대학교 HEMT 제작 실습 및 분석 모집기간2026.10.02 ~ 2026.10.03 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 4/20 ) 모집중"
+        },
+        {
           "key": "9251321ce2bae3919e18",
           "title": "교육이미지",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
@@ -80,20 +80,20 @@
           "context": "한양대학교 [2차 -C] 삼성전자 교수진이 알려주는 반도체 제조공정 이해 모집기간2026.08.12 ~ 2026.08.14 교육기간2026.08.18 ~ 2026.08.21 신청현황 ( 25/25 ) 모집마감"
         },
         {
+          "key": "9469b74aaff9278adeb7",
+          "title": "반도체 공정장비 실무인력 양성 과정",
+          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
+          "status": "모집전",
+          "period": "2026.10.08 ~ 2026.10.13 ~ 2026.10.26 ~ 2026.10.30",
+          "context": "서울대학교 반도체 공정장비 실무인력 양성 과정 모집기간2026.10.08 ~ 2026.10.13 교육기간2026.10.26 ~ 2026.10.30 신청현황 ( 인원제한 없음 ) 모집전"
+        },
+        {
           "key": "70eca75aeed0427d79f9",
           "title": "반도체 패키징 엔지니어 양성 (예비취업자-기초)",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집중",
-          "period": "2026.09.28 ~ 2026.10.02 ~ 2026.10.19 ~ 2026.10.23",
-          "context": "인하대학교 반도체 패키징 엔지니어 양성 (예비취업자-기초) 모집기간2026.09.28 ~ 2026.10.02 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 56/70 ) 모집중"
-        },
-        {
-          "key": "39a30296b21b69c41cb4",
-          "title": "이미지없음",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
-          "period": "2026.08.09 ~ 2026.08.20 ~ 2026.08.18 ~ 2026.10.23",
-          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.08.09 ~ 2026.08.20 교육기간2026.08.18 ~ 2026.10.23 신청현황 ( 인원제한 없음 ) 모집마감"
+          "period": "2026.09.28 ~ 2026.10.02 ~ 2026.10.19 ~ 2026.10.23",
+          "context": "인하대학교 반도체 패키징 엔지니어 양성 (예비취업자-기초) 모집기간2026.09.28 ~ 2026.10.02 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 60/70 ) 모집마감"
         },
         {
           "key": "0b4f5fd2ae5c4bb9aecc",
@@ -107,9 +107,9 @@
           "key": "fb173fd2582248f3b30c",
           "title": "전력반도체 소자제작 및 측정분석 /HEMT 제작 실습 및 분석",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집중",
+          "status": "모집마감",
           "period": "2026.09.14 ~ 2026.10.02 ~ 2026.10.12 ~ 2026.10.12",
-          "context": "전북대학교 전력반도체 소자제작 및 측정분석 /HEMT 제작 실습 및 분석 모집기간2026.09.14 ~ 2026.10.02 교육기간2026.10.12 ~ 2026.10.12 신청현황 ( 인원제한 없음 ) 모집중"
+          "context": "전북대학교 전력반도체 소자제작 및 측정분석 /HEMT 제작 실습 및 분석 모집기간2026.09.14 ~ 2026.10.02 교육기간2026.10.12 ~ 2026.10.12 신청현황 ( 인원제한 없음 ) 모집마감"
         },
         {
           "key": "b01d3571439c6cce8d78",
@@ -142,22 +142,6 @@
           "status": "모집마감",
           "period": "2026.08.12 ~ 2026.08.14 ~ 2026.08.18 ~ 2026.08.21",
           "context": "한양대학교 [2차 -B] 삼성전자 교수진이 알려주는 반도체 제조공정 이해 모집기간2026.08.12 ~ 2026.08.14 교육기간2026.08.18 ~ 2026.08.21 신청현황 ( 25/25 ) 모집마감"
-        },
-        {
-          "key": "1f0a9c8ddefe7c77d99b",
-          "title": "[2차 -A] 삼성전자 교수진이 알려주는 반도체 제조공정 이해",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.08.12 ~ 2026.08.14 ~ 2026.08.18 ~ 2026.08.21",
-          "context": "한양대학교 [2차 -A] 삼성전자 교수진이 알려주는 반도체 제조공정 이해 모집기간2026.08.12 ~ 2026.08.14 교육기간2026.08.18 ~ 2026.08.21 신청현황 ( 25/25 ) 모집마감"
-        },
-        {
-          "key": "fcc155a0486eb15c40e0",
-          "title": "나노반도체 공정 실습교육-경남대 전용",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.08.03 ~ 2026.08.14 ~ 2026.08.18 ~ 2026.08.21",
-          "context": "포항공과대학교 나노반도체 공정 실습교육-경남대 전용 모집기간2026.08.03 ~ 2026.08.14 교육기간2026.08.18 ~ 2026.08.21 신청현황 ( 10/10 ) 모집마감"
         }
       ]
     },
@@ -226,7 +210,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "7e90a56d640a0f3df60c",
@@ -308,7 +292,8 @@
           "period": "2026-04-28 ~ 2026-05-11 ~ 2026-04-28 ~ 2026-05-11",
           "context": "마감 [수원일자리센터] 2026년 맞춤형 직무훈련 프로그램 『중장년 커리어 리부트: 경험은 자산으로, 커리어는 AI로』 참여자 모집 안내 모집기간 : 2026-04-28 ~ 2026-05-11"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
