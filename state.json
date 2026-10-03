@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-02T15:48:53.671Z",
+  "checkedAt": "2026-10-03T05:18:06.541Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
@@ -69,7 +69,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집중",
           "period": "2026.10.02 ~ 2026.10.03 ~ 2026.10.19 ~ 2026.10.23",
-          "context": "전북대학교 HEMT 제작 실습 및 분석 모집기간2026.10.02 ~ 2026.10.03 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 4/20 ) 모집중"
+          "context": "전북대학교 HEMT 제작 실습 및 분석 모집기간2026.10.02 ~ 2026.10.03 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 7/20 ) 모집중"
         },
         {
           "key": "9251321ce2bae3919e18",
@@ -210,7 +210,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 1,
+      "failures": 0,
       "items": [
         {
           "key": "7e90a56d640a0f3df60c",
@@ -292,8 +292,7 @@
           "period": "2026-04-28 ~ 2026-05-11 ~ 2026-04-28 ~ 2026-05-11",
           "context": "마감 [수원일자리센터] 2026년 맞춤형 직무훈련 프로그램 『중장년 커리어 리부트: 경험은 자산으로, 커리어는 AI로』 참여자 모집 안내 모집기간 : 2026-04-28 ~ 2026-05-11"
         }
-      ],
-      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
