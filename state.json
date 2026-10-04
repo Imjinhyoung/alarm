@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-04T08:47:25.432Z",
+  "checkedAt": "2026-10-04T14:47:28.274Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
@@ -202,7 +202,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 2,
+      "failures": 3,
       "items": [
         {
           "key": "7e90a56d640a0f3df60c",
