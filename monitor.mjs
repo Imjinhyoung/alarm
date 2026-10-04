@@ -118,6 +118,27 @@ const clean = value => String(value ?? "")
 
 const digest = value => crypto.createHash("sha256").update(value).digest("hex").slice(0, 20);
 
+function itemKey(site, item) {
+  const title = clean(item.title).slice(0, 180);
+  let source = clean(item.url);
+
+  // The integrated notice board generates a new, random itemId on every
+  // request.  It is not an article identifier, so using the full URL makes
+  // every existing post look new on every run.  viewBoardId + title is stable.
+  if (site.id === "skku_eee_total") {
+    try {
+      const url = new URL(source);
+      source = `${url.searchParams.get("viewBoardId") || ""}|${title}`;
+    } catch {
+      source = title;
+    }
+  } else if (!source || source.startsWith("javascript:") || source.endsWith("#")) {
+    source = title;
+  }
+
+  return digest(`${site.id}|${source}`);
+}
+
 function statusOf(text) {
   const match = text.match(/접수\s?가능|접수\s?중|모집\s?중|모집\s?전|접수\s?대기|모집\s?마감|마감|종료|Closed/i);
   return match ? clean(match[0]).toLowerCase() : "";
@@ -184,8 +205,7 @@ async function collect(page, site) {
       // Relative and javascript links are handled by the fallback title key below.
     }
     const canonicalTitle = title.length > 180 ? title.slice(0, 180) : title;
-    const keySource = href && !href.startsWith("javascript:") && !href.endsWith("#") ? href : canonicalTitle;
-    const key = digest(`${site.id}|${keySource}`);
+    const key = itemKey(site, { title: canonicalTitle, url: href });
     const existing = items.get(key);
     const item = {
       key,
@@ -221,7 +241,9 @@ async function main() {
       const page = await context.newPage();
       try {
         const items = await collect(page, site);
-        const oldItems = new Map((oldSite.items ?? []).map(item => [item.key, item]));
+        // Recompute keys from saved data so this also migrates old state that
+        // contains the volatile integrated-board itemId values.
+        const oldItems = new Map((oldSite.items ?? []).map(item => [itemKey(site, item), item]));
         const changes = [];
         const recoveringWithoutBaseline = (oldSite.failures ?? 0) > 0 && (oldSite.items?.length ?? 0) === 0;
         if (siteInitialized && !recoveringWithoutBaseline) {
@@ -229,9 +251,9 @@ async function main() {
             const old = oldItems.get(item.key);
             if (!old) {
               changes.push({ type: "새 항목", item });
-            } else if (isWaiting(old.status) && isOpen(item.status)) {
+            } else if (site.group !== "school" && isWaiting(old.status) && isOpen(item.status)) {
               changes.push({ type: `${old.status || "대기"} → ${item.status}`, item });
-            } else if (old.period && item.period && old.period !== item.period) {
+            } else if (site.group !== "school" && old.period && item.period && old.period !== item.period) {
               changes.push({ type: "접수·교육 일정 변경", item });
             }
           }
