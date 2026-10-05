@@ -1,21 +1,13 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-04T14:47:28.274Z",
+  "checkedAt": "2026-10-05T05:39:39.465Z",
   "sites": {
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "abf941f074fe92130830",
-          "title": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel)",
-          "url": "https://boottent.com/camps/letuinedu-scexcel_20251001113129",
-          "status": "모집 중",
-          "period": "",
-          "context": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel) 공정·수율·패키징 모집 중 26.10.04 KDC 39,930원 온라인 26.10.05 약 3주 26.10.25 파트타임 개별 자유 학습 / 일2시간 학습 권장 반도체 공정 품질관리 데이터분석 운영 렛유인에듀 모아 보기 →"
-        },
         {
           "key": "2c71eb9b00a8669dff58",
           "title": "한국반도체아카데미 반도체 패키지테스트 공정기술 전문가 양성과정 심화2",
@@ -202,7 +194,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 3,
+      "failures": 0,
       "items": [
         {
           "key": "7e90a56d640a0f3df60c",
@@ -284,8 +276,7 @@
           "period": "2026-04-28 ~ 2026-05-11 ~ 2026-04-28 ~ 2026-05-11",
           "context": "마감 [수원일자리센터] 2026년 맞춤형 직무훈련 프로그램 『중장년 커리어 리부트: 경험은 자산으로, 커리어는 AI로』 참여자 모집 안내 모집기간 : 2026-04-28 ~ 2026-05-11"
         }
-      ],
-      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
