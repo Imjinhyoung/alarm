@@ -7,6 +7,12 @@ const ALERT_PATH = new URL("./alert.md", import.meta.url);
 
 const sites = [
   {
+    id: "work24_winter",
+    name: "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
+    url: "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
+    newOnly: true
+  },
+  {
     id: "boottent",
     name: "부트텐트 반도체·디스플레이",
     url: "https://boottent.com/camps?industries=003&tagCodes=300",
@@ -161,6 +167,7 @@ function isWaiting(status) {
 }
 
 async function collect(page, site) {
+  if (site.id === "work24_winter") return collectWork24(page, site);
   await page.goto(site.url, { waitUntil: "domcontentloaded", timeout: 60000 });
   if (site.id === "boottent") {
     await page.locator(site.selectors[0]).first().waitFor({ state: "attached", timeout: 30000 });
@@ -226,6 +233,43 @@ async function collect(page, site) {
   return [...items.values()].slice(0, 100);
 }
 
+async function collectWork24(page, site) {
+  const items = new Map();
+  let pages = 1;
+  for (let pageNo = 1; pageNo <= pages; pageNo += 1) {
+    const url = new URL(site.url);
+    url.searchParams.set("currentPageNo", String(pageNo));
+    await page.goto(url.href, { waitUntil: "domcontentloaded", timeout: 60000 });
+    const html = await page.content();
+    const total = html.match(/totalRecordCount\s*:\s*"(\d+)"/);
+    const pageCount = html.match(/totalPageCount\s*:\s*"(\d+)"/);
+    if (!total || !pageCount || await page.locator("#operBgde").inputValue() !== "2026-12-01" || await page.locator("#operEnde").inputValue() !== "2027-02-28") {
+      throw new Error("고용24 검색 결과 또는 참여기간 조건을 확인하지 못했습니다.");
+    }
+    pages = Number(pageCount[1]);
+    if (pages > 100) throw new Error("고용24 검색 결과가 예상 범위를 초과했습니다.");
+    const rows = await page.locator(".card:has(a[href*='fn_searchDetail'])").evaluateAll(cards => cards.map(card => {
+      const link = card.querySelector("a[href*='fn_searchDetail']");
+      const field = label => [...card.querySelectorAll("li")].find(li => li.querySelector("strong")?.textContent.trim() === label)?.querySelector("span")?.textContent.replace(/[\s\u200b]+/g, " ").trim() || "";
+      return { title: link.textContent.trim(), href: link.getAttribute("href"), participation: field("일경험기간"), recruitment: field("모집기간"), context: card.textContent.replace(/[\s\u200b]+/g, " ").trim() };
+    }));
+    if (Number(total[1]) > 0 && !rows.length) throw new Error("고용24 공고 목록 구조를 확인하지 못했습니다.");
+    for (const row of rows) {
+      const id = row.href.match(/fn_searchDetail\('([^']+)','([^']+)'\)/);
+      const date = row.participation.match(/^(\d{2})-(\d{2})-(\d{2})/);
+      if (!id || !date) throw new Error("고용24 공고 식별자 또는 참여 시작일을 읽지 못했습니다.");
+      const start = `20${date[1]}-${date[2]}-${date[3]}`;
+      if (start < "2026-12-01" || start > "2027-02-28") throw new Error("고용24 참여 시작일 필터가 적용되지 않았습니다.");
+      const detail = new URL(id[1] === "C" ? "/d/a/selectEntrTrvlPrgmDtal.do" : "/d/a/selectItrnPrjtEsgPrgmDtal.do", site.url);
+      detail.searchParams.set("untyPrgmCtn", id[2]);
+      const item = { title: clean(row.title), url: detail.href, status: "", period: `모집 ${row.recruitment} / 참여 ${row.participation}`, context: clean(row.context).slice(0, 500) };
+      item.key = itemKey(site, item);
+      items.set(item.key, item);
+    }
+  }
+  return [...items.values()];
+}
+
 async function main() {
   const previous = JSON.parse(await fs.readFile(STATE_PATH, "utf8"));
   const next = { version: 1, initialized: true, checkedAt: new Date().toISOString(), sites: { ...(previous.sites ?? {}) } };
@@ -249,21 +293,23 @@ async function main() {
         // contains the volatile integrated-board itemId values.
         const oldItems = new Map((oldSite.items ?? []).map(item => [itemKey(site, item), item]));
         const changes = [];
+        const seenKeys = new Set(oldSite.seenKeys ?? oldItems.keys());
         const recoveringWithoutBaseline = (oldSite.failures ?? 0) > 0 && (oldSite.items?.length ?? 0) === 0;
         if (siteInitialized && !recoveringWithoutBaseline) {
           for (const item of items) {
             const old = oldItems.get(item.key);
-            if (!old) {
+            if (!old && (!site.newOnly || !seenKeys.has(item.key))) {
               changes.push({ type: "새 항목", item });
-            } else if (site.group !== "school" && isWaiting(old.status) && isOpen(item.status)) {
+            } else if (!site.newOnly && site.group !== "school" && isWaiting(old.status) && isOpen(item.status)) {
               changes.push({ type: `${old.status || "대기"} → ${item.status}`, item });
-            } else if (site.group !== "school" && old.period && item.period && old.period !== item.period) {
+            } else if (!site.newOnly && site.group !== "school" && old.period && item.period && old.period !== item.period) {
               changes.push({ type: "접수·교육 일정 변경", item });
             }
           }
         }
         if (changes.length) alerts.push({ site, changes });
         next.sites[site.id] = { name: site.name, url: site.url, failures: 0, items };
+        if (site.newOnly) next.sites[site.id].seenKeys = [...new Set([...seenKeys, ...items.map(item => item.key)])];
       } catch (error) {
         const failures = (oldSite.failures ?? 0) + 1;
         next.sites[site.id] = { ...oldSite, name: site.name, url: site.url, failures, lastError: String(error.message ?? error) };

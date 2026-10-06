@@ -3,6 +3,13 @@
   "initialized": true,
   "checkedAt": "2026-10-06T09:25:19.300Z",
   "sites": {
+    "work24_winter": {
+      "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
+      "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
+      "failures": 0,
+      "items": [],
+      "seenKeys": []
+    },
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
