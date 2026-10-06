@@ -1,14 +1,15 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-06T09:25:19.300Z",
+  "checkedAt": "2026-10-06T15:57:10.525Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
       "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
-      "failures": 0,
+      "failures": 1,
       "items": [],
-      "seenKeys": []
+      "seenKeys": [],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\", waiting until \"domcontentloaded\"\n"
     },
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
@@ -38,6 +39,14 @@
           "status": "모집 중",
           "period": "",
           "context": "한국정보통신진흥협회 [AI융합/AI반도체] AI 반도체 : Verilog와 Python cocotb로 배우는 NPU 반도체 설계·검증 모집 중 26.10.16 17:00 무료 온라인 26.10.29 약 4주 26.11.25 파트타임 월, 화, 수, 목, 금 / 19:00 ~ 23:00 AI반도체 NPU Verilog Python cocotb CPU GPU MAC유닛 dataflow 시뮬레이션 운영 한국정보통신진흥협회 모아 보기 →"
+        },
+        {
+          "key": "abf941f074fe92130830",
+          "title": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel)",
+          "url": "https://boottent.com/camps/letuinedu-scexcel_20251001113129",
+          "status": "모집 중",
+          "period": "",
+          "context": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel) 공정·수율·패키징 모집 중 26.10.18 KDC 39,930원 온라인 26.10.19 약 3주 26.11.08 파트타임 개별 자유 학습 / 일2시간 학습 권장 반도체 공정 품질관리 데이터분석 운영 렛유인에듀 모아 보기 →"
         },
         {
           "key": "4da89c3e9ad83098380b",
