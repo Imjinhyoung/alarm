@@ -60,6 +60,7 @@ const sites = [
     url: "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
     selectors: ["h2", "a"],
     accept: /20\d{2}년.*(교육|과정)|취업준비형|반도체|이차전지|바이오제약/,
+    acceptTitle: /^20\d{2}년.*(교육|과정)/,
     reject: /교육신청$|교육과정$/
   },
   {
@@ -132,7 +133,9 @@ function itemKey(site, item) {
     } catch {
       source = title;
     }
-  } else if (!source || source.startsWith("javascript:") || source.endsWith("#")) {
+  } else if (!source || source === site.url || source.startsWith("javascript:") || source.endsWith("#")) {
+    // A heading without a detail link is saved with the site's landing URL.
+    // Both the collected heading and its saved version must use its title.
     source = title;
   }
 
@@ -194,6 +197,7 @@ async function collect(page, site) {
     const context = clean(candidate.context);
     const searchable = `${title} ${context}`;
     if (title.length < 5 || !site.accept.test(searchable) || site.reject.test(searchable)) continue;
+    if (site.acceptTitle && !site.acceptTitle.test(title)) continue;
     let href = clean(candidate.href);
     try {
       const parsed = new URL(href);
