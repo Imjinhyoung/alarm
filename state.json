@@ -1,12 +1,12 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-06T15:57:10.525Z",
+  "checkedAt": "2026-10-07T05:58:36.894Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
       "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
-      "failures": 1,
+      "failures": 2,
       "items": [],
       "seenKeys": [],
       "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\", waiting until \"domcontentloaded\"\n"
@@ -47,6 +47,14 @@
           "status": "모집 중",
           "period": "",
           "context": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel) 공정·수율·패키징 모집 중 26.10.18 KDC 39,930원 온라인 26.10.19 약 3주 26.11.08 파트타임 개별 자유 학습 / 일2시간 학습 권장 반도체 공정 품질관리 데이터분석 운영 렛유인에듀 모아 보기 →"
+        },
+        {
+          "key": "3c695ca3193a6dc40fee",
+          "title": "대한상공회의소 인천인력개발원 MTS 엠티에스코퍼레이션 채용연계 과정 2회차",
+          "url": "https://boottent.com/camps/korchamic-mts_20261007032404434",
+          "status": "모집 중",
+          "period": "",
+          "context": "대한상공회의소 인천인력개발원 MTS 엠티에스코퍼레이션 채용연계 과정 2회차 장비 설계·제어·정비 모집 중 26.10.21 국비 무료 오프라인 인천 26.10.28 약 2개월 26.12.30 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 17:00 반도체장비 PM 엔지니어 전기·전자 기초 PLC 제어 계측장비 활용 설비 점검 고장 대응 유지보수 데이터 관리 자동화장비 제어 유지보수 실무 채용우대 운영 대한상공회의소인천인력개발원 모아 보기 →"
         },
         {
           "key": "4da89c3e9ad83098380b",
