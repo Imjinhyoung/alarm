@@ -1,12 +1,12 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-07T09:16:01.023Z",
+  "checkedAt": "2026-10-07T16:28:07.972Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
       "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
-      "failures": 2,
+      "failures": 3,
       "items": [],
       "seenKeys": [],
       "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\", waiting until \"domcontentloaded\"\n"
@@ -57,6 +57,14 @@
           "context": "대한상공회의소 인천인력개발원 MTS 엠티에스코퍼레이션 채용연계 과정 2회차 장비 설계·제어·정비 모집 중 26.10.21 국비 무료 오프라인 인천 26.10.28 약 2개월 26.12.30 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 17:00 반도체장비 PM 엔지니어 전기·전자 기초 PLC 제어 계측장비 활용 설비 점검 고장 대응 유지보수 데이터 관리 자동화장비 제어 유지보수 실무 채용우대 운영 대한상공회의소인천인력개발원 모아 보기 →"
         },
         {
+          "key": "04d9103d33811a591850",
+          "title": "대한상공회의소 인천인력개발원 반도체 분야 교육(인천교육청)1학년 직무성장 프로그램 2026년",
+          "url": "https://boottent.com/camps/korchamic-semiconductor_20261007032649606",
+          "status": "모집 중",
+          "period": "",
+          "context": "대한상공회의소 인천인력개발원 반도체 분야 교육(인천교육청)1학년 직무성장 프로그램 2026년 공정·수율·패키징 모집 중 26.11.08 국비 무료 오프라인 인천 26.11.11 7일 26.11.17 파트타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 공정 시뮬레이션 XR 체험 반도체 기업 탐방 FAB 공정 모형 조립 반도체 산업 구조 주요 공정 개요 운영 대한상공회의소인천인력개발원 모아 보기 →"
+        },
+        {
           "key": "4da89c3e9ad83098380b",
           "title": "AI+X(융합) 아카데미 AI를 활용한 반도체 공정 장비 데이터 분석 전문가 양성과정",
           "url": "https://boottent.com/camps/thein-semicon_20260929170931637",
@@ -75,9 +83,17 @@
           "key": "39a30296b21b69c41cb4",
           "title": "이미지없음",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.08.09 ~ 2026.08.20 ~ 2026.08.18 ~ 2026.10.23",
-          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.08.09 ~ 2026.08.20 교육기간2026.08.18 ~ 2026.10.23 신청현황 ( 인원제한 없음 ) 모집마감"
+          "status": "모집중",
+          "period": "2026.10.07 ~ 2026.10.23 ~ 2026.11.18 ~ 2026.12.19",
+          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.10.07 ~ 2026.10.23 교육기간2026.11.18 ~ 2026.12.19 신청현황 ( 인원제한 없음 ) 모집중"
+        },
+        {
+          "key": "0b4f5fd2ae5c4bb9aecc",
+          "title": "청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청!",
+          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
+          "status": "모집중",
+          "period": "2026.10.07 ~ 2026.10.23 ~ 2026.11.18 ~ 2026.12.19",
+          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.10.07 ~ 2026.10.23 교육기간2026.11.18 ~ 2026.12.19 신청현황 ( 인원제한 없음 ) 모집중"
         },
         {
           "key": "1122b3a66ff42a160804",
@@ -110,14 +126,6 @@
           "status": "모집마감",
           "period": "2026.09.28 ~ 2026.10.02 ~ 2026.10.19 ~ 2026.10.23",
           "context": "인하대학교 반도체 패키징 엔지니어 양성 (예비취업자-기초) 모집기간2026.09.28 ~ 2026.10.02 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 60/70 ) 모집마감"
-        },
-        {
-          "key": "0b4f5fd2ae5c4bb9aecc",
-          "title": "청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청!",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.08.09 ~ 2026.08.20 ~ 2026.08.18 ~ 2026.10.23",
-          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.08.09 ~ 2026.08.20 교육기간2026.08.18 ~ 2026.10.23 신청현황 ( 인원제한 없음 ) 모집마감"
         },
         {
           "key": "fb173fd2582248f3b30c",
