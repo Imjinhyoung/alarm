@@ -1,12 +1,12 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-15T07:43:53.276Z",
+  "checkedAt": "2026-10-15T14:09:57.853Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
       "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
-      "failures": 18,
+      "failures": 19,
       "items": [],
       "seenKeys": [],
       "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\", waiting until \"domcontentloaded\"\n"
@@ -96,6 +96,22 @@
       "failures": 0,
       "items": [
         {
+          "key": "9251321ce2bae3919e18",
+          "title": "교육이미지",
+          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
+          "status": "모집전",
+          "period": "2026.10.19 ~ 2026.10.22 ~ 2026.11.02 ~ 2026.11.11",
+          "context": "인천대학교 IGZO TFT 제작 및 특성 평가 기반 반도체 공정 실습 교육 모집기간2026.10.19 ~ 2026.10.22 교육기간2026.11.02 ~ 2026.11.11 신청현황 ( 0/60 ) 모집전"
+        },
+        {
+          "key": "909e610f9cdad4df9203",
+          "title": "IGZO TFT 제작 및 특성 평가 기반 반도체 공정 실습 교육",
+          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
+          "status": "모집전",
+          "period": "2026.10.19 ~ 2026.10.22 ~ 2026.11.02 ~ 2026.11.11",
+          "context": "인천대학교 IGZO TFT 제작 및 특성 평가 기반 반도체 공정 실습 교육 모집기간2026.10.19 ~ 2026.10.22 교육기간2026.11.02 ~ 2026.11.11 신청현황 ( 0/60 ) 모집전"
+        },
+        {
           "key": "39a30296b21b69c41cb4",
           "title": "이미지없음",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
@@ -126,14 +142,6 @@
           "status": "모집마감",
           "period": "2026.10.02 ~ 2026.10.03 ~ 2026.10.19 ~ 2026.10.23",
           "context": "전북대학교 HEMT 제작 실습 및 분석 모집기간2026.10.02 ~ 2026.10.03 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 10/20 ) 모집마감"
-        },
-        {
-          "key": "9251321ce2bae3919e18",
-          "title": "교육이미지",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.08.12 ~ 2026.08.14 ~ 2026.08.18 ~ 2026.08.21",
-          "context": "한양대학교 [2차 -C] 삼성전자 교수진이 알려주는 반도체 제조공정 이해 모집기간2026.08.12 ~ 2026.08.14 교육기간2026.08.18 ~ 2026.08.21 신청현황 ( 25/25 ) 모집마감"
         },
         {
           "key": "9469b74aaff9278adeb7",
@@ -174,14 +182,6 @@
           "status": "모집마감",
           "period": "2026.08.31 ~ 2026.09.04 ~ 2026.09.14 ~ 2026.09.18",
           "context": "포항공과대학교 DRAM 집적공정 이해 및 전기적 분석 -목포대학교 모집기간2026.08.31 ~ 2026.09.04 교육기간2026.09.14 ~ 2026.09.18 신청현황 ( 21/21 ) 모집마감"
-        },
-        {
-          "key": "8618c4dd4404d925443c",
-          "title": "[2차 -C] 삼성전자 교수진이 알려주는 반도체 제조공정 이해",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.08.12 ~ 2026.08.14 ~ 2026.08.18 ~ 2026.08.21",
-          "context": "한양대학교 [2차 -C] 삼성전자 교수진이 알려주는 반도체 제조공정 이해 모집기간2026.08.12 ~ 2026.08.14 교육기간2026.08.18 ~ 2026.08.21 신청현황 ( 25/25 ) 모집마감"
         }
       ]
     },
