@@ -1,12 +1,12 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-14T14:30:39.352Z",
+  "checkedAt": "2026-10-15T04:37:57.318Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
       "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
-      "failures": 17,
+      "failures": 18,
       "items": [],
       "seenKeys": [],
       "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\", waiting until \"domcontentloaded\"\n"
@@ -79,6 +79,14 @@
           "status": "모집 중",
           "period": "",
           "context": "대한상공회의소 인천인력개발원 반도체 분야 교육(인천교육청)1학년 직무성장 프로그램 2026년 공정·수율·패키징 모집 중 26.11.08 국비 무료 오프라인 인천 26.11.11 7일 26.11.17 파트타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 공정 시뮬레이션 XR 체험 반도체 기업 탐방 FAB 공정 모형 조립 반도체 산업 구조 주요 공정 개요 운영 대한상공회의소인천인력개발원 모아 보기 →"
+        },
+        {
+          "key": "8da802c4c006baf37f60",
+          "title": "성균관대학교 AI CAMPUS [SKKU] AI 기반 첨단 반도체 엔지니어링 전문가 양성과정 2기",
+          "url": "https://boottent.com/camps/skkukdt-syschip_20261012181146644",
+          "status": "모집 중",
+          "period": "",
+          "context": "성균관대학교 AI CAMPUS [SKKU] AI 기반 첨단 반도체 엔지니어링 전문가 양성과정 2기 반도체 설계·검증 모집 중 26.11.15 KDT AI 캠퍼스 무료 오프라인 경기 26.11.24 약 4개월 27.03.24 풀타임 월, 화, 수, 목, 금 / 9:30 ~ 18:30 반도체 설계 Digital IC 설계 Analog IC 설계 반도체 공정 레이아웃 AI 반도체 데이터 분석 시각화 전자회로 논리회로 메모리 설계 Physical Design 운영 성균관대학교 산학협력단 모아 보기 →"
         }
       ]
     },
@@ -228,6 +236,14 @@
           "status": "",
           "period": "",
           "context": "거점특화 이벤트"
+        },
+        {
+          "key": "006ba607e1b3f875ea93",
+          "title": "(접수중)취업현황조사 이벤트",
+          "url": "https://stormy-swoop-e2e.notion.site/318e4f105f35810ab020c2a91d3f78d5",
+          "status": "접수중",
+          "period": "",
+          "context": "(접수중)취업현황조사 이벤트"
         }
       ]
     },
