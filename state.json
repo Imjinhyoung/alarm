@@ -1,12 +1,12 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-16T07:31:43.061Z",
+  "checkedAt": "2026-10-16T13:57:27.863Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
       "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
-      "failures": 20,
+      "failures": 21,
       "items": [],
       "seenKeys": [],
       "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\", waiting until \"domcontentloaded\"\n"
@@ -16,14 +16,6 @@
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
       "items": [
-        {
-          "key": "be5a3c8e81623296d7b7",
-          "title": "한국정보통신진흥협회 [AI융합/AI반도체] AI 반도체 : Verilog와 Python cocotb로 배우는 NPU",
-          "url": "https://boottent.com/camps/kait-npu_20260922032457871",
-          "status": "모집 중",
-          "period": "",
-          "context": "한국정보통신진흥협회 [AI융합/AI반도체] AI 반도체 : Verilog와 Python cocotb로 배우는 NPU 반도체 설계·검증 모집 중 26.10.16 17:00 무료 온라인 26.10.29 약 4주 26.11.25 파트타임 월, 화, 수, 목, 금 / 19:00 ~ 23:00 AI반도체 NPU Verilog Python cocotb CPU GPU MAC유닛 dataflow 시뮬레이션 운영 한국정보통신진흥협회 모아 보기 →"
-        },
         {
           "key": "abf941f074fe92130830",
           "title": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel)",
