@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-18T04:32:31.028Z",
+  "checkedAt": "2026-10-18T07:25:32.645Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -542,7 +542,7 @@
     "skku_eee_notice": {
       "name": "성균관대 전자전기공학부 학부공지",
       "url": "https://eee.skku.edu/eee/notice.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "2be23003fdd79304d007",
@@ -688,12 +688,13 @@
           "period": "2026-09-08",
           "context": "2026-2 전자전기컴퓨터공학과 진학설명회 안내(9/29(화), 13:30/ 사전접수: 9/22(화)) No.335 전자전기공학부 2026-09-08 조회수1436"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://eee.skku.edu/eee/notice.do\", waiting until \"domcontentloaded\"\n"
     },
     "skku_eee_total": {
       "name": "성균관대 전자전기공학부 통합공지",
       "url": "https://eee.skku.edu/eee/notice_total.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "6e6388ebb07f2cfb4c2f",
@@ -775,12 +776,13 @@
           "period": "2026-10-15 16:22 ~ 2026-10-13 13:52 ~ 2026-10-12 15:30 ~ 2026-10-12 11:40",
           "context": "[일반] [학생인재개발팀] 2026학년도 2학기 국가고시 및 전문자격증 설명회 참가 신청 NEW No.3019 박찬환 2026-10-15 16:22 첨부파일 [취업] [아이폰 17 및 경품 다수] 2026년 학생인재개발팀/대학일자리플러스센터 만족도 조사 No.3018 박은선 2026-10-13 13:52 [행사/세미나] [학생성공센터 대학원] 양적 연구 실무 워크숍(논문작성 전략) 안내 No.3017 학생성공센터행정실 2026-10-12 15:30 [학사] 2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행중) No.3016 교무팀 2026-10-12 11:40 첨부파일 [행사/세미나] [학생성공센터 대학원] 질적 연구 실무 워크숍(근거이론&문화기술지) 안내 No.3015 학생성공센터행정실 2026-10-12 09:49 [취업] [학생인재개발팀/대학일자리플러스센터] 2026 하반기 한국무역보험공사와 함께하는 무역금융 특강 No.3014 박은선 2026-10-08"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://eee.skku.edu/eee/notice_total.do\", waiting until \"domcontentloaded\"\n"
     },
     "skku_ice_notice": {
       "name": "성균관대 정보통신대학 학부공지",
       "url": "https://ice.skku.edu/ice/notice.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "f30231b31b92d9af337a",
@@ -862,12 +864,13 @@
           "period": "2026-09-23 ~ 2026-09-16 ~ 2026-09-15 ~ 2026-09-14",
           "context": "『2027 경기도 대학생 자율주행 경진대회』공고 및 신청 안내(~10/5, 17시까지) No.1023 정보통신대학 2026-09-23 조회수1825 첨부파일 2026 산업계 대학교육 혁신포럼 No.1022 정보통신대학 2026-09-16 조회수1727 첨부파일 SPRINT 3기 학생 모집 안내 (9.16.(수) ~ 9.29.(화)) No.1021 ice 2026-09-15 조회수2396 첨부파일 [채용/모집] 2026 하반기 현대모비스 장학생 모집 No.1020 정보통신대학 2026-09-14 조회수2268 [채용/모집] 2026 LG 전자 VS본부 채용계약 Track 산학장학생 모집(석사과정)안내 No.1019 정보통신대학 2026-09-07 조회수3086 [학사] 2026-2학기 「반도체융합공학세미나」 교과목 이종호 전 과기부장관(현 서울대 교수) 특별 강연 안내 (9/3(목) 17:00) (장소 변경) No.1018 ice 2026-08-27 조회수2382 [채용/모집] 202"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://ice.skku.edu/ice/notice.do\", waiting until \"domcontentloaded\"\n"
     },
     "skku_ase_notice": {
       "name": "성균관대 차세대반도체공학연계전공 공지",
       "url": "https://ase.skku.edu/ase/notice.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "cfc54742d53378f1d1a0",
@@ -949,7 +952,8 @@
           "period": "2026-10-16 ~ 2026-09-15 ~ 2026-09-02 ~ 2026-08-31",
           "context": "[채용/모집] [안내] 반도체특성화대학사업단 신규 양성인원 일시적 모집중단 안내 NEW No.90 ase 2026-10-16 조회수530 [채용/모집] SPRINT 3기 학생 모집 안내(9.16.(수) ~ 9.29.(화)) No.89 ase 2026-09-15 조회수2329 첨부파일 [일반] 차세대반도체공학 연계전공 이수요건 확인 후 확인서 제출 No.88 ase 2026-09-02 조회수3037 첨부파일 차세대반도체공학연계전공 이수요건 설명회(26.9.1.화 19:00~) No.87 ase 2026-08-31 조회수1526 [행사/세미나] 2026년 상용반도체 및 소부장 개발 기술워크숍 등록비 지원 신청 안내 No.86 ase 2026-08-20 조회수1519 첨부파일 [학사] ★ C/L 중복 이수에 따른 학점 인정 숙지 안내 (중요) ★ No.85 ase 2026-08-07 조회수2466 첨부파일 [장학] 반도체특성화대학/디스플레이 부트캠프 중 중복 이수 허용(장학금은 중복 수혜"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://ase.skku.edu/ase/notice.do\", waiting until \"domcontentloaded\"\n"
     }
   }
 }
