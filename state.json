@@ -1,12 +1,12 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-19T16:27:51.099Z",
+  "checkedAt": "2026-10-20T04:49:51.299Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
       "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
-      "failures": 27,
+      "failures": 28,
       "items": [],
       "seenKeys": [],
       "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\", waiting until \"domcontentloaded\"\n"
@@ -250,7 +250,7 @@
     "suwon": {
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
-      "failures": 0,
+      "failures": 1,
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -332,7 +332,8 @@
           "period": "",
           "context": "마감 [수원일자리센터] 2026 맞춤형 직무훈련 프로그램 『보안 전문인력 일반경비원 신임교육과정』 참여자 모집 모집기간 : 0000-00-00 ~ 0000-00-00"
         }
-      ]
+      ],
+      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do\", waiting until \"domcontentloaded\"\n"
     },
     "ekcdi": {
       "name": "한국커리어개발원 온라인 과정",
