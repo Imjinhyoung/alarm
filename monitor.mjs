@@ -344,7 +344,6 @@ async function main() {
         try {
           items = await collect(page, site);
         } catch (error) {
-          if (site.group !== "school") throw error;
           console.warn(`${site.id}: 첫 조회 실패, 5초 후 전체 조회 재시도`);
           await page.waitForTimeout(5000);
           items = await collect(page, site);
