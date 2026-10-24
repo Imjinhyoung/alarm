@@ -177,7 +177,15 @@ function isWaiting(status) {
 
 async function collect(page, site) {
   if (site.id === "work24_winter") return collectWork24(page, site);
-  await page.goto(site.url, { waitUntil: "domcontentloaded", timeout: 60000 });
+  if (site.group === "school" || site.id === "semi") {
+    const response = await page.request.get(site.url, { timeout: 45000 });
+    if (!response.ok()) throw new Error(`HTTP ${response.status()}`);
+    const html = await response.text();
+    await page.route("**/*", route => route.abort());
+    await page.setContent(`<base href="${site.url}">` + html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ""), { waitUntil: "domcontentloaded" });
+  } else {
+    await page.goto(site.url, { waitUntil: "domcontentloaded", timeout: 60000 });
+  }
   if (site.id === "boottent") {
     await page.locator(site.selectors[0]).first().waitFor({ state: "attached", timeout: 30000 });
   }
