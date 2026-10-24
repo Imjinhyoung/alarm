@@ -1,6 +1,10 @@
 import { chromium } from "playwright";
 import fs from "node:fs/promises";
 import crypto from "node:crypto";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+
+const execFileAsync = promisify(execFile);
 
 const STATE_PATH = new URL("./state.json", import.meta.url);
 const ALERT_PATH = new URL("./alert.md", import.meta.url);
@@ -17,6 +21,8 @@ const sites = [
   },
   {
     id: "work24_winter",
+    enabled: false,
+    disabledReason: "GitHub 서버에서 지속적인 연결 시간 초과. 사용자 동의로 감시 제외.",
     name: "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
     url: "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
     newOnly: true
@@ -125,7 +131,7 @@ const sites = [
 ];
 
 const siteGroup = process.env.SITE_GROUP || "training";
-const activeSites = sites.filter(site => (site.group || "training") === siteGroup);
+const activeSites = sites.filter(site => site.enabled !== false && (site.group || "training") === siteGroup);
 
 const clean = value => String(value ?? "")
   .replace(/\s+/g, " ")
@@ -178,9 +184,22 @@ function isWaiting(status) {
 async function collect(page, site) {
   if (site.id === "work24_winter") return collectWork24(page, site);
   if (site.group === "school" || ["semi", "suwon", "ekcdi", "postech"].includes(site.id)) {
-    const response = await page.request.get(site.url, { timeout: 45000 });
-    if (!response.ok()) throw new Error(`HTTP ${response.status()}`);
-    const html = await response.text();
+    let html;
+    if (site.group === "school") {
+      // The school pages are server-rendered. Use the OS HTTP client over IPv4
+      // and retry transient connection failures before falling back to Playwright.
+      try {
+        ({ stdout: html } = await execFileAsync("curl", ["--ipv4", "--http1.1", "--fail", "--location", "--connect-timeout", "10", "--max-time", "25", "--retry", "2", "--retry-delay", "3", "--retry-all-errors", "--silent", "--show-error", site.url], { timeout: 100000, maxBuffer: 8 * 1024 * 1024 }));
+      } catch {
+        const response = await page.request.get(site.url, { timeout: 20000 });
+        if (!response.ok()) throw new Error(`HTTP ${response.status()}`);
+        html = await response.text();
+      }
+    } else {
+      const response = await page.request.get(site.url, { timeout: 45000 });
+      if (!response.ok()) throw new Error(`HTTP ${response.status()}`);
+      html = await response.text();
+    }
     await page.route("**/*", route => route.abort());
     await page.setContent(`<base href="${site.url}">` + html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ""), { waitUntil: "domcontentloaded" });
   } else {
@@ -303,6 +322,9 @@ async function collectWork24(page, site) {
 async function main() {
   const previous = JSON.parse(await fs.readFile(STATE_PATH, "utf8"));
   const next = { version: 1, initialized: true, checkedAt: new Date().toISOString(), sites: { ...(previous.sites ?? {}) } };
+  for (const site of sites.filter(site => site.enabled === false && (site.group || "training") === siteGroup)) {
+    next.sites[site.id] = { ...previous.sites?.[site.id], disabled: true, disabledReason: site.disabledReason };
+  }
   const alerts = [];
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
