@@ -177,7 +177,7 @@ function isWaiting(status) {
 
 async function collect(page, site) {
   if (site.id === "work24_winter") return collectWork24(page, site);
-  if (site.group === "school" || site.id === "semi") {
+  if (site.group === "school" || ["semi", "suwon", "ekcdi", "postech"].includes(site.id)) {
     const response = await page.request.get(site.url, { timeout: 45000 });
     if (!response.ok()) throw new Error(`HTTP ${response.status()}`);
     const html = await response.text();
