@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-24T08:34:13.462Z",
+  "checkedAt": "2026-10-24T08:35:16.401Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -9,13 +9,15 @@
       "failures": 32,
       "items": [],
       "seenKeys": [],
-      "lastError": "apiRequestContext.get: connect ETIMEDOUT 210.95.199.122:443\nCall log:\n\u001b[2m  - → GET https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n"
+      "lastError": "apiRequestContext.get: connect ETIMEDOUT 210.95.199.122:443\nCall log:\n\u001b[2m  - → GET https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
+      "disabled": true,
+      "disabledReason": "GitHub 서버에서 지속적인 연결 시간 초과. 사용자 동의로 감시 제외."
     },
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:55:11.386Z",
+      "checkedAt": "2026-10-24T08:35:28.274Z",
       "items": [
         {
           "key": "3e32b439a5ef7f150d70",
@@ -103,7 +105,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:55:16.351Z",
+      "checkedAt": "2026-10-24T08:35:33.599Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
@@ -199,7 +201,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:55:22.212Z",
+      "checkedAt": "2026-10-24T08:35:39.741Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -231,7 +233,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:55:29.445Z",
+      "checkedAt": "2026-10-24T08:35:47.119Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -271,7 +273,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:55:33.018Z",
+      "checkedAt": "2026-10-24T08:35:51.118Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -359,7 +361,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:55:36.236Z",
+      "checkedAt": "2026-10-24T08:35:54.785Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -519,7 +521,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:55:39.788Z",
+      "checkedAt": "2026-10-24T08:35:58.494Z",
       "items": [
         {
           "key": "af358663ad4cd96a79ee",
@@ -567,7 +569,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:55:45.959Z",
+      "checkedAt": "2026-10-24T08:36:05.130Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -999,7 +1001,7 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-10-24T07:54:00.481Z",
+      "checkedAt": "2026-10-24T08:35:20.728Z",
       "items": [
         {
           "key": "fb6f6bd41d134ab3f2ef",
