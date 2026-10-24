@@ -2,7 +2,7 @@ name: 성균관대 공지사항 감시
 
 on:
   push:
-    paths: [monitor.mjs, package.json, .github/workflows/school-monitor.yml]
+    paths: [monitor.mjs, save-state.mjs, package.json, .github/workflows/school-monitor.yml]
   schedule:
     # 한국시간 11:47, 15:47 (UTC 02:47, 06:47)
     - cron: "47 2,6 * * *"
@@ -41,15 +41,12 @@ jobs:
         run: npm run check
 
       - name: 기준선 저장
+        env:
+          SITE_GROUP: school
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state.json
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: update monitoring state"
-            git pull --rebase origin main
-            git push
-          fi
+          node save-state.mjs
 
       - name: 새 학교 공지 알림 생성
         if: steps.monitor.outputs.alert == 'true'
