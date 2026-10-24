@@ -37,7 +37,11 @@ jobs:
           node-version: "22"
 
       - run: npm install --no-audit --no-fund
-      - run: npx playwright install --with-deps chromium
+      - name: 브라우저 설치
+        run: npx playwright install --with-deps chromium
+
+      - name: 조회 로직 검증
+        run: node work24.test.mjs
 
       - name: 사이트 확인
         id: monitor
