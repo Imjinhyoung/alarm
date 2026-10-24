@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   monitor:
-    runs-on: windows-2022
+    runs-on: macos-14
     defaults:
       run:
         shell: bash
