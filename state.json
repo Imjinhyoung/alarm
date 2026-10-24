@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-24T07:36:51.474Z",
+  "checkedAt": "2026-10-24T07:46:56.259Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -566,7 +566,7 @@
     "skku_eee_notice": {
       "name": "성균관대 전자전기공학부 학부공지",
       "url": "https://eee.skku.edu/eee/notice.do",
-      "failures": 2,
+      "failures": 3,
       "items": [
         {
           "key": "b22b74ec8656b8d1dcd5",
@@ -713,12 +713,12 @@
           "context": "[취업] [한화오션] 2026 하반기 한화오션 신입사원 채용 (~9/30 23시 59분까지) No.336 전자전기공학부 2026-09-15 조회수1278"
         }
       ],
-      "lastError": "apiRequestContext.get: Timeout 45000ms exceeded.\nCall log:\n  - → GET https://eee.skku.edu/eee/notice.do\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n"
+      "lastError": "apiRequestContext.get: connect ETIMEDOUT 115.145.129.109:443\nCall log:\n\u001b[2m  - → GET https://eee.skku.edu/eee/notice.do\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n"
     },
     "skku_eee_total": {
       "name": "성균관대 전자전기공학부 통합공지",
       "url": "https://eee.skku.edu/eee/notice_total.do",
-      "failures": 2,
+      "failures": 3,
       "items": [
         {
           "key": "dc120783221b088f5846",
@@ -801,12 +801,12 @@
           "context": "[채용/모집] 경기도 반도체 산업 전문인력 양성사업 취업컨설팅(3회차) 모집 안내 NEW No.3024 이영은 2026-10-21 15:31 첨부파일 [일반] 킹고포털 내 Google, Microsoft365 연동 서비스 일시 중단 안내 NEW No.3023 소혜조 2026-10-20 16:27 [취업] [학생인재개발팀/대학일자리플러스센터] (자과캠) [뉴파워프라즈마] 캠퍼스 리크루팅 NEW No.3022 학생인재개발팀 2026-10-20 14:50 첨부파일 [학사] 3품 중 인턴십 인증 신청 안내 NEW No.3021 교무팀 2026-10-19 13:23 [학사] 2026학년도 2학기 예비군 훈련 참여 학생 출석 인정처리 안내(1차) NEW No.3020 교무팀 2026-10-19 10:58 첨부파일 [일반] [학생인재개발팀] 2026학년도 2학기 국가고시 및 전문자격증 설명회 참가 신청 No.3019 박찬환 2026-10-15 16:22 첨부파일 [취업] [아이폰 17 및 경품 "
         }
       ],
-      "lastError": "apiRequestContext.get: Timeout 45000ms exceeded.\nCall log:\n  - → GET https://eee.skku.edu/eee/notice_total.do\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n"
+      "lastError": "apiRequestContext.get: connect ETIMEDOUT 115.145.129.109:443\nCall log:\n\u001b[2m  - → GET https://eee.skku.edu/eee/notice_total.do\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n"
     },
     "skku_ice_notice": {
       "name": "성균관대 정보통신대학 학부공지",
       "url": "https://ice.skku.edu/ice/notice.do",
-      "failures": 2,
+      "failures": 3,
       "items": [
         {
           "key": "57455a91a3d0d47852ea",
@@ -889,12 +889,12 @@
           "context": "2026학년도 2학기 미래차 SDV/전동화/자율주행 마이크로디그리 신청 안내 - 10/19(월)~10/23(금) NEW No.1024 정보통신대학 2026-10-19 조회수264 첨부파일 『2027 경기도 대학생 자율주행 경진대회』공고 및 신청 안내(~10/5, 17시까지) No.1023 정보통신대학 2026-09-23 조회수1980 첨부파일 2026 산업계 대학교육 혁신포럼 No.1022 정보통신대학 2026-09-16 조회수1865 첨부파일 SPRINT 3기 학생 모집 안내 (9.16.(수) ~ 9.29.(화)) No.1021 ice 2026-09-15 조회수2530 첨부파일 [채용/모집] 2026 하반기 현대모비스 장학생 모집 No.1020 정보통신대학 2026-09-14 조회수2481 [채용/모집] 2026 LG 전자 VS본부 채용계약 Track 산학장학생 모집(석사과정)안내 No.1019 정보통신대학 2026-09-07 조회수3359 [학사] 2026-2학기 「반도체융합공학"
         }
       ],
-      "lastError": "apiRequestContext.get: Timeout 45000ms exceeded.\nCall log:\n  - → GET https://ice.skku.edu/ice/notice.do\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n"
+      "lastError": "apiRequestContext.get: connect ETIMEDOUT 115.145.129.109:443\nCall log:\n\u001b[2m  - → GET https://ice.skku.edu/ice/notice.do\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n"
     },
     "skku_ase_notice": {
       "name": "성균관대 차세대반도체공학연계전공 공지",
       "url": "https://ase.skku.edu/ase/notice.do",
-      "failures": 2,
+      "failures": 3,
       "items": [
         {
           "key": "76e847076a9cd59b7577",
@@ -977,7 +977,7 @@
           "context": "[채용/모집] 2026 반도체 기업탐방 프로그램 신청 (~ 10/29까지) NEW No.91 ase 2026-10-21 조회수173 첨부파일 [채용/모집] [안내] 반도체특성화대학사업단 신규 양성인원 일시적 모집중단 안내 NEW No.90 ase 2026-10-16 조회수1184 [채용/모집] SPRINT 3기 학생 모집 안내(9.16.(수) ~ 9.29.(화)) No.89 ase 2026-09-15 조회수2463 첨부파일 [일반] 차세대반도체공학 연계전공 이수요건 확인 후 확인서 제출 No.88 ase 2026-09-02 조회수3140 첨부파일 차세대반도체공학연계전공 이수요건 설명회(26.9.1.화 19:00~) No.87 ase 2026-08-31 조회수1610 [행사/세미나] 2026년 상용반도체 및 소부장 개발 기술워크숍 등록비 지원 신청 안내 No.86 ase 2026-08-20 조회수1577 첨부파일 [학사] ★ C/L 중복 이수에 따른 학점 인정 숙지 안내 (중요) ★ "
         }
       ],
-      "lastError": "apiRequestContext.get: Timeout 45000ms exceeded.\nCall log:\n  - → GET https://ase.skku.edu/ase/notice.do\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n"
+      "lastError": "apiRequestContext.get: connect ETIMEDOUT 115.145.129.109:443\nCall log:\n\u001b[2m  - → GET https://ase.skku.edu/ase/notice.do\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n"
     }
   }
 }
