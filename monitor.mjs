@@ -340,7 +340,15 @@ async function main() {
       const siteInitialized = Array.isArray(previous.sites?.[site.id]?.items);
       const page = await context.newPage();
       try {
-        const items = await collect(page, site);
+        let items;
+        try {
+          items = await collect(page, site);
+        } catch (error) {
+          if (site.group !== "school") throw error;
+          console.warn(`${site.id}: 첫 조회 실패, 5초 후 전체 조회 재시도`);
+          await page.waitForTimeout(5000);
+          items = await collect(page, site);
+        }
         // Recompute keys from saved data so this also migrates old state that
         // contains the volatile integrated-board itemId values.
         const oldItems = new Map((oldSite.items ?? []).map(item => [itemKey(site, item), item]));
