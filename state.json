@@ -1,52 +1,29 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-24T07:53:18.316Z",
+  "checkedAt": "2026-10-24T07:53:56.565Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
       "url": "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
-      "failures": 31,
+      "failures": 32,
       "items": [],
       "seenKeys": [],
-      "lastError": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\", waiting until \"domcontentloaded\"\n"
+      "lastError": "apiRequestContext.get: connect ETIMEDOUT 210.95.199.122:443\nCall log:\n\u001b[2m  - → GET https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n"
     },
     "boottent": {
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
+      "checkedAt": "2026-10-24T07:55:11.386Z",
       "items": [
         {
-          "key": "3dbec35cd09cfafdae7f",
-          "title": "한국반도체아카데미 공정 시뮬레이터를 활용한 AI 반도체 공정 설계 교육 2026",
-          "url": "https://boottent.com/camps/ksia-process_20261009033116449",
+          "key": "3e32b439a5ef7f150d70",
+          "title": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석",
+          "url": "https://boottent.com/camps/linekd-semiconductor_20260914185534369",
           "status": "모집 중",
           "period": "",
-          "context": "한국반도체아카데미 공정 시뮬레이터를 활용한 AI 반도체 공정 설계 교육 2026 공정·수율·패키징 모집 중 26.10.21 무료 오프라인 경기 26.11.04 약 2주 26.11.19 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 공정 Process Integration PI Engineer Device Physics 단위 공정 Process Flow Design Rule SEMulator3D FinFET 공정 시뮬레이터 AI 반도체 운영 한국반도체아카데미 모아 보기 →"
-        },
-        {
-          "key": "3c695ca3193a6dc40fee",
-          "title": "대한상공회의소 인천인력개발원 MTS 엠티에스코퍼레이션 채용연계 과정 2회차",
-          "url": "https://boottent.com/camps/korchamic-mts_20261007032404434",
-          "status": "모집 중",
-          "period": "",
-          "context": "대한상공회의소 인천인력개발원 MTS 엠티에스코퍼레이션 채용연계 과정 2회차 장비 설계·제어·정비 모집 중 26.10.21 국비 무료 오프라인 인천 26.10.28 약 2개월 26.12.30 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 17:00 반도체장비 PM 엔지니어 전기·전자 기초 PLC 제어 계측장비 활용 설비 점검 고장 대응 유지보수 데이터 관리 자동화장비 제어 유지보수 실무 채용우대 운영 대한상공회의소인천인력개발원 모아 보기 →"
-        },
-        {
-          "key": "0fa9e02b36683d973b39",
-          "title": "한국반도체아카데미 반도체 RTL 전문가 양성 4주 집중과정",
-          "url": "https://boottent.com/camps/ksia-rtl_20260919061800127",
-          "status": "모집 중",
-          "period": "",
-          "context": "한국반도체아카데미 반도체 RTL 전문가 양성 4주 집중과정 반도체 설계·검증 모집 중 26.10.22 무료 오프라인 서울 26.10.26 약 4주 26.11.23 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 RTL 설계 Verilog HDL FPGA SoC 디지털 회로 반도체 설계 타이밍 제어 인터페이스 설계 운영 한국반도체아카데미 모아 보기 →"
-        },
-        {
-          "key": "4da89c3e9ad83098380b",
-          "title": "AI+X(융합) 아카데미 AI를 활용한 반도체 공정 장비 데이터 분석 전문가 양성과정",
-          "url": "https://boottent.com/camps/thein-semicon_20260929170931637",
-          "status": "모집 중",
-          "period": "",
-          "context": "AI+X(융합) 아카데미 AI를 활용한 반도체 공정 장비 데이터 분석 전문가 양성과정 공정·수율·패키징 모집 중 26.10.23 15:00 국비 무료 오프라인 서울 26.11.02 약 7주 26.12.18 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 17:00 반도체 개론 반도체 소자 반도체 공정 장비요소 기술 반도체 패키징 반도체 테스트 데이터 분석 데이터 시각화 공정/장비/테스트 실습 실무 프로젝트 기술 멘토링 운영 더인에듀 모아 보기 →"
+          "context": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석 공정·수율·패키징 모집 중 26.10.28 KDC 34,500원 온라인 26.10.29 약 4주 26.11.27 파트타임 개별 자유 학습 / 일1.2시간 학습 권장 파이썬 머신러닝 반도체 데이터 분석 Pandas Numpy Matplotlib Seaborn scikit-learn 운영 라인원격평생교육원 모아 보기 →"
         },
         {
           "key": "56567be82b208cfe7426",
@@ -65,6 +42,38 @@
           "context": "내일도렛유인 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (feat. Excel) 공정·수율·패키징 모집 중 26.11.01 KDC 39,930원 온라인 26.11.02 약 3주 26.11.22 파트타임 개별 자유 학습 / 일2시간 학습 권장 반도체 공정 품질관리 데이터분석 운영 렛유인에듀 모아 보기 →"
         },
         {
+          "key": "a2bd8d0b1b18a72833b4",
+          "title": "내일도렛유인 반도체 공정/설비 : 기초 이론 및 실무 역량 강화",
+          "url": "https://boottent.com/camps/letuinedu-scbasic_20251001113118",
+          "status": "모집 중",
+          "period": "",
+          "context": "내일도렛유인 반도체 공정/설비 : 기초 이론 및 실무 역량 강화 공정·수율·패키징 모집 중 26.11.01 KDC 45,980원 온라인 26.11.02 약 3주 26.11.22 파트타임 개별 자유 학습 / 일2시간 학습 권장 반도체 공정 미세패턴형성 Trench구조 운영 렛유인에듀 모아 보기 →"
+        },
+        {
+          "key": "528f12c777b25862b924",
+          "title": "렛유인에듀 [KDC] 반도체 후공정 공정 실무 : 양산조건 수립 및 부적합 분석",
+          "url": "https://boottent.com/camps/letuinedu-pkg_20251001113042",
+          "status": "모집 중",
+          "period": "",
+          "context": "렛유인에듀 [KDC] 반도체 후공정 공정 실무 : 양산조건 수립 및 부적합 분석 공정·수율·패키징 모집 중 26.11.01 KDC 44,770원 온라인 26.11.02 약 3주 26.11.22 파트타임 개별 자유 학습 / 일5시간 학습 권장 운영 렛유인에듀 모아 보기 →"
+        },
+        {
+          "key": "5584aeac7dc1dc02a8eb",
+          "title": "윈스펙원격평생교육원 반도체 핵심공정 온라인 실습 입문: 소자부터 증착까지",
+          "url": "https://boottent.com/camps/winspec-mosfet_20251001112834",
+          "status": "모집 중",
+          "period": "",
+          "context": "윈스펙원격평생교육원 반도체 핵심공정 온라인 실습 입문: 소자부터 증착까지 공정·수율·패키징 모집 중 26.11.03 15:00 KDC 42,350원 온라인 26.11.04 약 4주 26.12.04 파트타임 개별 자유 학습 / 일2시간 학습 권장 반도체물성 반도체소자 포토공정 식각공정 진공및플라즈마기술 박막증착 기상증착 ALD 운영 윈스펙 모아 보기 →"
+        },
+        {
+          "key": "64e1e519fa0380ca0f1c",
+          "title": "윈스펙 비전공자도 쉽게 배우는 디스플레이 제조 공정",
+          "url": "https://boottent.com/camps/winspec-display_20241112113108",
+          "status": "모집 중",
+          "period": "",
+          "context": "윈스펙 비전공자도 쉽게 배우는 디스플레이 제조 공정 공정·수율·패키징 모집 중 26.11.03 15:00 KDC 49,000원 온라인 26.11.04 약 4주 26.12.04 파트타임 개별 자유 학습 / 일2시간 학습 권장 디스플레이 LCD OLED Micro-LED AR/VR 3D 투명디스플레이 특수디스플레이 운영 윈스펙 모아 보기 →"
+        },
+        {
           "key": "17a693597f5e4d7833e8",
           "title": "한국반도체아카데미 전력반도체 소자공정 및 신뢰성평가 기초과정",
           "url": "https://boottent.com/camps/ksia-power_20261021091527948",
@@ -73,20 +82,20 @@
           "context": "한국반도체아카데미 전력반도체 소자공정 및 신뢰성평가 기초과정 공정·수율·패키징 모집 중 26.11.03 국비 무료 오프라인 부산 26.11.09 약 2주 26.11.20 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 전력반도체 소자공정 신뢰성평가 파워사이클 열저항 측정 정특성 동특성 후공정 증착 사진 이온주입 식각 AQG324 파워모듈 운영 한국반도체아카데미 모아 보기 →"
         },
         {
+          "key": "952f645b016cd1ca729b",
+          "title": "한국반도체아카데미 공정 시뮬레이터를 활용한 AI 반도체 공정 설계(PI) 교육 2026",
+          "url": "https://boottent.com/camps/ksia-process_20261023061722363",
+          "status": "모집 중",
+          "period": "",
+          "context": "한국반도체아카데미 공정 시뮬레이터를 활용한 AI 반도체 공정 설계(PI) 교육 2026 공정·수율·패키징 모집 중 26.11.08 무료 오프라인 경기 26.11.25 약 2주 26.12.09 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 공정 Process Integration PI 엔지니어 Device Physics 단위 공정 Process Flow Design Rule FinFET SEMulator3D 공정 시뮬레이터 운영 한국반도체아카데미 모아 보기 →"
+        },
+        {
           "key": "04d9103d33811a591850",
           "title": "대한상공회의소 인천인력개발원 반도체 분야 교육(인천교육청)1학년 직무성장 프로그램 2026년",
           "url": "https://boottent.com/camps/korchamic-semiconductor_20261007032649606",
           "status": "모집 중",
           "period": "",
           "context": "대한상공회의소 인천인력개발원 반도체 분야 교육(인천교육청)1학년 직무성장 프로그램 2026년 공정·수율·패키징 모집 중 26.11.08 국비 무료 오프라인 인천 26.11.11 7일 26.11.17 파트타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 반도체 공정 시뮬레이션 XR 체험 반도체 기업 탐방 FAB 공정 모형 조립 반도체 산업 구조 주요 공정 개요 운영 대한상공회의소인천인력개발원 모아 보기 →"
-        },
-        {
-          "key": "8da802c4c006baf37f60",
-          "title": "성균관대학교 AI CAMPUS [SKKU] AI 기반 첨단 반도체 엔지니어링 전문가 양성과정 2기",
-          "url": "https://boottent.com/camps/skkukdt-syschip_20261012181146644",
-          "status": "모집 중",
-          "period": "",
-          "context": "성균관대학교 AI CAMPUS [SKKU] AI 기반 첨단 반도체 엔지니어링 전문가 양성과정 2기 반도체 설계·검증 모집 중 26.11.15 KDT AI 캠퍼스 무료 오프라인 경기 26.11.24 약 4개월 27.03.24 풀타임 월, 화, 수, 목, 금 / 9:30 ~ 18:30 반도체 설계 Digital IC 설계 Analog IC 설계 반도체 공정 레이아웃 AI 반도체 데이터 분석 시각화 전자회로 논리회로 메모리 설계 Physical Design 운영 성균관대학교 산학협력단 모아 보기 →"
         }
       ]
     },
@@ -94,14 +103,15 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
+      "checkedAt": "2026-10-24T07:55:16.351Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
           "title": "이미지없음",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
-          "period": "2026.09.16 ~ 2026.10.16 ~ 2026.10.16 ~ 2026.10.30",
-          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.09.16 ~ 2026.10.16 교육기간2026.10.16 ~ 2026.10.30 신청현황 ( 인원제한 없음 ) 모집마감"
+          "period": "2026.10.07 ~ 2026.10.23 ~ 2026.11.18 ~ 2026.12.19",
+          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.10.07 ~ 2026.10.23 교육기간2026.11.18 ~ 2026.12.19 신청현황 ( 인원제한 없음 ) 모집마감"
         },
         {
           "key": "b21b2039d70c3bd93b13",
@@ -117,7 +127,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.10.19 ~ 2026.10.22 ~ 2026.11.02 ~ 2026.11.11",
-          "context": "인천대학교 IGZO TFT 제작 및 특성 평가 기반 반도체 공정 실습 교육 모집기간2026.10.19 ~ 2026.10.22 교육기간2026.11.02 ~ 2026.11.11 신청현황 ( 60/60 ) 모집마감"
+          "context": "인천대학교 IGZO TFT 제작 및 특성 평가 기반 반도체 공정 실습 교육 모집기간2026.10.19 ~ 2026.10.22 교육기간2026.11.02 ~ 2026.11.11 신청현황 ( 61/60 ) 모집마감"
         },
         {
           "key": "909e610f9cdad4df9203",
@@ -125,7 +135,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.10.19 ~ 2026.10.22 ~ 2026.11.02 ~ 2026.11.11",
-          "context": "인천대학교 IGZO TFT 제작 및 특성 평가 기반 반도체 공정 실습 교육 모집기간2026.10.19 ~ 2026.10.22 교육기간2026.11.02 ~ 2026.11.11 신청현황 ( 60/60 ) 모집마감"
+          "context": "인천대학교 IGZO TFT 제작 및 특성 평가 기반 반도체 공정 실습 교육 모집기간2026.10.19 ~ 2026.10.22 교육기간2026.11.02 ~ 2026.11.11 신청현황 ( 61/60 ) 모집마감"
         },
         {
           "key": "468652c6ff97f139bb4e",
@@ -140,8 +150,8 @@
           "title": "청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청!",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
-          "period": "2026.09.16 ~ 2026.10.16 ~ 2026.10.16 ~ 2026.10.30",
-          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.09.16 ~ 2026.10.16 교육기간2026.10.16 ~ 2026.10.30 신청현황 ( 인원제한 없음 ) 모집마감"
+          "period": "2026.10.07 ~ 2026.10.23 ~ 2026.11.18 ~ 2026.12.19",
+          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.10.07 ~ 2026.10.23 교육기간2026.11.18 ~ 2026.12.19 신청현황 ( 인원제한 없음 ) 모집마감"
         },
         {
           "key": "1122b3a66ff42a160804",
@@ -189,30 +199,31 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
+      "checkedAt": "2026-10-24T07:55:22.212Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
           "title": "정기교육 접수신청",
           "url": "javascript:void(0)",
-          "status": "접수 중",
-          "period": "2026-10-15 09:00 ~ 2026-10-23 13:00 ~ 2026-11-02 10:00 ~ 2026-11-02 17:40",
-          "context": "정기교육 접수신청 정기교육 신청 전체 77개 전체 제목 내용 검색 2026 11 양자 반도체 기본공정교육 모집안내 학생 및 재직자(이론+실습) 양자 반도체기본공정교육(이론) 담당자 :한정훈 접수기간 :2026-10-15 09:00~ 2026-10-23 13:00 교육기간 :2026-11-02 10:00~ 2026-11-02 17:40 양자 반도체기본공정교육(실습) 담당자 :한정훈 접수기간 :2026-10-15 09:00~ 2026-10-23 13:00 교육기간 :2026-11-03 10:00~ 2026-11-05 18:00 접수 중 신청하기 2026 10 2026 K-ISRC 연합교육 (단기강좌) - (충남대) MOSFET 핵심 파라미터 추출 실습 교육 충남대학교 제2공학관 327호(이론), 474호(실습) 담당자 :김가연 접수기간 :2026-10-21 00:00~ 2026-10-23 23:59 교육기간 :2026-10-30 09:30~ 2026-10-30 18:00 접수 중 신청하"
+          "status": "",
+          "period": "2026-10-01 00:00 ~ 2026-10-16 23:59 ~ 2026-11-27 09:30 ~ 2026-11-27 18:00",
+          "context": "정기교육 접수신청 정기교육 신청 전체 77개 전체 제목 내용 검색 2026 11 2026 K-ISRC 연합교육 (단기강좌) - (전북대) 반도체 공정 이론 전북대학교 진수당 교육동 504호 담당자 :김가연 접수기간 :2026-10-01 00:00~ 2026-10-16 23:59 교육기간 :2026-11-27 09:30~ 2026-11-27 18:00 접수 완료 신청하기 2026 11 2026 K-ISRC 연합교육 (단기강좌) - (전북대) 반도체 패터닝 공정 실습 전북대학교 진수당 교육동 504호 담당자 :김가연 접수기간 :2026-10-01 00:00~ 2026-10-16 23:59 교육기간 :2026-11-06 09:30~ 2026-11-06 17:30 접수 완료 신청하기 2026 11 2026 K-ISRC 연합교육 (단기강좌) - (전북대) 반도체 센서 이론 전북대학교 진수당 교육동 504호 담당자 :김가연 접수기간 :2026-10-01 00:00~ 2026-10-16 23:5"
         },
         {
           "key": "201821c54d617ba1c04b",
           "title": "비정기교육 접수신청",
           "url": "javascript:void(0)",
-          "status": "접수 중",
-          "period": "2026-10-15 09:00 ~ 2026-10-23 13:00 ~ 2026-11-02 10:00 ~ 2026-11-02 17:40",
-          "context": "정기교육 접수신청 정기교육 신청 전체 77개 전체 제목 내용 검색 2026 11 양자 반도체 기본공정교육 모집안내 학생 및 재직자(이론+실습) 양자 반도체기본공정교육(이론) 담당자 :한정훈 접수기간 :2026-10-15 09:00~ 2026-10-23 13:00 교육기간 :2026-11-02 10:00~ 2026-11-02 17:40 양자 반도체기본공정교육(실습) 담당자 :한정훈 접수기간 :2026-10-15 09:00~ 2026-10-23 13:00 교육기간 :2026-11-03 10:00~ 2026-11-05 18:00 접수 중 신청하기 2026 10 2026 K-ISRC 연합교육 (단기강좌) - (충남대) MOSFET 핵심 파라미터 추출 실습 교육 충남대학교 제2공학관 327호(이론), 474호(실습) 담당자 :김가연 접수기간 :2026-10-21 00:00~ 2026-10-23 23:59 교육기간 :2026-10-30 09:30~ 2026-10-30 18:00 접수 중 신청하"
+          "status": "",
+          "period": "2026-10-01 00:00 ~ 2026-10-16 23:59 ~ 2026-11-27 09:30 ~ 2026-11-27 18:00",
+          "context": "정기교육 접수신청 정기교육 신청 전체 77개 전체 제목 내용 검색 2026 11 2026 K-ISRC 연합교육 (단기강좌) - (전북대) 반도체 공정 이론 전북대학교 진수당 교육동 504호 담당자 :김가연 접수기간 :2026-10-01 00:00~ 2026-10-16 23:59 교육기간 :2026-11-27 09:30~ 2026-11-27 18:00 접수 완료 신청하기 2026 11 2026 K-ISRC 연합교육 (단기강좌) - (전북대) 반도체 패터닝 공정 실습 전북대학교 진수당 교육동 504호 담당자 :김가연 접수기간 :2026-10-01 00:00~ 2026-10-16 23:59 교육기간 :2026-11-06 09:30~ 2026-11-06 17:30 접수 완료 신청하기 2026 11 2026 K-ISRC 연합교육 (단기강좌) - (전북대) 반도체 센서 이론 전북대학교 진수당 교육동 504호 담당자 :김가연 접수기간 :2026-10-01 00:00~ 2026-10-16 23:5"
         },
         {
           "key": "fcd1c9f3976135933278",
           "title": "접수 완료",
           "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
           "status": "",
-          "period": "2026-10-01 00:00 ~ 2026-10-16 23:59 ~ 2026-11-06 09:30 ~ 2026-11-06 17:30",
-          "context": "2026 11 2026 K-ISRC 연합교육 (단기강좌) - (전북대) 반도체 패터닝 공정 실습 전북대학교 진수당 교육동 504호 담당자 :김가연 접수기간 :2026-10-01 00:00~ 2026-10-16 23:59 교육기간 :2026-11-06 09:30~ 2026-11-06 17:30 접수 완료 신청하기"
+          "period": "2026-10-06 10:00 ~ 2026-10-16 18:00 ~ 2026-10-28 09:00 ~ 2026-10-28 18:00",
+          "context": "2026 10 2026 K-ISRC 연합교육 단기강좌 - (경북대) [공정특화-식각] 반도체 Etch 공정 마스터 클래스 경북대학교 IT대학 1호관 313호(건물번호 418) 담당자 :김가연 접수기간 :2026-10-06 10:00~ 2026-10-16 18:00 교육기간 :2026-10-28 09:00~ 2026-10-28 18:00 접수 완료 신청하기"
         }
       ]
     },
@@ -220,6 +231,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
+      "checkedAt": "2026-10-24T07:55:29.445Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -259,6 +271,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
+      "checkedAt": "2026-10-24T07:55:33.018Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -346,6 +359,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
+      "checkedAt": "2026-10-24T07:55:36.236Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -353,7 +367,7 @@
           "url": "https://www.ekcdi.co.kr/html/trainning/trainning_offline.php",
           "status": "",
           "period": "",
-          "context": "오프라인 과정 온라인 과정 동영상 과정 특별할인 과정"
+          "context": "Toggle navigation :: Select Menu :: 오프라인 과정 온라인 과정 동영상 과정 특별할인 과정"
         },
         {
           "key": "5eab1c94875187897bc3",
@@ -361,7 +375,7 @@
           "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
           "status": "",
           "period": "",
-          "context": "오프라인 과정 온라인 과정 동영상 과정 특별할인 과정"
+          "context": "Toggle navigation :: Select Menu :: 오프라인 과정 온라인 과정 동영상 과정 특별할인 과정"
         },
         {
           "key": "c127ead8a646453e2fa1",
@@ -369,7 +383,7 @@
           "url": "https://www.ekcdi.co.kr/html/trainning/trainning_video.php",
           "status": "",
           "period": "",
-          "context": "오프라인 과정 온라인 과정 동영상 과정 특별할인 과정"
+          "context": "Toggle navigation :: Select Menu :: 오프라인 과정 온라인 과정 동영상 과정 특별할인 과정"
         },
         {
           "key": "489194159b9108a9237e",
@@ -377,7 +391,7 @@
           "url": "https://www.ekcdi.co.kr/html/trainning/trainning_common.php",
           "status": "",
           "period": "",
-          "context": "오프라인 과정 온라인 과정 동영상 과정 특별할인 과정"
+          "context": "Toggle navigation :: Select Menu :: 오프라인 과정 온라인 과정 동영상 과정 특별할인 과정"
         },
         {
           "key": "bbe10769fdb41cbad582",
@@ -460,8 +474,8 @@
           "context": "온라인 과정 비대면 실시간 강의/실습! 줌(ZOOM) 채팅을 통한 질의응답! [서울과기대] 제6기 6시그마 Black Belt 과정 2026-11-03 ~ 2026-11-06 교육비: 무료 예정 [서울과기대] 제15기 6시그마 Green Belt 과정 2026-10-06 ~ 2026-10-09 교육비: 무료 종료 [한국항공대] 제2기 6시그마 Black Belt 과정 2026-08-18 ~ 2026-08-20 교육비: 30,000 종료 [계명대] 제5기 마케팅조사분석 과정 2026-08-10 ~ 2026-08-13 교육비: 무료 종료 [계명대] 제5기 통계적 공정관리 과정 2026-07-20 ~ 2026-07-23 교육비: 무료 종료 [한국항공대] 제5기 6시그마 Green Belt 과정 2026-07-13 ~ 2026-07-15 교육비: 20,000 종료 [서울과기대] 제14기 6시그마 Green Belt 과정 2026-06-25 ~ 2026-06-27 교육비: 무료 종료 [창원대"
         },
         {
-          "key": "2f9f0ab0bb6d9800d391",
-          "title": "1 (current)",
+          "key": "07084616989636c41b81",
+          "title": "1(current)",
           "url": "javascript:",
           "status": "종료",
           "period": "2026-11-03 ~ 2026-11-06 ~ 2026-10-06 ~ 2026-10-09",
@@ -505,6 +519,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
+      "checkedAt": "2026-10-24T07:55:39.788Z",
       "items": [
         {
           "key": "af358663ad4cd96a79ee",
@@ -552,6 +567,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
+      "checkedAt": "2026-10-24T07:55:45.959Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -977,6 +993,250 @@
           "period": "2026-10-21 ~ 2026-10-16 ~ 2026-09-15 ~ 2026-09-02",
           "context": "[채용/모집] 2026 반도체 기업탐방 프로그램 신청 (~ 10/29까지) NEW No.91 ase 2026-10-21 조회수639 첨부파일 [채용/모집] [안내] 반도체특성화대학사업단 신규 양성인원 일시적 모집중단 안내 NEW No.90 ase 2026-10-16 조회수1588 [채용/모집] SPRINT 3기 학생 모집 안내(9.16.(수) ~ 9.29.(화)) No.89 ase 2026-09-15 조회수2578 첨부파일 [일반] 차세대반도체공학 연계전공 이수요건 확인 후 확인서 제출 No.88 ase 2026-09-02 조회수3245 첨부파일 차세대반도체공학연계전공 이수요건 설명회(26.9.1.화 19:00~) No.87 ase 2026-08-31 조회수1686 [행사/세미나] 2026년 상용반도체 및 소부장 개발 기술워크숍 등록비 지원 신청 안내 No.86 ase 2026-08-20 조회수1681 첨부파일 [학사] ★ C/L 중복 이수에 따른 학점 인정 숙지 안내 (중요) ★ "
         }
+      ]
+    },
+    "semi": {
+      "name": "SEMI Korea 교육 프로그램",
+      "url": "https://semikrprogram.com/",
+      "failures": 0,
+      "checkedAt": "2026-10-24T07:54:00.481Z",
+      "items": [
+        {
+          "key": "fb6f6bd41d134ab3f2ef",
+          "title": "대학생을 위한 반도체패키징실습교육 2026 1차",
+          "url": "https://semikrprogram.com/",
+          "status": "",
+          "period": "2026년 11월 3일",
+          "context": "Nov, 2026 16   Nov, 2026 19 대학생을 위한 반도체패키징실습교육 2026 1차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 11월 3일-11월 9일 Coming Soon"
+        },
+        {
+          "key": "c69dbb84fabf5efe008c",
+          "title": "SEMI 반도체공정기술교육 2026 기초과정 (상반기)",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 4월 20일",
+          "context": "Apr, 2026 20 SEMI 반도체공정기술교육 2026 기초과정 (상반기) 수원컨벤션센터 203호 현장등록기간 2026년 4월 20일 Closed"
+        },
+        {
+          "key": "b51b158be73a9a2d0896",
+          "title": "SEMI 반도체공정기술교육 2026 중급과정",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 4월 21일",
+          "context": "Apr, 2026 21   Apr, 2026 23 SEMI 반도체공정기술교육 2026 중급과정 수원컨벤션센터 203호 현장등록기간 2026년 4월 21일-4월 23일 Closed"
+        },
+        {
+          "key": "6b4405472dd375c06e65",
+          "title": "대학생을 위한 반도체공정실습교육 2026 1차",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 3월 10일",
+          "context": "Mar, 2026 23   Mar, 2026 26 대학생을 위한 반도체공정실습교육 2026 1차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 3월 10일-3월 13일 Closed"
+        },
+        {
+          "key": "046e50f8b032c5ab0221",
+          "title": "SMC (Strategic Materials Conference) Korea 2026",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "",
+          "context": "May, 2026 12 SMC (Strategic Materials Conference) Korea 2026 Hall 2, Suwon Convention Center On-Site Registration May 12, 2026 Closed"
+        },
+        {
+          "key": "f0983b8a66e88fd42337",
+          "title": "대학생을 위한 반도체공정실습교육 2026 2차",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 4월 7일",
+          "context": "Apr, 2026 20   Apr, 2026 23 대학생을 위한 반도체공정실습교육 2026 2차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 4월 7일-4월 13일 Closed"
+        },
+        {
+          "key": "4a1b87f68fdb03e88701",
+          "title": "SEMI 안전표준교육 2026 (상반기) 기초과정",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 6월 10일",
+          "context": "Jun, 2026 10 SEMI 안전표준교육 2026 (상반기) 기초과정 수원컨벤션센터 202호 현장등록기간 2026년 6월 10일 Closed"
+        },
+        {
+          "key": "5d982188417fe66de77b",
+          "title": "SEMI 안전표준교육 2026 (상반기) 심화과정",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 6월 11일",
+          "context": "Jun, 2026 11   Jun, 2026 12 SEMI 안전표준교육 2026 (상반기) 심화과정 수원컨벤션센터 202호 현장등록기간 2026년 6월 11일-6월 12일 Closed"
+        },
+        {
+          "key": "dccf8885acfcfbbb72f7",
+          "title": "대학생을 위한 반도체공정실습교육 2026 3차",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 4월 28일",
+          "context": "May, 2026 11   May, 2026 14 대학생을 위한 반도체공정실습교육 2026 3차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 4월 28일-5월 6일 Closed"
+        },
+        {
+          "key": "cc2edc8c485de64aec87",
+          "title": "SEMI 반도체패키징기술교육 2026",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 6월 17일",
+          "context": "Jun, 2026 17 SEMI 반도체패키징기술교육 2026 수원컨벤션센터 305호 현장등록기간 2026년 6월 17일 Closed"
+        },
+        {
+          "key": "5b560deb88173166ce85",
+          "title": "2026 Global Semiconductor Market Insight Forum",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "",
+          "context": "Jun, 2026 23 2026 Global Semiconductor Market Insight Forum 202(2F), Suwon Convention Center On-Site Registration June 23, 2026 Closed"
+        },
+        {
+          "key": "ec9bf2ecc3555f71177a",
+          "title": "Advanced Packaging Summit 2026",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "",
+          "context": "Jul, 2026 15 Advanced Packaging Summit 2026 Hall 1, Suwon Convention Center On-Site Registration July 15, 2026 Closed"
+        },
+        {
+          "key": "0bc8dde8add9c6f04734",
+          "title": "[SEMI-Merck 공동웨비나] 증착 공정의 게임 체임저: 차세대 공정 소재 몰리브덴과 첨단 공급 시스템",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 6월 17일",
+          "context": "Jul, 2026 22 [SEMI-Merck 공동웨비나] 증착 공정의 게임 체임저: 차세대 공정 소재 몰리브덴과 첨단 공급 시스템 Zoom 사전등록기간 2026년 6월 17일-7월 16일 Closed"
+        },
+        {
+          "key": "5e4bd5c499ae488eb650",
+          "title": "대학생을 위한 반도체공정실습교육 2026 4차",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 7월 7일",
+          "context": "Jul, 2026 20   Jul, 2026 23 대학생을 위한 반도체공정실습교육 2026 4차 '학생'만 신청 가능, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 7월 7일-7월 13일 Closed"
+        },
+        {
+          "key": "9922065c62ae3968d832",
+          "title": "SEMI 반도체테스트기술교육 2026",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 9월 9일",
+          "context": "Sep, 2026 9 SEMI 반도체테스트기술교육 2026 수원컨벤션센터 205+206호 현장등록기간 2026년 9월 9일 Closed"
+        },
+        {
+          "key": "315c7284999396aa6d4f",
+          "title": "SEMI 회원사의 날 2026",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 8월 3일",
+          "context": "Sep, 2026 16 SEMI 회원사의 날 2026 수원컨벤션센터 컨벤션홀 2 사전등록기간 2026년 8월 3일-9월 9일 Closed"
+        },
+        {
+          "key": "954643181880c0abde11",
+          "title": "대학생을 위한 반도체공정실습교육 2026 5차",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 8월 11일",
+          "context": "Aug, 2026 24   Aug, 2026 27 대학생을 위한 반도체공정실습교육 2026 5차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 8월 11일-8월 17일 Closed"
+        },
+        {
+          "key": "bb18bd471d9ca85dc11e",
+          "title": "SEMI 안전표준교육 2026 (하반기) 기초과정",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 10월 21일",
+          "context": "Oct, 2026 21 SEMI 안전표준교육 2026 (하반기) 기초과정 수원컨벤션센터 202호 현장등록기간 2026년 10월 21일 Closed"
+        },
+        {
+          "key": "7466c0888cea60042735",
+          "title": "SEMI 안전표준교육 2026 (하반기) 심화과정",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 10월 22일",
+          "context": "Oct, 2026 22   Oct, 2026 23 SEMI 안전표준교육 2026 (하반기) 심화과정 수원컨벤션센터 202호 & 205호 현장등록기간 2026년 10월 22일-10월 23일 Closed"
+        },
+        {
+          "key": "24cc45d430de3df0d955",
+          "title": "SEMI 소프트웨어표준교육 2026",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 10월 23일",
+          "context": "Oct, 2026 23 SEMI 소프트웨어표준교육 2026 수원컨벤션센터 202호 현장등록기간 2026년 10월 23일 Closed"
+        },
+        {
+          "key": "2a953262aa0908eb1dcf",
+          "title": "SEMI 반도체공정기술교육 2026 기초과정 (하반기)",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 10월 12일",
+          "context": "Oct, 2026 12 SEMI 반도체공정기술교육 2026 기초과정 (하반기) 수원컨벤션센터 301+302호 현장등록기간 2026년 10월 12일 Closed"
+        },
+        {
+          "key": "eb5ad623c7a3e53f3f9b",
+          "title": "SEMI 반도체공정기술교육 2026 심화과정",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 10월 13일",
+          "context": "Oct, 2026 13   Oct, 2026 14 SEMI 반도체공정기술교육 2026 심화과정 수원컨벤션센터 301+302호 현장등록기간 2026년 10월 13일-10월 14일 Closed"
+        },
+        {
+          "key": "0e6643eef8e49bb42f3b",
+          "title": "SEMI 반도체계측검사기술교육 2026",
+          "url": "https://semikrprogram.com/",
+          "status": "마감",
+          "period": "2026년 10월 22일",
+          "context": "Oct, 2026 22 SEMI 반도체계측검사기술교육 2026 * 선착순 마감되었습니다. 현장등록기간 2026년 10월 22일 Closed"
+        },
+        {
+          "key": "bcb73c5efffe5c7737b1",
+          "title": "대학생을 위한 반도체공정실습교육 2026 6차",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 9월 1일",
+          "context": "Sep, 2026 14   Sep, 2026 17 대학생을 위한 반도체공정실습교육 2026 6차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 9월 1일-9월 7일 Closed"
+        },
+        {
+          "key": "35ed132aa30afa8bf3de",
+          "title": "대학생을 위한 반도체공정실습교육 2026 7차",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 9월 29일",
+          "context": "Oct, 2026 12   Oct, 2026 15 대학생을 위한 반도체공정실습교육 2026 7차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 9월 29일-10월 6일 Closed"
+        },
+        {
+          "key": "04f4dccc6a5cdaa328bd",
+          "title": "대학생을 위한 반도체공정실습교육 2026 8차",
+          "url": "https://semikrprogram.com/",
+          "status": "closed",
+          "period": "2026년 10월 13일",
+          "context": "Oct, 2026 26   Oct, 2026 29 대학생을 위한 반도체공정실습교육 2026 8차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 10월 13일-10월 19일 Closed"
+        }
+      ],
+      "seenKeys": [
+        "fb6f6bd41d134ab3f2ef",
+        "c69dbb84fabf5efe008c",
+        "b51b158be73a9a2d0896",
+        "6b4405472dd375c06e65",
+        "046e50f8b032c5ab0221",
+        "f0983b8a66e88fd42337",
+        "4a1b87f68fdb03e88701",
+        "5d982188417fe66de77b",
+        "dccf8885acfcfbbb72f7",
+        "cc2edc8c485de64aec87",
+        "5b560deb88173166ce85",
+        "ec9bf2ecc3555f71177a",
+        "0bc8dde8add9c6f04734",
+        "5e4bd5c499ae488eb650",
+        "9922065c62ae3968d832",
+        "315c7284999396aa6d4f",
+        "954643181880c0abde11",
+        "bb18bd471d9ca85dc11e",
+        "7466c0888cea60042735",
+        "24cc45d430de3df0d955",
+        "2a953262aa0908eb1dcf",
+        "eb5ad623c7a3e53f3f9b",
+        "0e6643eef8e49bb42f3b",
+        "bcb73c5efffe5c7737b1",
+        "35ed132aa30afa8bf3de",
+        "04f4dccc6a5cdaa328bd"
       ]
     }
   }
