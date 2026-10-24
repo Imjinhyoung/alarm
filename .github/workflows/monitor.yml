@@ -24,7 +24,10 @@ concurrency:
 
 jobs:
   monitor:
-    runs-on: ubuntu-24.04
+    runs-on: windows-2022
+    defaults:
+      run:
+        shell: bash
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
@@ -48,6 +51,7 @@ jobs:
           git add state.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: update monitoring state"
+            git pull --rebase origin main
             git push
           fi
 
