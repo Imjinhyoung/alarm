@@ -7,6 +7,15 @@ const ALERT_PATH = new URL("./alert.md", import.meta.url);
 
 const sites = [
   {
+    id: "semi",
+    name: "SEMI Korea 교육 프로그램",
+    url: "https://semikrprogram.com/",
+    selectors: [".pr_big_title"],
+    accept: /./,
+    reject: /^$/,
+    newOnly: true
+  },
+  {
     id: "work24_winter",
     name: "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
     url: "https://yw.work24.go.kr/d/a/selectWkexPrgmList.do?operBe=1&operBgde=2026-12-01&operEnde=2027-02-28&recordCountPerPage=48&listCnt=48&currentPageNo=1",
@@ -239,8 +248,21 @@ async function collectWork24(page, site) {
   for (let pageNo = 1; pageNo <= pages; pageNo += 1) {
     const url = new URL(site.url);
     url.searchParams.set("currentPageNo", String(pageNo));
-    await page.goto(url.href, { waitUntil: "domcontentloaded", timeout: 60000 });
-    const html = await page.content();
+    let html;
+    for (let attempt = 1; attempt <= 3; attempt += 1) {
+      try {
+        const response = await page.request.get(url.href, { timeout: 45000 });
+        if (!response.ok()) throw new Error(`고용24 HTTP ${response.status()}`);
+        html = await response.text();
+        if (!/totalRecordCount/.test(html)) throw new Error("고용24 검색 결과가 아닌 응답을 받았습니다.");
+        break;
+      } catch (error) {
+        if (attempt === 3) throw error;
+      }
+    }
+    // Parse server-rendered results without loading slow third-party scripts.
+    await page.route("**/*", route => route.abort());
+    await page.setContent(html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ""), { waitUntil: "domcontentloaded" });
     const total = html.match(/totalRecordCount\s*:\s*"(\d+)"/);
     const pageCount = html.match(/totalPageCount\s*:\s*"(\d+)"/);
     if (!total || !pageCount || await page.locator("#operBgde").inputValue() !== "2026-12-01" || await page.locator("#operEnde").inputValue() !== "2027-02-28") {
@@ -308,10 +330,12 @@ async function main() {
           }
         }
         if (changes.length) alerts.push({ site, changes });
-        next.sites[site.id] = { name: site.name, url: site.url, failures: 0, items };
+        next.sites[site.id] = { name: site.name, url: site.url, failures: 0, checkedAt: new Date().toISOString(), items };
+        console.log(`${site.id}: OK (${items.length}개)`);
         if (site.newOnly) next.sites[site.id].seenKeys = [...new Set([...seenKeys, ...items.map(item => item.key)])];
       } catch (error) {
         const failures = (oldSite.failures ?? 0) + 1;
+        console.error(`${site.id}: ERROR ${String(error.message ?? error)}`);
         next.sites[site.id] = { ...oldSite, name: site.name, url: site.url, failures, lastError: String(error.message ?? error) };
         if (siteInitialized && failures === 3) {
           alerts.push({ site, changes: [{ type: "연속 3회 확인 실패", item: { title: String(error.message ?? error), url: site.url, status: "점검 필요", period: "" } }] });
@@ -324,7 +348,7 @@ async function main() {
     await browser.close();
   }
 
-  await fs.writeFile(STATE_PATH, `${JSON.stringify(next, null, 2)}\n`, "utf8");
+  if (process.env.DRY_RUN !== "true") await fs.writeFile(STATE_PATH, `${JSON.stringify(next, null, 2)}\n`, "utf8");
   const lines = [siteGroup === "school" ? "# 학교 공지사항 새 글 알림" : "# 교육·인턴 모집 변경 알림", ""];
   for (const alert of alerts) {
     lines.push(`## ${alert.site.name}`, "");
@@ -335,7 +359,7 @@ async function main() {
     }
     lines.push("");
   }
-  await fs.writeFile(ALERT_PATH, alerts.length ? `${lines.join("\n")}\n` : "", "utf8");
+  if (process.env.DRY_RUN !== "true") await fs.writeFile(ALERT_PATH, alerts.length ? `${lines.join("\n")}\n` : "", "utf8");
 
   const output = process.env.GITHUB_OUTPUT;
   if (output) {
@@ -343,6 +367,8 @@ async function main() {
     await fs.appendFile(output, `alert_count=${alerts.reduce((sum, entry) => sum + entry.changes.length, 0)}\n`, "utf8");
   }
   console.log(previous.initialized ? `확인 완료: ${alerts.length}개 사이트에서 변경 감지` : "첫 실행 기준선 저장 완료");
+  const failed = activeSites.filter(site => next.sites[site.id].failures > 0);
+  if (failed.length) process.exitCode = 1;
 }
 
 await main();

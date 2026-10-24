@@ -1,6 +1,8 @@
 name: 성균관대 공지사항 감시
 
 on:
+  push:
+    paths: [monitor.mjs, package.json, .github/workflows/school-monitor.yml]
   schedule:
     # 한국시간 11:47, 15:47 (UTC 02:47, 06:47)
     - cron: "47 2,6 * * *"
@@ -16,7 +18,7 @@ concurrency:
 
 jobs:
   monitor:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -30,6 +32,7 @@ jobs:
 
       - name: 학교 공지 확인
         id: monitor
+        continue-on-error: true
         env:
           SITE_GROUP: school
         run: npm run check
@@ -53,3 +56,7 @@ jobs:
             --title "새 학교 공지 알림 ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
             --body-file alert.md \
             --assignee "${{ github.repository_owner }}"
+
+      - name: 사이트 오류 상태 반영
+        if: steps.monitor.outcome == 'failure'
+        run: exit 1

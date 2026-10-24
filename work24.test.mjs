@@ -11,6 +11,9 @@ function pageFor(rows, total = rows.length, pages = 1) {
   let pageNo = 1;
   return {
     async goto(url) { pageNo = Number(new URL(url).searchParams.get("currentPageNo")); },
+    request: { async get(url) { pageNo = Number(new URL(url).searchParams.get("currentPageNo")); return { ok: () => true, text: async () => `totalRecordCount : "${total}", totalPageCount : "${pages}"` }; } },
+    async route() {},
+    async setContent() {},
     async content() { return `totalRecordCount : "${total}", totalPageCount : "${pages}"`; },
     locator(selector) { return {
       async inputValue() { return selector === "#operBgde" ? "2026-12-01" : "2027-02-28"; },
