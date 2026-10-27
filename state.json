@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-26T16:07:13.288Z",
+  "checkedAt": "2026-10-27T05:03:05.820Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,7 +17,7 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:21.383Z",
+      "checkedAt": "2026-10-27T05:03:14.791Z",
       "items": [
         {
           "key": "3e32b439a5ef7f150d70",
@@ -105,7 +105,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:26.268Z",
+      "checkedAt": "2026-10-27T05:03:20.507Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
@@ -201,7 +201,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:31.801Z",
+      "checkedAt": "2026-10-27T05:03:27.985Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -233,7 +233,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:39.160Z",
+      "checkedAt": "2026-10-27T05:03:35.422Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -273,7 +273,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:42.503Z",
+      "checkedAt": "2026-10-27T05:03:39.139Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -361,7 +361,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:45.492Z",
+      "checkedAt": "2026-10-27T05:03:42.500Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -521,7 +521,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:48.712Z",
+      "checkedAt": "2026-10-27T05:03:45.968Z",
       "items": [
         {
           "key": "af358663ad4cd96a79ee",
@@ -569,7 +569,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:54.772Z",
+      "checkedAt": "2026-10-27T05:03:53.437Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1001,7 +1001,7 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-10-26T16:07:16.860Z",
+      "checkedAt": "2026-10-27T05:03:09.916Z",
       "items": [
         {
           "key": "fb6f6bd41d134ab3f2ef",
