@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-28T08:59:13.010Z",
+  "checkedAt": "2026-10-28T16:02:01.675Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,16 +17,8 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:22.487Z",
+      "checkedAt": "2026-10-28T16:02:11.162Z",
       "items": [
-        {
-          "key": "3e32b439a5ef7f150d70",
-          "title": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석",
-          "url": "https://boottent.com/camps/linekd-semiconductor_20260914185534369",
-          "status": "모집 중",
-          "period": "",
-          "context": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석 공정·수율·패키징 모집 중 26.10.28 KDC 34,500원 온라인 26.10.29 약 4주 26.11.27 파트타임 개별 자유 학습 / 일1.2시간 학습 권장 파이썬 머신러닝 반도체 데이터 분석 Pandas Numpy Matplotlib Seaborn scikit-learn 운영 라인원격평생교육원 모아 보기 →"
-        },
         {
           "key": "56567be82b208cfe7426",
           "title": "한양대학교 ERICA 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프",
@@ -53,11 +45,11 @@
         },
         {
           "key": "528f12c777b25862b924",
-          "title": "렛유인에듀 [KDC] 반도체 후공정 공정 실무 : 양산조건 수립 및 부적합 분석",
+          "title": "렛유인에듀 반도체 후공정 공정 실무 : 양산조건 수립 및 부적합 분석 27기",
           "url": "https://boottent.com/camps/letuinedu-pkg_20251001113042",
           "status": "모집 중",
           "period": "",
-          "context": "렛유인에듀 [KDC] 반도체 후공정 공정 실무 : 양산조건 수립 및 부적합 분석 공정·수율·패키징 모집 중 26.11.01 KDC 44,770원 온라인 26.11.02 약 3주 26.11.22 파트타임 개별 자유 학습 / 일5시간 학습 권장 운영 렛유인에듀 모아 보기 →"
+          "context": "렛유인에듀 반도체 후공정 공정 실무 : 양산조건 수립 및 부적합 분석 27기 공정·수율·패키징 모집 중 26.11.01 KDC 44,000원 온라인 26.11.02 약 3주 26.11.22 파트타임 개별 자유 학습 / 일5시간 학습 권장 반도체 후공정 패키징 엔지니어 운영 렛유인에듀 모아 보기 →"
         },
         {
           "key": "5584aeac7dc1dc02a8eb",
@@ -82,6 +74,14 @@
           "status": "모집 중",
           "period": "",
           "context": "한국반도체아카데미 전력반도체 소자공정 및 신뢰성평가 기초과정 공정·수율·패키징 모집 중 26.11.03 국비 무료 오프라인 부산 26.11.09 약 2주 26.11.20 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 전력반도체 소자공정 신뢰성평가 파워사이클 열저항 측정 정특성 동특성 후공정 증착 사진 이온주입 식각 AQG324 파워모듈 운영 한국반도체아카데미 모아 보기 →"
+        },
+        {
+          "key": "3e32b439a5ef7f150d70",
+          "title": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석",
+          "url": "https://boottent.com/camps/linekd-semiconductor_20260914185534369",
+          "status": "모집 중",
+          "period": "",
+          "context": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석 공정·수율·패키징 모집 중 26.11.04 KDC 34,500원 온라인 26.11.05 약 4주 26.12.04 파트타임 개별 자유 학습 / 일1.2시간 학습 권장 파이썬 머신러닝 반도체 데이터 분석 Pandas Numpy Matplotlib Seaborn scikit-learn 운영 라인원격평생교육원 모아 보기 →"
         },
         {
           "key": "952f645b016cd1ca729b",
@@ -113,7 +113,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:27.287Z",
+      "checkedAt": "2026-10-28T16:02:17.070Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
@@ -209,7 +209,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:32.946Z",
+      "checkedAt": "2026-10-28T16:02:23.555Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -241,7 +241,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:40.327Z",
+      "checkedAt": "2026-10-28T16:02:31.055Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -281,7 +281,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:43.738Z",
+      "checkedAt": "2026-10-28T16:02:34.884Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -369,7 +369,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:47.006Z",
+      "checkedAt": "2026-10-28T16:02:38.451Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -529,7 +529,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:50.227Z",
+      "checkedAt": "2026-10-28T16:02:42.005Z",
       "items": [
         {
           "key": "af358663ad4cd96a79ee",
@@ -577,7 +577,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:56.139Z",
+      "checkedAt": "2026-10-28T16:02:49.418Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1009,7 +1009,7 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-10-28T05:41:17.286Z",
+      "checkedAt": "2026-10-28T16:02:05.851Z",
       "items": [
         {
           "key": "fb6f6bd41d134ab3f2ef",
