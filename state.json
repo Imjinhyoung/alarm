@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-10-30T08:59:13.481Z",
+  "checkedAt": "2026-10-30T15:56:21.035Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,16 +17,8 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:47:27.752Z",
+      "checkedAt": "2026-10-30T15:56:29.493Z",
       "items": [
-        {
-          "key": "56567be82b208cfe7426",
-          "title": "한양대학교 ERICA 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프",
-          "url": "https://boottent.com/camps/youthleap-hanyangericadisplay_20260724032711306",
-          "status": "모집 중",
-          "period": "",
-          "context": "한양대학교 ERICA 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프 공정·수율·패키징 모집 중 26.10.30 국비 무료 오프라인 경기 26.09.08 약 8주 26.09.30 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 디스플레이 AI 데이터분석 공정이해 공정분석 스마트공정 기업연계프로젝트 마이크로LED 채용우대 운영 한양대학교ERICA 모아 보기 →"
-        },
         {
           "key": "abf941f074fe92130830",
           "title": "렛유인에듀 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (Feat. Excel) 30기",
@@ -121,7 +113,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:47:32.964Z",
+      "checkedAt": "2026-10-30T15:56:34.807Z",
       "items": [
         {
           "key": "9251321ce2bae3919e18",
@@ -217,7 +209,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:47:38.780Z",
+      "checkedAt": "2026-10-30T15:56:40.458Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -249,7 +241,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:47:46.313Z",
+      "checkedAt": "2026-10-30T15:56:47.946Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -289,7 +281,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:47:49.836Z",
+      "checkedAt": "2026-10-30T15:56:51.493Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -377,7 +369,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:47:53.185Z",
+      "checkedAt": "2026-10-30T15:56:55.107Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -537,7 +529,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:47:56.499Z",
+      "checkedAt": "2026-10-30T15:56:58.474Z",
       "items": [
         {
           "key": "af358663ad4cd96a79ee",
@@ -585,7 +577,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:48:02.275Z",
+      "checkedAt": "2026-10-30T15:57:04.816Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1033,7 +1025,7 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-10-30T05:47:20.720Z",
+      "checkedAt": "2026-10-30T15:56:24.992Z",
       "items": [
         {
           "key": "fb6f6bd41d134ab3f2ef",
