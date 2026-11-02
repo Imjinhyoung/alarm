@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-11-02T09:57:10.662Z",
+  "checkedAt": "2026-11-02T19:29:15.041Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,7 +17,7 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:10.773Z",
+      "checkedAt": "2026-11-02T19:29:24.188Z",
       "items": [
         {
           "key": "5584aeac7dc1dc02a8eb",
@@ -92,12 +92,20 @@
           "context": "코멘토 반도체 회사 현직자와 함께 양산기술 & 공정기술 실무 이해하기 70차 공정·수율·패키징 모집 중 26.11.12 185,400원 얼리버드 온라인 26.11.12 약 4주 26.12.10 파트타임 목 / 22:00 ~ 0:00 공정기술 양산기술 제조기술 반도체 공정 품질 이슈 데이터 분석 개선 평가 보고서 작성 업무 보고 협업 운영 코멘토 모아 보기 →"
         },
         {
-          "key": "8da802c4c006baf37f60",
-          "title": "성균관대학교 AI CAMPUS [SKKU] AI 기반 첨단 반도체 엔지니어링 전문가 양성과정 2기",
-          "url": "https://boottent.com/camps/skkukdt-syschip_20261012181146644",
+          "key": "abf941f074fe92130830",
+          "title": "렛유인에듀 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (Feat. Excel)",
+          "url": "https://boottent.com/camps/letuinedu-scexcel_20251001113129",
           "status": "모집 중",
           "period": "",
-          "context": "성균관대학교 AI CAMPUS [SKKU] AI 기반 첨단 반도체 엔지니어링 전문가 양성과정 2기 반도체 설계·검증 모집 중 26.11.15 KDT AI 캠퍼스 무료 오프라인 경기 26.11.24 약 4개월 27.03.24 풀타임 월, 화, 수, 목, 금 / 9:30 ~ 18:30 반도체 설계 Digital IC 설계 Analog IC 설계 반도체 공정 레이아웃 AI 반도체 데이터 분석 시각화 전자회로 논리회로 메모리 설계 Physical Design 운영 성균관대학교 산학협력단 모아 보기 →"
+          "context": "렛유인에듀 반도체 공정/설비 데이터분석: 공정 평가 및 최적화 (Feat. Excel) 공정·수율·패키징 모집 중 26.11.15 KDC 39,000원 온라인 26.11.16 약 3주 26.12.06 파트타임 개별 자유 학습 / 일5시간 학습 권장 반도체 데이터분석 공정개발 공정기술 운영 렛유인에듀 모아 보기 →"
+        },
+        {
+          "key": "a2bd8d0b1b18a72833b4",
+          "title": "렛유인에듀 반도체 공정/설비 : 기초 이론 및 실무 역량 강화",
+          "url": "https://boottent.com/camps/letuinedu-scbasic_20251001113118",
+          "status": "모집 중",
+          "period": "",
+          "context": "렛유인에듀 반도체 공정/설비 : 기초 이론 및 실무 역량 강화 공정·수율·패키징 모집 중 26.11.15 KDC 40,000원 온라인 26.11.16 약 3주 26.12.06 파트타임 개별 자유 학습 / 일3시간 학습 권장 반도체공정 반도체설비 실무프로젝트 DOF ALE 운영 렛유인에듀 모아 보기 →"
         }
       ]
     },
@@ -105,7 +113,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:16.461Z",
+      "checkedAt": "2026-11-02T19:29:28.995Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
@@ -201,7 +209,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:23.035Z",
+      "checkedAt": "2026-11-02T19:29:34.482Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -233,7 +241,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:30.291Z",
+      "checkedAt": "2026-11-02T19:29:41.995Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -273,15 +281,15 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:33.945Z",
+      "checkedAt": "2026-11-02T19:29:45.417Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
-          "title": "모집중 「2026년 수원시 숙련건설 기능인력 교육훈련」참여자 모집 모집기간 : 2026-10-14 ~ 2026-11-02",
+          "title": "마감 「2026년 수원시 숙련건설 기능인력 교육훈련」참여자 모집 모집기간 : 2026-10-14 ~ 2026-11-02",
           "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/view.do?cpage=1&rows=10&conditional=&keyword=&pcategory=&pstatus=&bbs_seq=7427",
-          "status": "모집중",
+          "status": "마감",
           "period": "2026-10-14 ~ 2026-11-02 ~ 2026-10-14 ~ 2026-11-02",
-          "context": "모집중 「2026년 수원시 숙련건설 기능인력 교육훈련」참여자 모집 모집기간 : 2026-10-14 ~ 2026-11-02"
+          "context": "마감 「2026년 수원시 숙련건설 기능인력 교육훈련」참여자 모집 모집기간 : 2026-10-14 ~ 2026-11-02"
         },
         {
           "key": "e99bd2f107323dff048d",
@@ -361,7 +369,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:37.089Z",
+      "checkedAt": "2026-11-02T19:29:48.715Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -521,7 +529,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:40.560Z",
+      "checkedAt": "2026-11-02T19:29:51.959Z",
       "items": [
         {
           "key": "af358663ad4cd96a79ee",
@@ -569,7 +577,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:47.145Z",
+      "checkedAt": "2026-11-02T19:29:58.709Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1017,7 +1025,7 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-11-02T06:00:06.597Z",
+      "checkedAt": "2026-11-02T19:29:19.160Z",
       "items": [
         {
           "key": "fb6f6bd41d134ab3f2ef",
