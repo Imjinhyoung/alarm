@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-11-04T09:51:30.507Z",
+  "checkedAt": "2026-11-04T17:14:07.909Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,24 +17,8 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:10.019Z",
+      "checkedAt": "2026-11-04T17:14:17.500Z",
       "items": [
-        {
-          "key": "374c9356afd387b673b3",
-          "title": "코멘토 반도체 PECVD 공정개발 실무를 통해 증착 공정 엔지니어가 되어보자",
-          "url": "https://boottent.com/camps/comento-deposition_20261027023435850",
-          "status": "모집 중",
-          "period": "",
-          "context": "코멘토 반도체 PECVD 공정개발 실무를 통해 증착 공정 엔지니어가 되어보자 공정·수율·패키징 모집 중 26.11.04 189,000원 얼리버드 온라인 26.11.05 약 4주 26.12.03 파트타임 목 / 20:00 ~ 22:00 PECVD 반도체 공정 증착 공정 공정기술 Thin film 공정 Parameter Particle issue FDC Data Recipe 설계 Warpage Plasma 공정 엔지니어 운영 코멘토 모아 보기 →"
-        },
-        {
-          "key": "3e32b439a5ef7f150d70",
-          "title": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석",
-          "url": "https://boottent.com/camps/linekd-semiconductor_20260914185534369",
-          "status": "모집 중",
-          "period": "",
-          "context": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석 공정·수율·패키징 모집 중 26.11.04 KDC 34,500원 온라인 26.11.05 약 4주 26.12.04 파트타임 개별 자유 학습 / 일1.2시간 학습 권장 파이썬 머신러닝 반도체 데이터 분석 Pandas Numpy Matplotlib Seaborn scikit-learn 운영 라인원격평생교육원 모아 보기 →"
-        },
         {
           "key": "890feab006b15b07734a",
           "title": "코멘토 외국계 반도체 대기업 현직자와 함께하는 품질 실무 A to Z",
@@ -92,6 +76,22 @@
           "context": "윈스펙 비전공자도 쉽게 배우는 디스플레이 제조 공정 공정·수율·패키징 모집 중 26.11.10 15:00 KDC 49,000원 온라인 26.11.11 약 4주 26.12.11 파트타임 개별 자유 학습 / 일2시간 학습 권장 디스플레이 LCD OLED Micro-LED AR/VR 3D 투명디스플레이 특수디스플레이 운영 윈스펙 모아 보기 →"
         },
         {
+          "key": "969ad744042575bdf738",
+          "title": "성균관대학교 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프",
+          "url": "https://boottent.com/camps/youthleap-skkudisplay_20260724033208311",
+          "status": "모집 중",
+          "period": "",
+          "context": "성균관대학교 청년도약 인재양성 디스플레이 분야 첨단인재형 부트캠프 장비 설계·제어·정비 모집 중 26.11.11 국비 무료 오프라인 경기 26.11.16 약 2.5개월 27.01.29 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 디스플레이소재/소자기초 디스플레이공정기초 기초직무교양 직무소양심화교육 Backplane Frontplane Ellipsometer등다양한분석장비교육 디스플레이구성별심화교육 연구프로젝트 운영 성균관대학교 모아 보기 →"
+        },
+        {
+          "key": "3e32b439a5ef7f150d70",
+          "title": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석",
+          "url": "https://boottent.com/camps/linekd-semiconductor_20260914185534369",
+          "status": "모집 중",
+          "period": "",
+          "context": "라인원격평생교육원 파이썬과 머신러닝을 활용한 반도체 제조 공정 데이터 분석 공정·수율·패키징 모집 중 26.11.11 KDC 34,500원 온라인 26.11.12 약 4주 26.12.11 파트타임 개별 자유 학습 / 일1.2시간 학습 권장 파이썬 머신러닝 반도체 데이터 분석 Pandas Numpy Matplotlib Seaborn scikit-learn 운영 라인원격평생교육원 모아 보기 →"
+        },
+        {
           "key": "5b7d13e6a88f6d50a012",
           "title": "코멘토 반도체 회사 현직자와 함께 양산기술 & 공정기술 실무 이해하기 70차",
           "url": "https://boottent.com/camps/comento-process_20261027023409864",
@@ -105,7 +105,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:16.017Z",
+      "checkedAt": "2026-11-04T17:14:22.989Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
@@ -201,7 +201,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:21.524Z",
+      "checkedAt": "2026-11-04T17:14:29.585Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -233,7 +233,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:28.822Z",
+      "checkedAt": "2026-11-04T17:14:37.083Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -273,7 +273,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:32.207Z",
+      "checkedAt": "2026-11-04T17:14:41.141Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -361,7 +361,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:35.497Z",
+      "checkedAt": "2026-11-04T17:14:44.741Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -521,7 +521,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:38.746Z",
+      "checkedAt": "2026-11-04T17:14:48.221Z",
       "items": [
         {
           "key": "af358663ad4cd96a79ee",
@@ -569,7 +569,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:44.838Z",
+      "checkedAt": "2026-11-04T17:14:55.462Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1017,7 +1017,7 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-11-04T06:20:05.227Z",
+      "checkedAt": "2026-11-04T17:14:11.891Z",
       "items": [
         {
           "key": "fb6f6bd41d134ab3f2ef",
