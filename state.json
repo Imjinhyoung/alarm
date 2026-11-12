@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-11-11T17:06:52.330Z",
+  "checkedAt": "2026-11-12T07:08:33.051Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,7 +17,7 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:07:02.187Z",
+      "checkedAt": "2026-11-12T07:08:43.251Z",
       "items": [
         {
           "key": "5b7d13e6a88f6d50a012",
@@ -129,7 +129,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:07:07.431Z",
+      "checkedAt": "2026-11-12T07:08:49.385Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
@@ -140,12 +140,20 @@
           "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.10.07 ~ 2026.10.23 교육기간2026.11.18 ~ 2026.12.19 신청현황 ( 인원제한 없음 ) 모집마감"
         },
         {
+          "key": "f896be0c5ea84988ede4",
+          "title": "센서반도체 플라즈마 공정과정",
+          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
+          "status": "모집중",
+          "period": "2026.11.12 ~ 2026.11.15 ~ 2026.11.25 ~ 2026.11.27",
+          "context": "성균관대학교 센서반도체 플라즈마 공정과정 모집기간2026.11.12 ~ 2026.11.15 교육기간2026.11.25 ~ 2026.11.27 신청현황 ( 인원제한 없음 ) 모집중"
+        },
+        {
           "key": "f4cbd2d5eddb2f72895a",
           "title": "전력반도체 소자제작 및 특성분석 /HEMT 제작 실습 및 분석",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집전",
+          "status": "모집중",
           "period": "2026.11.12 ~ 2027.01.15 ~ 2027.01.25 ~ 2027.01.25",
-          "context": "전북대학교 전력반도체 소자제작 및 특성분석 /HEMT 제작 실습 및 분석 모집기간2026.11.12 ~ 2027.01.15 교육기간2027.01.25 ~ 2027.01.25 신청현황 ( 0/100 ) 모집전"
+          "context": "전북대학교 전력반도체 소자제작 및 특성분석 /HEMT 제작 실습 및 분석 모집기간2026.11.12 ~ 2027.01.15 교육기간2027.01.25 ~ 2027.01.25 신청현황 ( 43/100 ) 모집중"
         },
         {
           "key": "adacc38305496583d48f",
@@ -153,7 +161,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집중",
           "period": "2026.11.06 ~ 2026.12.31 ~ 2027.01.18 ~ 2027.01.22",
-          "context": "전북대학교 전력반도체 공정 품질 관리(ESD 검증 및 이물관리) 모집기간2026.11.06 ~ 2026.12.31 교육기간2027.01.18 ~ 2027.01.22 신청현황 ( 60/100 ) 모집중"
+          "context": "전북대학교 전력반도체 공정 품질 관리(ESD 검증 및 이물관리) 모집기간2026.11.06 ~ 2026.12.31 교육기간2027.01.18 ~ 2027.01.22 신청현황 ( 63/100 ) 모집중"
         },
         {
           "key": "28a972916edf7bbf8a11",
@@ -218,14 +226,6 @@
           "status": "모집마감",
           "period": "2026.10.02 ~ 2026.10.03 ~ 2026.10.19 ~ 2026.10.23",
           "context": "전북대학교 HEMT 제작 실습 및 분석 모집기간2026.10.02 ~ 2026.10.03 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 10/20 ) 모집마감"
-        },
-        {
-          "key": "9469b74aaff9278adeb7",
-          "title": "반도체 공정장비 실무인력 양성 과정",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.10.08 ~ 2026.10.13 ~ 2026.10.26 ~ 2026.10.30",
-          "context": "서울대학교 반도체 공정장비 실무인력 양성 과정 모집기간2026.10.08 ~ 2026.10.13 교육기간2026.10.26 ~ 2026.10.30 신청현황 ( 인원제한 없음 ) 모집마감"
         }
       ]
     },
@@ -233,7 +233,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:07:13.804Z",
+      "checkedAt": "2026-11-12T07:08:56.071Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -265,7 +265,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:07:21.408Z",
+      "checkedAt": "2026-11-12T07:09:03.348Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -305,7 +305,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:07:25.208Z",
+      "checkedAt": "2026-11-12T07:09:07.080Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -393,7 +393,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:07:28.721Z",
+      "checkedAt": "2026-11-12T07:09:10.332Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -553,7 +553,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:07:32.150Z",
+      "checkedAt": "2026-11-12T07:09:13.661Z",
       "items": [
         {
           "key": "0496e511060fa38c23fe",
@@ -609,7 +609,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:07:38.768Z",
+      "checkedAt": "2026-11-12T07:09:20.892Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1065,7 +1065,7 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-11-11T17:06:56.412Z",
+      "checkedAt": "2026-11-12T07:08:37.165Z",
       "items": [
         {
           "key": "90c040c8097b2527167b",
