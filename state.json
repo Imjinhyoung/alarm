@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-11-12T17:35:39.126Z",
+  "checkedAt": "2026-11-13T06:43:19.006Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,7 +17,7 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:35:50.470Z",
+      "checkedAt": "2026-11-13T06:43:30.770Z",
       "items": [
         {
           "key": "abf941f074fe92130830",
@@ -121,7 +121,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:35:56.284Z",
+      "checkedAt": "2026-11-13T06:43:36.743Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
@@ -145,7 +145,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집중",
           "period": "2026.11.12 ~ 2027.01.15 ~ 2027.01.25 ~ 2027.01.25",
-          "context": "전북대학교 전력반도체 소자제작 및 특성분석 /HEMT 제작 실습 및 분석 모집기간2026.11.12 ~ 2027.01.15 교육기간2027.01.25 ~ 2027.01.25 신청현황 ( 53/100 ) 모집중"
+          "context": "전북대학교 전력반도체 소자제작 및 특성분석 /HEMT 제작 실습 및 분석 모집기간2026.11.12 ~ 2027.01.15 교육기간2027.01.25 ~ 2027.01.25 신청현황 ( 64/100 ) 모집중"
         },
         {
           "key": "adacc38305496583d48f",
@@ -153,7 +153,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집중",
           "period": "2026.11.06 ~ 2026.12.31 ~ 2027.01.18 ~ 2027.01.22",
-          "context": "전북대학교 전력반도체 공정 품질 관리(ESD 검증 및 이물관리) 모집기간2026.11.06 ~ 2026.12.31 교육기간2027.01.18 ~ 2027.01.22 신청현황 ( 65/100 ) 모집중"
+          "context": "전북대학교 전력반도체 공정 품질 관리(ESD 검증 및 이물관리) 모집기간2026.11.06 ~ 2026.12.31 교육기간2027.01.18 ~ 2027.01.22 신청현황 ( 64/100 ) 모집중"
         },
         {
           "key": "28a972916edf7bbf8a11",
@@ -225,7 +225,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:36:02.379Z",
+      "checkedAt": "2026-11-13T06:43:43.732Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -257,7 +257,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:36:10.098Z",
+      "checkedAt": "2026-11-13T06:43:51.485Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -297,7 +297,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:36:14.155Z",
+      "checkedAt": "2026-11-13T06:43:55.364Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -385,7 +385,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:36:17.896Z",
+      "checkedAt": "2026-11-13T06:43:59.279Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -545,7 +545,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:36:21.282Z",
+      "checkedAt": "2026-11-13T06:44:02.891Z",
       "items": [
         {
           "key": "0496e511060fa38c23fe",
@@ -601,7 +601,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:36:28.220Z",
+      "checkedAt": "2026-11-13T06:44:10.252Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1057,8 +1057,16 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-11-12T17:35:43.553Z",
+      "checkedAt": "2026-11-13T06:43:24.429Z",
       "items": [
+        {
+          "key": "fb6f6bd41d134ab3f2ef",
+          "title": "대학생을 위한 반도체패키징실습교육 2026 1차",
+          "url": "https://semikrprogram.com/",
+          "status": "",
+          "period": "2026년 11월 3일",
+          "context": "Nov, 2026 16   Nov, 2026 19 대학생을 위한 반도체패키징실습교육 2026 1차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 11월 3일-11월 13일 신청하기"
+        },
         {
           "key": "90c040c8097b2527167b",
           "title": "대학생을 위한 반도체패키징실습교육 2026 2차",
@@ -1266,14 +1274,6 @@
           "status": "closed",
           "period": "2026년 10월 13일",
           "context": "Oct, 2026 26   Oct, 2026 29 대학생을 위한 반도체공정실습교육 2026 8차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 10월 13일-10월 19일 Closed"
-        },
-        {
-          "key": "fb6f6bd41d134ab3f2ef",
-          "title": "대학생을 위한 반도체패키징실습교육 2026 1차",
-          "url": "https://semikrprogram.com/",
-          "status": "closed",
-          "period": "2026년 11월 3일",
-          "context": "Nov, 2026 16   Nov, 2026 19 대학생을 위한 반도체패키징실습교육 2026 1차 명지대학교 자연캠퍼스, 온라인 사전등록 오픈: 오전 11시 사전등록기간 2026년 11월 3일-11월 9일 Closed"
         }
       ],
       "seenKeys": [
