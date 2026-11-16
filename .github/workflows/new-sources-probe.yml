@@ -1,0 +1,37 @@
+name: KDT·링커리어 읽기 전용 실제 조회 테스트
+on:
+  push:
+    paths: [new-sources-probe.mjs, .github/workflows/new-sources-probe.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - name: 날짜·자격·기간·중복 방지 검증
+        run: |
+          node work24-kdt.test.mjs
+          node linkareer.test.mjs
+      - name: 무료 한국어 OCR 준비
+        run: |
+          command -v tesseract >/dev/null || brew install tesseract
+          mkdir -p "$RUNNER_TEMP/probe-tessdata"
+          for lang in kor eng; do
+            curl --fail --location --retry 3 "https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/$lang.traineddata" -o "$RUNNER_TEMP/probe-tessdata/$lang.traineddata"
+          done
+          echo "LINKAREER_TESSDATA=$RUNNER_TEMP/probe-tessdata" >> "$GITHUB_ENV"
+      - name: 기준선 변경 없이 실제 목록·공고·OCR 재조회
+        run: node new-sources-probe.mjs
+      - name: 기준선·알림 파일 무변경 검증
+        if: always()
+        run: |
+          git diff --exit-code -- state.json
+          test ! -f alert.md
