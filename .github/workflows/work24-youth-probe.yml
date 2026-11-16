@@ -1,7 +1,5 @@
 name: 청년 일경험 겨울 조건 읽기 전용 테스트
 on:
-  push:
-    paths: [work24-youth-probe.mjs, .github/workflows/work24-youth-probe.yml]
   workflow_dispatch:
 permissions:
   contents: read
