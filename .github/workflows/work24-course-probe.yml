@@ -1,8 +1,6 @@
 name: 고용24 훈련 페이지 읽기 전용 접속 테스트
 
 on:
-  push:
-    paths: [work24-course-probe.mjs, .github/workflows/work24-course-probe.yml]
   workflow_dispatch:
 
 permissions:
