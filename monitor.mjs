@@ -2,6 +2,7 @@ import { chromium } from "playwright";
 import fs from "node:fs/promises";
 import crypto from "node:crypto";
 import { collectLinkareer } from "./linkareer.mjs";
+import { collectKdt70 } from "./work24-kdt.mjs";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 
@@ -11,6 +12,12 @@ const STATE_PATH = new URL("./state.json", import.meta.url);
 const ALERT_PATH = new URL("./alert.md", import.meta.url);
 
 const sites = [
+  {
+    id: "work24_kdt70",
+    name: "고용24 반도체 KDT (달력 70일 이하)",
+    url: "https://m.work24.go.kr/hr/a/a/1100/trnnCrsInf2.do?keyword=%EB%B0%98%EB%8F%84%EC%B2%B4",
+    newOnly: true
+  },
   {
     id: "linkareer_intern",
     name: "링커리어 국내 단기 인턴 (재학생 지원 가능)",
@@ -189,6 +196,7 @@ function isWaiting(status) {
 }
 
 async function collect(page, site, oldSite) {
+  if (site.id === "work24_kdt70") return collectKdt70(page, site);
   if (site.id === "linkareer_intern") return collectLinkareer(page, site, oldSite);
   if (site.id === "work24_winter") return collectWork24(page, site);
   if (site.group === "school" || ["semi", "suwon", "ekcdi", "postech"].includes(site.id)) {

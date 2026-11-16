@@ -1,0 +1,26 @@
+import assert from "node:assert/strict";
+import { inclusiveDays, filterCourses, searchUrl } from "./work24-kdt.mjs";
+
+assert.equal(inclusiveDays("2027-01-01", "2027-03-11"), 70);
+assert.equal(inclusiveDays("2027-01-01", "2027-03-12"), 71);
+assert.equal(inclusiveDays("2028-02-28", "2028-03-01"), 3);
+assert.equal(inclusiveDays("2027-02-30", "2027-03-01"), null);
+assert.equal(inclusiveDays("2027-03-01", "2027-02-28"), null);
+assert.equal(inclusiveDays("2026-11-16", "2027-02-25"), 102);
+const row = { id: "ABC", round: "1", title: "반도체 과정", type: "K-디지털트레이닝", status: "모집중", provider: "기관", dates: "2027-01-01 ~ 2027-03-11 (1회차)" };
+assert.equal(filterCourses([row], "2026-11-16").length, 1);
+assert.equal(filterCourses([{ ...row, dates: "2027-01-01 ~ 2027-03-12" }], "2026-11-16").length, 0);
+assert.equal(filterCourses([{ ...row, dates: "2026-11-16 ~ 2027-02-25 (수업일수 68일)" }], "2026-11-16").length, 0);
+assert.equal(filterCourses([{ ...row, type: "K-디지털기초역량훈련" }], "2026-11-16").length, 0);
+assert.equal(filterCourses([{ ...row, type: "K-디지털트레이닝(단기)" }], "2026-11-16").length, 1);
+assert.equal(filterCourses([{ ...row, type: "K-디지털트레이닝(AI캠퍼스)" }], "2026-11-16").length, 1);
+assert.equal(filterCourses([{ ...row, dates: "미정" }], "2026-11-16").length, 0);
+assert.equal(filterCourses([{ ...row, status: "모집마감" }], "2026-11-16").length, 0);
+assert.equal(filterCourses([row], "2027-01-02").length, 0);
+assert.equal(filterCourses([row, row, { ...row, round: "2" }], "2026-11-16").length, 2);
+const url = searchUrl(new Date("2026-11-16T15:30:00Z"));
+assert.equal(url.searchParams.get("startDate_datepicker"), "2026-11-17");
+assert.equal(url.searchParams.get("keyword"), "반도체");
+assert.equal(url.searchParams.getAll("crseTracseSeKDT").length, 3);
+assert(!url.searchParams.getAll("crseTracseSeKDT").some(v => v.includes("기초")));
+console.log("PASS: 달력 70/71일 경계, 윤년, KDT 유형, 모집상태, 다른 회차, 한국 날짜");
