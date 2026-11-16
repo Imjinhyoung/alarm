@@ -1,0 +1,23 @@
+name: 고용24 훈련 페이지 읽기 전용 접속 테스트
+
+on:
+  push:
+    paths: [work24-course-probe.mjs, .github/workflows/work24-course-probe.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: macos-15
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - name: HTTP 및 브라우저 읽기 전용 조회
+        run: node work24-course-probe.mjs
