@@ -16,7 +16,7 @@ finally { await client.dispose(); }
 
 let browser;
 try {
-  browser = await chromium.launch({ headless: true });
+  browser = await chromium.launch({ headless: true, ...(process.env.PROBE_BROWSER_CHANNEL ? { channel: process.env.PROBE_BROWSER_CHANNEL } : {}) });
   const page = await browser.newPage({ locale: "ko-KR", ignoreHTTPSErrors: true });
   if (!receivedHtml) throw new Error("HTTP 조회로 유효한 HTML을 받지 못했습니다.");
   // The live site's scripts replace browser globals and break automation's
@@ -28,9 +28,9 @@ try {
   const html = await page.content();
   const hasCourseId = html.includes("AIG20250000539952");
   const courseIds = await page.locator('input[name="tracseId"][value]').evaluateAll(nodes => nodes.map(node => node.value).filter(Boolean));
-  const courseNames = await page.locator("div.info_area h3, div.company_title h3").allTextContents();
+  const courseNames = await page.locator('a[onclick*="fn_viewTracseInfo"]').allTextContents();
   const labels = ["훈련기간", "훈련시간", "훈련비", "훈련기관", "훈련과정"].filter(label => text.includes(label));
-  const contentLoaded = courseIds.length > 0 && labels.length >= 3 && !/접근이 차단|자동입력 방지|비정상적인 접근/.test(text);
+  const contentLoaded = courseIds.length > 0 && courseNames.some(name => name.trim()) && labels.length >= 3 && !/접근이 차단|자동입력 방지|비정상적인 접근/.test(text);
   console.log(JSON.stringify({ method: "static HTML parser", title: await page.title(), hasCourseId, requestedCourseInResults: courseIds.includes("AIG20250000539952"), courseIds, courseNames: courseNames.map(name => name.trim()).filter(Boolean).slice(0, 10), resultCount: text.match(/전체\s*(\d+)\s*건/)?.[1], labels, contentLoaded, excerpt: text.slice(-1800) }));
   if (!contentLoaded) process.exitCode = 1;
 } catch (error) { errors.push(`browser: ${error.message}`); process.exitCode = 1; }
