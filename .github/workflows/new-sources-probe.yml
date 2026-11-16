@@ -1,7 +1,5 @@
 name: KDT·링커리어 읽기 전용 실제 조회 테스트
 on:
-  push:
-    paths: [new-sources-probe.mjs, .github/workflows/new-sources-probe.yml]
   workflow_dispatch:
 permissions:
   contents: read
