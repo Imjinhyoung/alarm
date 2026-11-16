@@ -1,6 +1,7 @@
 import { chromium } from "playwright";
 import fs from "node:fs/promises";
 import crypto from "node:crypto";
+import { collectLinkareer } from "./linkareer.mjs";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 
@@ -10,6 +11,12 @@ const STATE_PATH = new URL("./state.json", import.meta.url);
 const ALERT_PATH = new URL("./alert.md", import.meta.url);
 
 const sites = [
+  {
+    id: "linkareer_intern",
+    name: "링커리어 국내 단기 인턴 (재학생 지원 가능)",
+    url: "https://linkareer.com/list/intern?orderBy_direction=DESC&orderBy_field=RECENT&page=1",
+    newOnly: true
+  },
   {
     id: "semi",
     name: "SEMI Korea 교육 프로그램",
@@ -181,7 +188,8 @@ function isWaiting(status) {
   return /모집전|접수대기/.test(status.replace(/\s/g, ""));
 }
 
-async function collect(page, site) {
+async function collect(page, site, oldSite) {
+  if (site.id === "linkareer_intern") return collectLinkareer(page, site, oldSite);
   if (site.id === "work24_winter") return collectWork24(page, site);
   if (site.group === "school" || ["semi", "suwon", "ekcdi", "postech"].includes(site.id)) {
     let html;
@@ -342,11 +350,11 @@ async function main() {
       try {
         let items;
         try {
-          items = await collect(page, site);
+          items = await collect(page, site, oldSite);
         } catch (error) {
           console.warn(`${site.id}: 첫 조회 실패, 5초 후 전체 조회 재시도`);
           await page.waitForTimeout(5000);
-          items = await collect(page, site);
+          items = await collect(page, site, oldSite);
         }
         // Recompute keys from saved data so this also migrates old state that
         // contains the volatile integrated-board itemId values.
@@ -368,6 +376,7 @@ async function main() {
         }
         if (changes.length) alerts.push({ site, changes });
         next.sites[site.id] = { name: site.name, url: site.url, failures: 0, checkedAt: new Date().toISOString(), items };
+        if (items.metadata) Object.assign(next.sites[site.id], items.metadata);
         console.log(`${site.id}: OK (${items.length}개)`);
         if (site.newOnly) next.sites[site.id].seenKeys = [...new Set([...seenKeys, ...items.map(item => item.key)])];
       } catch (error) {
@@ -393,6 +402,7 @@ async function main() {
       lines.push(`- **${type}**: [${item.title}](${item.url || alert.site.url})`);
       if (item.status) lines.push(`  - 상태: ${item.status}`);
       if (item.period) lines.push(`  - 확인된 일정: ${item.period}`);
+      for (const reason of item.matchReasons || []) lines.push(`  - ${reason}`);
     }
     lines.push("");
   }
