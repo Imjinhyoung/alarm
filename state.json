@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-11-16T13:10:58.301Z",
+  "checkedAt": "2026-11-16T14:39:28.324Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,7 +17,7 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:07:34.952Z",
+      "checkedAt": "2026-11-16T14:41:04.635Z",
       "items": [
         {
           "key": "5584aeac7dc1dc02a8eb",
@@ -113,7 +113,7 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:07:40.235Z",
+      "checkedAt": "2026-11-16T14:41:10.587Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
@@ -145,7 +145,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집중",
           "period": "2026.11.06 ~ 2026.12.31 ~ 2027.01.18 ~ 2027.01.22",
-          "context": "전북대학교 전력반도체 공정 품질 관리(ESD 검증 및 이물관리) 모집기간2026.11.06 ~ 2026.12.31 교육기간2027.01.18 ~ 2027.01.22 신청현황 ( 82/100 ) 모집중"
+          "context": "전북대학교 전력반도체 공정 품질 관리(ESD 검증 및 이물관리) 모집기간2026.11.06 ~ 2026.12.31 교육기간2027.01.18 ~ 2027.01.22 신청현황 ( 83/100 ) 모집중"
         },
         {
           "key": "28a972916edf7bbf8a11",
@@ -217,7 +217,7 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:07:46.138Z",
+      "checkedAt": "2026-11-16T14:41:17.224Z",
       "items": [
         {
           "key": "107fa76e4c2efcefe1dd",
@@ -249,7 +249,7 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:07:53.737Z",
+      "checkedAt": "2026-11-16T14:41:24.533Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -289,7 +289,7 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:07:57.306Z",
+      "checkedAt": "2026-11-16T14:41:28.220Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -377,7 +377,7 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:08:00.970Z",
+      "checkedAt": "2026-11-16T14:41:31.842Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -537,7 +537,7 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:08:04.373Z",
+      "checkedAt": "2026-11-16T14:41:35.322Z",
       "items": [
         {
           "key": "0496e511060fa38c23fe",
@@ -593,7 +593,7 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:08:10.820Z",
+      "checkedAt": "2026-11-16T14:41:42.771Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1041,7 +1041,7 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:07:27.886Z",
+      "checkedAt": "2026-11-16T14:40:57.953Z",
       "items": [
         {
           "key": "fb6f6bd41d134ab3f2ef",
@@ -1294,7 +1294,7 @@
       "name": "링커리어 국내 단기 인턴 (재학생 지원 가능)",
       "url": "https://linkareer.com/list/intern?orderBy_direction=DESC&orderBy_field=RECENT&page=1",
       "failures": 0,
-      "checkedAt": "2026-11-16T13:07:23.704Z",
+      "checkedAt": "2026-11-16T14:40:53.513Z",
       "items": [],
       "knownIds": [
         "364846",
@@ -2339,23 +2339,43 @@
         "280780",
         "265502",
         "261640",
-        "212844"
+        "212844",
+        "364880",
+        "364878",
+        "364873",
+        "364872",
+        "364858",
+        "364856",
+        "364854"
       ],
       "filterStats": {
-        "listed": 1043,
-        "examined": 0,
+        "listed": 1050,
+        "examined": 7,
         "matched": 0,
-        "rejected": {},
-        "deferred": 0,
-        "onboarding": {
-          "id": "364614",
-          "ocrCharacters": 1588,
-          "result": {
-            "pass": false,
-            "reason": "재학생 지원 가능 확인 불가"
-          }
+        "rejected": {
+          "재학생 지원 불가": 1,
+          "희망 분야 확인 불가": 6
         },
-        "baseline": true
+        "deferred": 0
+      },
+      "seenKeys": []
+    },
+    "work24_kdt70": {
+      "name": "고용24 반도체 KDT (달력 70일 이하)",
+      "url": "https://m.work24.go.kr/hr/a/a/1100/trnnCrsInf2.do?keyword=%EB%B0%98%EB%8F%84%EC%B2%B4",
+      "failures": 0,
+      "checkedAt": "2026-11-16T14:39:33.287Z",
+      "items": [],
+      "filterStats": {
+        "totalCourses": 14,
+        "searchStart": "2026-11-16",
+        "searchEnd": "2027-11-16",
+        "listedRounds": 23,
+        "eligible": 0,
+        "excludedType": 0,
+        "excludedPeriod": 23,
+        "excludedClosed": 0,
+        "unknownDate": 0
       },
       "seenKeys": []
     }
