@@ -1,0 +1,20 @@
+name: 청년 일경험 겨울 조건 읽기 전용 테스트
+on:
+  push:
+    paths: [work24-youth-probe.mjs, .github/workflows/work24-youth-probe.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: macos-15
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - name: 기존 참여 시작일 조건 조회
+        run: node work24-youth-probe.mjs
