@@ -1,7 +1,5 @@
 name: 전체 감시 읽기 전용 점검
 on:
-  push:
-    paths: [.github/workflows/full-audit.yml]
   workflow_dispatch:
 permissions:
   contents: read
@@ -43,7 +41,7 @@ jobs:
       - name: 운영 코드로 모든 활성 사이트 실제 조회
         run: node monitor.mjs
       - name: 기존 인턴 상세·이미지 및 KDT 재판정
-        if: matrix.group == 'training'
+        if: always() && matrix.group == 'training'
         run: |
           node new-sources-probe.mjs
           node intern-sources-probe.mjs
