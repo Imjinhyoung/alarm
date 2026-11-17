@@ -1,0 +1,54 @@
+name: 전체 감시 읽기 전용 점검
+on:
+  push:
+    paths: [.github/workflows/full-audit.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        group: [training, school]
+    runs-on: macos-15
+    timeout-minutes: 25
+    env:
+      DRY_RUN: "true"
+      SITE_GROUP: ${{ matrix.group }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - name: 전체 필터·중복·동시 저장 로직 검증
+        run: |
+          node aict.test.mjs
+          node intern-sources.test.mjs
+          node linkareer.test.mjs
+          node work24-kdt.test.mjs
+          node work24.test.mjs
+          node save-state.test.mjs
+      - name: 무료 한국어 OCR 준비
+        if: matrix.group == 'training'
+        run: |
+          command -v tesseract >/dev/null || brew install tesseract
+          mkdir -p "$RUNNER_TEMP/audit-tessdata"
+          for lang in kor eng; do
+            curl --fail --location --retry 3 "https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/$lang.traineddata" -o "$RUNNER_TEMP/audit-tessdata/$lang.traineddata"
+          done
+          echo "LINKAREER_TESSDATA=$RUNNER_TEMP/audit-tessdata" >> "$GITHUB_ENV"
+      - name: 운영 코드로 모든 활성 사이트 실제 조회
+        run: node monitor.mjs
+      - name: 기존 인턴 상세·이미지 및 KDT 재판정
+        if: matrix.group == 'training'
+        run: |
+          node new-sources-probe.mjs
+          node intern-sources-probe.mjs
+      - name: 운영 기준선·알림 파일 무변경 확인
+        if: always()
+        run: |
+          git diff --exit-code -- state.json
+          test ! -f alert.md
