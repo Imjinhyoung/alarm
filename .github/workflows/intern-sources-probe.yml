@@ -1,7 +1,5 @@
 name: 슈퍼루키·슥삭 읽기 전용 실제 조회 테스트
 on:
-  push:
-    paths: [intern-sources.mjs, intern-sources-probe.mjs, .github/workflows/intern-sources-probe.yml]
   workflow_dispatch:
 permissions:
   contents: read

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { qualifySuper,qualifySsg,superDuties,domesticCities,superUrl } from './intern-sources.mjs';
+import { qualifySuper,qualifySsg,superDuties,domesticCities,superUrl,collectInternSource } from './intern-sources.mjs';
 const now=Date.parse('2026-11-17T00:00:00+09:00');
 const superPost={job_level_id:'579f18168b129f673b4efebe',duty_group_lv2_id:superDuties[0],city_id:domesticCities[0],job_title:'생산관리 인턴',end_at:'2026-12-31 23:59:59',job_requirement:'대학교 재학생 및 휴학생 지원 가능합니다. 엑셀과 문서작성 능력이 있는 분',additional_info:'근무기간: 3개월',company:{address1:'서울'}};
 assert.equal(qualifySuper(superPost,now).pass,true);
@@ -10,3 +10,17 @@ const ssg={posterName:'체험형 개발 인턴',jobName:'소프트웨어 개발'
 assert.equal(qualifySsg(ssg,now).pass,true);
 for(const change of [{jobName:'마케팅',outline:'콘텐츠 제작'},{regionName:'미국'},{benefit:'근무기간: 최소 3개월 이상'},{target:'졸업자 및 졸업예정자만 지원 가능'},{categoryIdx:9}])assert.equal(qualifySsg({...ssg,...change},now).pass,false);
 console.log('두 인턴 사이트의 직무·국내·재학생·기간·마감 필터 검증 통과');
+const posts=[{...ssg,posterIdx:1,posterEndDate:'2099-12-31T23:59:59'}];
+const page={request:{post:async(url,options)=>{
+  const args=JSON.parse(options.multipart.args);
+  const value=options.headers['x-ssgsag-rpc'].endsWith('loadRecruitmentPage')?{totalCount:posts.length,data:posts}:posts.find(p=>p.posterIdx===args[0]);
+  return {ok:()=>true,json:async()=>({ok:true,value})};
+}}};
+const baseline=await collectInternSource(page,{id:'ssgsag_intern'});
+assert.equal(baseline.length,0);
+assert.deepEqual(baseline.metadata.knownIds,['1']);
+posts.push({...posts[0],posterIdx:2});
+const fresh=await collectInternSource(page,{id:'ssgsag_intern'},baseline.metadata);
+assert.equal(fresh.length,1);assert.ok(fresh[0].url.endsWith('/2'));
+assert.equal((await collectInternSource(page,{id:'ssgsag_intern'},fresh.metadata)).length,0);
+console.log('첫 실행 무발송·신규 공고 1회 발송·중복 방지 검증 통과');

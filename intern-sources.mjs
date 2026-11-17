@@ -65,7 +65,7 @@ export async function superListing() {
 export async function ssgListing(page) {
   const live=new Map();let total=1;
   for(let n=1;live.size<total;n++) {
-    const data=await rpc(page,'loadRecruitmentPage',[{chipIds:[10],jobIds:[103,104,109],ordering:0,page:n,pageSize:12}]);
+    const data=await rpc(page,'loadRecruitmentPage',[{chipIds:[10],jobIds:[103,104,109],ordering:'-reg_date',page:n,pageSize:12}]);
     if(!Array.isArray(data.data)||!Number.isInteger(data.totalCount)||data.totalCount>1200)throw new Error('슥삭 목록 구조 변경');
     total=data.totalCount;
     for(const p of data.data){if(!p.posterIdx||!p.posterName||live.has(String(p.posterIdx)))throw new Error('슥삭 공고/페이지 검증 실패');live.set(String(p.posterIdx),p);}
@@ -83,6 +83,7 @@ export async function collectInternSource(page,site,old={}) {
     if(known.has(id))continue;
     if(stats.examined>=120){stats.deferred++;continue;}
     const p=isSuper?post:await rpc(page,'loadPosterDetail',[post.posterIdx]);
+    if(!isSuper && (p.posterIdx!==post.posterIdx || !p.posterName || !('target' in p)))throw new Error('슥삭 상세 공고 구조 변경');
     let result=isSuper?qualifySuper(p):qualifySsg(p);stats.examined++;
     if(isSuper && !result.pass && /자격|기간|지원 가능/.test(result.reason) && /<img\b/i.test(p.custom_field||'') && process.env.LINKAREER_TESSDATA) {
       result=qualifySuper(p,Date.now(),await ocr(page,p.custom_field,'superookie'));
