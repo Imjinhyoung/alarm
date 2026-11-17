@@ -2,7 +2,7 @@ name: 교육 및 인턴 모집 감시
 
 on:
   push:
-    paths: [monitor.mjs, linkareer.mjs, linkareer.test.mjs, work24-kdt.mjs, work24-kdt.test.mjs, save-state.mjs, package.json, .github/workflows/monitor.yml]
+    paths: [monitor.mjs, linkareer.mjs, linkareer.test.mjs, intern-sources.mjs, intern-sources.test.mjs, work24-kdt.mjs, work24-kdt.test.mjs, save-state.mjs, package.json, .github/workflows/monitor.yml]
   schedule:
     # 09:17, 13:17, 18:17
     - cron: "17 0,4,9 * * *"
@@ -44,6 +44,7 @@ jobs:
         run: |
           node work24.test.mjs
           node linkareer.test.mjs
+          node intern-sources.test.mjs
           node work24-kdt.test.mjs
 
       - name: 무료 한국어 OCR 준비

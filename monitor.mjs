@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import crypto from "node:crypto";
 import { collectLinkareer } from "./linkareer.mjs";
 import { collectKdt70 } from "./work24-kdt.mjs";
+import { collectInternSource, superUrl, ssgUrl } from "./intern-sources.mjs";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 
@@ -12,6 +13,8 @@ const STATE_PATH = new URL("./state.json", import.meta.url);
 const ALERT_PATH = new URL("./alert.md", import.meta.url);
 
 const sites = [
+  { id: "superookie_intern", name: "슈퍼루키 국내 단기 인턴 (선택 직무·재학생)", url: superUrl.href, newOnly: true },
+  { id: "ssgsag_intern", name: "슥삭 체험형 인턴 (개발·엔지니어링·제조/생산·재학생)", url: ssgUrl, newOnly: true },
   {
     id: "work24_kdt70",
     name: "고용24 반도체 KDT (달력 70일 이하)",
@@ -198,6 +201,7 @@ function isWaiting(status) {
 async function collect(page, site, oldSite) {
   if (site.id === "work24_kdt70") return collectKdt70(page, site);
   if (site.id === "linkareer_intern") return collectLinkareer(page, site, oldSite);
+  if (["superookie_intern", "ssgsag_intern"].includes(site.id)) return collectInternSource(page, site, oldSite);
   if (site.id === "work24_winter") return collectWork24(page, site);
   if (site.group === "school" || ["semi", "suwon", "ekcdi", "postech"].includes(site.id)) {
     let html;

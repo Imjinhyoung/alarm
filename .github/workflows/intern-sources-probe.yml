@@ -1,0 +1,20 @@
+name: 슈퍼루키·슥삭 읽기 전용 실제 조회 테스트
+on:
+  push:
+    paths: [intern-sources.mjs, intern-sources-probe.mjs, .github/workflows/intern-sources-probe.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: macos-15
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - run: node intern-sources.test.mjs
+      - run: node intern-sources-probe.mjs

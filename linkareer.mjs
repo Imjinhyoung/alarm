@@ -81,13 +81,13 @@ function employmentPeriod(title, text) {
   return null;
 }
 
-export function qualify(activity, ocrText = "", now = Date.now()) {
+export function qualify(activity, ocrText = "", now = Date.now(), selectedField = null) {
   const text = htmlText(activity.bodyHtml) + "\n" + ocrText;
   const title = compact(activity.title);
   if (activity.status !== "OPEN" || !activity.jobTypes?.includes("INTERN") || (activity.recruitCloseAt && activity.recruitCloseAt < now)) return { pass: false, reason: "마감/인턴 아님" };
   if (!activity.addresses?.length || activity.addresses.some(a => !a || a.isAbroad !== false) || activity.regions?.some(r => /해외/.test(r.name))) return { pass: false, reason: "국내 근무 확인 불가" };
   const fieldText = `${title} ${activity.organizationName || ""} ${activity.organizationType || ""} ${activity.company?.detailedIndustry || ""} ${(activity.categories || []).join(" ")}`;
-  const field = fieldText.match(sector)?.[0];
+  const field = selectedField || fieldText.match(sector)?.[0];
   if (!field) return { pass: false, reason: "희망 분야 확인 불가" };
   if (/(?:재학|휴학|대학생)[^\n.]{0,25}(?:지원\s*불가|지원\s*불가능|지원할\s*수\s*없|지원\s*가능하지\s*않|제외|불허)/.test(text)) return { pass: false, reason: "재학생 지원 불가" };
   const student = text.match(/(?:재[·ㆍ/\s]*휴학[생자]?|재학[생자]?|휴학[생자]?)[^\n.]{0,45}/)?.[0];
@@ -113,10 +113,13 @@ async function request(page, url) {
   throw last;
 }
 
-async function ocr(page, bodyHtml) {
+export async function ocr(page, bodyHtml, source = "linkareer") {
   if (!process.env.LINKAREER_TESSDATA) throw new Error("링커리어 한국어 OCR 준비가 필요합니다.");
   const images = [...bodyHtml.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["']/gi)].map(m => new URL(m[1], "https://linkareer.com"))
-    .filter(url => url.protocol === "https:" && /(^|\.)linkareer\.com$/.test(url.hostname) && /se2editor|upload|image/.test(url.pathname)).slice(0, 3);
+    .filter(url => url.protocol === "https:" && (source === "superookie"
+      ? url.hostname === "d32gkk464bsqbe.cloudfront.net" && url.pathname.startsWith("/photos/")
+      : source === "ssgsag" ? url.hostname === "storage.googleapis.com" && url.pathname.startsWith("/ssgsag/posters/")
+      : /(^|\.)linkareer\.com$/.test(url.hostname) && /se2editor|upload|image/.test(url.pathname))).slice(0, 3);
   const folder = await fs.mkdtemp(path.join(os.tmpdir(), "intern-ocr-"));
   const texts = [];
   for (const [i, image] of images.entries()) {
