@@ -1,7 +1,5 @@
 name: 전체 감시 읽기 전용 점검
 on:
-  push:
-    paths: [public-html.mjs]
   workflow_dispatch:
 permissions:
   contents: read
