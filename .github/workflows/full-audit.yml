@@ -1,5 +1,7 @@
 name: 전체 감시 읽기 전용 점검
 on:
+  push:
+    paths: [public-html.mjs]
   workflow_dispatch:
 permissions:
   contents: read
@@ -23,6 +25,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: 전체 필터·중복·동시 저장 로직 검증
         run: |
+          node public-html.test.mjs
           node aict.test.mjs
           node intern-sources.test.mjs
           node linkareer.test.mjs

@@ -5,11 +5,7 @@ import { collectLinkareer } from "./linkareer.mjs";
 import { collectKdt70 } from "./work24-kdt.mjs";
 import { collectInternSource, superUrl, ssgUrl } from "./intern-sources.mjs";
 import { collectAict, aictUrl } from "./aict.mjs";
-import { execFile } from "node:child_process";
-import { promisify } from "node:util";
-
-const execFileAsync = promisify(execFile);
-
+import { fetchPublicHtml } from "./public-html.mjs";
 const STATE_PATH = new URL("./state.json", import.meta.url);
 const ALERT_PATH = new URL("./alert.md", import.meta.url);
 
@@ -206,18 +202,10 @@ async function collect(page, site, oldSite) {
   if (site.id === "linkareer_intern") return collectLinkareer(page, site, oldSite);
   if (["superookie_intern", "ssgsag_intern"].includes(site.id)) return collectInternSource(page, site, oldSite);
   if (site.id === "work24_winter") return collectWork24(page, site);
-  if (site.group === "school" || ["semi", "suwon", "ekcdi", "postech"].includes(site.id)) {
+  if (site.group === "school" || ["ksia", "semi", "suwon", "ekcdi", "postech"].includes(site.id)) {
     let html;
-    if (site.group === "school") {
-      // The school pages are server-rendered. Use the OS HTTP client over IPv4
-      // and retry transient connection failures before falling back to Playwright.
-      try {
-        ({ stdout: html } = await execFileAsync("curl", ["--ipv4", "--http1.1", "--fail", "--location", "--connect-timeout", "10", "--max-time", "25", "--retry", "2", "--retry-delay", "3", "--retry-all-errors", "--silent", "--show-error", site.url], { timeout: 100000, maxBuffer: 8 * 1024 * 1024 }));
-      } catch {
-        const response = await page.request.get(site.url, { timeout: 20000 });
-        if (!response.ok()) throw new Error(`HTTP ${response.status()}`);
-        html = await response.text();
-      }
+    if (site.group === "school" || site.id === "ksia") {
+      html = await fetchPublicHtml(page, site.url);
     } else {
       const response = await page.request.get(site.url, { timeout: 45000 });
       if (!response.ok()) throw new Error(`HTTP ${response.status()}`);
@@ -226,7 +214,8 @@ async function collect(page, site, oldSite) {
     await page.route("**/*", route => route.abort());
     await page.setContent(`<base href="${site.url}">` + html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ""), { waitUntil: "domcontentloaded" });
   } else {
-    await page.goto(site.url, { waitUntil: "domcontentloaded", timeout: 60000 });
+    const response = await page.goto(site.url, { waitUntil: "domcontentloaded", timeout: 60000 });
+    if (response && !response.ok()) throw new Error(`HTTP ${response.status()}`);
   }
   if (site.id === "boottent") {
     await page.locator(site.selectors[0]).first().waitFor({ state: "attached", timeout: 30000 });
@@ -390,14 +379,14 @@ async function main() {
           }
         }
         if (changes.length) alerts.push({ site, changes });
-        next.sites[site.id] = { name: site.name, url: site.url, failures: 0, checkedAt: new Date().toISOString(), items };
+        next.sites[site.id] = { name: site.name, url: site.url, failures: 0, checkedAt: new Date().toISOString(), lastAttemptAt: new Date().toISOString(), items };
         if (items.metadata) Object.assign(next.sites[site.id], items.metadata);
         console.log(`${site.id}: OK (${items.length}개)`);
         if (site.newOnly) next.sites[site.id].seenKeys = [...new Set([...seenKeys, ...items.map(item => item.key)])];
       } catch (error) {
         const failures = (oldSite.failures ?? 0) + 1;
         console.error(`${site.id}: ERROR ${String(error.message ?? error)}`);
-        next.sites[site.id] = { ...oldSite, name: site.name, url: site.url, failures, lastError: String(error.message ?? error) };
+        next.sites[site.id] = { ...oldSite, name: site.name, url: site.url, failures, lastAttemptAt: new Date().toISOString(), lastError: String(error.message ?? error) };
         if (siteInitialized && failures === 3) {
           alerts.push({ site, changes: [{ type: "연속 3회 확인 실패", item: { title: String(error.message ?? error), url: site.url, status: "점검 필요", period: "" } }] });
         }

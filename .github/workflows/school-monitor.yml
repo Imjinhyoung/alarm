@@ -2,7 +2,7 @@ name: 성균관대 공지사항 감시
 
 on:
   push:
-    paths: [monitor.mjs, save-state.mjs, package.json, .github/workflows/school-monitor.yml]
+    paths: [monitor.mjs, public-html.mjs, public-html.test.mjs, save-state.mjs, package.json, .github/workflows/school-monitor.yml]
   schedule:
     # 한국시간 11:47, 15:47 (UTC 02:47, 06:47)
     - cron: "47 2,6 * * *"
@@ -32,6 +32,7 @@ jobs:
 
       - run: npm install --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
+      - run: node public-html.test.mjs
 
       - name: 학교 공지 확인
         id: monitor

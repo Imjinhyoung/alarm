@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {fetchPublicHtml,validatePublicHtml} from './public-html.mjs';
+const valid='<html><title>교육 목록</title><body>교육</body></html>';
+let attempts=0;
+const result=await fetchPublicHtml(null,'https://example.invalid',{sleep:async()=>{},transports:[async()=>{attempts++;throw new Error('ECONNRESET');},async()=>{attempts++;return '<html><title>503 Service Unavailable</title></html>';},async()=>{attempts++;return valid;}]});
+assert.equal(result,valid);assert.equal(attempts,3);
+await assert.rejects(fetchPublicHtml(null,'https://example.invalid',{sleep:async()=>{},transports:[async()=>{throw new Error('HTTP 503');},async()=>'<html><title>503 Service Unavailable</title></html>']}),/외부 사이트 조회 실패.*503/);
+assert.throws(()=>validatePublicHtml('<html><title>Just a moment...</title></html>'),/장애\/차단/);
+assert.throws(()=>validatePublicHtml('{}'),/HTML/);
+console.log('PASS: 연결 오류 재시도·HTTP 200 장애 페이지 감지·외부 장애 성공 오인 방지');
