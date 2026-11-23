@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "checkedAt": "2026-11-23T11:16:35.689Z",
+  "checkedAt": "2026-11-23T21:22:57.563Z",
   "sites": {
     "work24_winter": {
       "name": "고용24 청년 일경험 (참여 시작 2026-12-01~2027-02-28)",
@@ -17,8 +17,8 @@
       "name": "부트텐트 반도체·디스플레이",
       "url": "https://boottent.com/camps?industries=003&tagCodes=300",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:38:35.689Z",
-      "lastAttemptAt": "2026-11-23T07:38:35.689Z",
+      "checkedAt": "2026-11-23T21:24:49.740Z",
+      "lastAttemptAt": "2026-11-23T21:24:49.740Z",
       "items": [
         {
           "key": "5584aeac7dc1dc02a8eb",
@@ -98,7 +98,7 @@
           "url": "https://boottent.com/camps/rapa-telechips_20261105170354475",
           "status": "모집 중",
           "period": "",
-          "context": "DX캠퍼스 텔레칩스 차량용 반도체 임베디드 스쿨 6기 우수 수료생 채용우대 + 텔레칩스 유일의 신입사원 채용 시스템반도체 SW·펌웨어 모집 중 26.11.30 KDT 60만원 오프라인 서울 26.12.14 약 6개월 27.06.17 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 임베디드 SW 차량용 반도체 C 프로그래밍 파이썬 리눅스 자료구조 알고리즘 RTOS Cortex-M Cortex-A 임베디드 리눅스 IoT 전장시스템 디바이스 드라이버 네트워크 통신 채용우대 운영 한국전파진흥협회 모아 보기 →"
+          "context": "DX캠퍼스 텔레칩스 차량용 반도체 임베디드 스쿨 6기 시스템반도체 SW·펌웨어 모집 중 26.11.30 KDT 60만원 오프라인 서울 26.12.14 약 6개월 27.06.17 풀타임 월, 화, 수, 목, 금 / 9:00 ~ 18:00 임베디드 SW 차량용 반도체 C 프로그래밍 파이썬 리눅스 자료구조 알고리즘 RTOS Cortex-M Cortex-A 임베디드 리눅스 IoT 전장시스템 디바이스 드라이버 네트워크 통신 채용우대 운영 한국전파진흥협회 모아 보기 →"
         },
         {
           "key": "71bf99923c2fe48d41db",
@@ -122,12 +122,20 @@
       "name": "KSIA 예비취업자 교육",
       "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:38:39.505Z",
-      "lastAttemptAt": "2026-11-23T07:38:39.505Z",
+      "checkedAt": "2026-11-23T21:24:54.014Z",
+      "lastAttemptAt": "2026-11-23T21:24:54.015Z",
       "items": [
         {
           "key": "39a30296b21b69c41cb4",
           "title": "이미지없음",
+          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
+          "status": "모집마감",
+          "period": "2026.10.07 ~ 2026.10.23 ~ 2026.11.18 ~ 2026.12.19",
+          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.10.07 ~ 2026.10.23 교육기간2026.11.18 ~ 2026.12.19 신청현황 ( 인원제한 없음 ) 모집마감"
+        },
+        {
+          "key": "0b4f5fd2ae5c4bb9aecc",
+          "title": "청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청!",
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집마감",
           "period": "2026.10.07 ~ 2026.10.23 ~ 2026.11.18 ~ 2026.12.19",
@@ -155,7 +163,7 @@
           "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
           "status": "모집중",
           "period": "2026.11.06 ~ 2026.12.31 ~ 2027.01.18 ~ 2027.01.22",
-          "context": "전북대학교 전력반도체 공정 품질 관리(ESD 검증 및 이물관리) 모집기간2026.11.06 ~ 2026.12.31 교육기간2027.01.18 ~ 2027.01.22 신청현황 ( 93/100 ) 모집중"
+          "context": "전북대학교 전력반도체 공정 품질 관리(ESD 검증 및 이물관리) 모집기간2026.11.06 ~ 2026.12.31 교육기간2027.01.18 ~ 2027.01.22 신청현황 ( 95/100 ) 모집중"
         },
         {
           "key": "28a972916edf7bbf8a11",
@@ -204,22 +212,6 @@
           "status": "모집마감",
           "period": "2026.10.01 ~ 2026.10.07 ~ 2026.10.12 ~ 2026.10.16",
           "context": "포항공과대학교 MOSFET 제조공정 및 소자분석 이해-1주차 (반도체제조공정) 모집기간2026.10.01 ~ 2026.10.07 교육기간2026.10.12 ~ 2026.10.16 신청현황 ( 20/20 ) 모집마감"
-        },
-        {
-          "key": "0b4f5fd2ae5c4bb9aecc",
-          "title": "청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청!",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.10.07 ~ 2026.10.23 ~ 2026.11.18 ~ 2026.12.19",
-          "context": "성균관대학교 청년도약 인재양성 부트캠프 교육생 모집 (홍보) - 하단에 QR 통해서 신청! 모집기간2026.10.07 ~ 2026.10.23 교육기간2026.11.18 ~ 2026.12.19 신청현황 ( 인원제한 없음 ) 모집마감"
-        },
-        {
-          "key": "1122b3a66ff42a160804",
-          "title": "HEMT 제작 실습 및 분석",
-          "url": "https://infra.ksia.or.kr/user/Wo/WoUser0101.do?SCH_PRM_GB=002&CURRENT_MENU_CODE=MENU0046&TOP_MENU_CODE=MENU0040#",
-          "status": "모집마감",
-          "period": "2026.10.02 ~ 2026.10.03 ~ 2026.10.19 ~ 2026.10.23",
-          "context": "전북대학교 HEMT 제작 실습 및 분석 모집기간2026.10.02 ~ 2026.10.03 교육기간2026.10.19 ~ 2026.10.23 신청현황 ( 10/20 ) 모집마감"
         }
       ]
     },
@@ -227,8 +219,8 @@
       "name": "서울대 ISRC 교육",
       "url": "https://isrc.snu.ac.kr/edu/school/event/list?",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:38:45.372Z",
-      "lastAttemptAt": "2026-11-23T07:38:45.372Z",
+      "checkedAt": "2026-11-23T21:25:00.484Z",
+      "lastAttemptAt": "2026-11-23T21:25:00.484Z",
       "items": [
         {
           "key": "fcd1c9f3976135933278",
@@ -244,8 +236,8 @@
       "name": "H-ACE 교육",
       "url": "https://stormy-swoop-e2e.notion.site/2026-H-ACE-318e4f105f3580329e9eecd2a1237486",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:38:52.704Z",
-      "lastAttemptAt": "2026-11-23T07:38:52.704Z",
+      "checkedAt": "2026-11-23T21:25:07.818Z",
+      "lastAttemptAt": "2026-11-23T21:25:07.818Z",
       "items": [
         {
           "key": "1cc54fdb8492f07bb7d8",
@@ -285,8 +277,8 @@
       "name": "수원시 직업교육훈련",
       "url": "https://www.suwon.go.kr:22871/M000149/S001/fw/bbs/board/00007/list.do",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:38:56.195Z",
-      "lastAttemptAt": "2026-11-23T07:38:56.195Z",
+      "checkedAt": "2026-11-23T21:25:11.616Z",
+      "lastAttemptAt": "2026-11-23T21:25:11.616Z",
       "items": [
         {
           "key": "5307684b7615d478c310",
@@ -374,8 +366,8 @@
       "name": "한국커리어개발원 온라인 과정",
       "url": "https://www.ekcdi.co.kr/html/trainning/trainning_online.php",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:38:59.752Z",
-      "lastAttemptAt": "2026-11-23T07:38:59.752Z",
+      "checkedAt": "2026-11-23T21:25:15.171Z",
+      "lastAttemptAt": "2026-11-23T21:25:15.171Z",
       "items": [
         {
           "key": "46ffd628fa7d44a1df36",
@@ -535,8 +527,8 @@
       "name": "POSTECH 환동해 글로컬 연합 아카데미",
       "url": "https://popens.postech.ac.kr/contents/03_apply/sub01.html",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:39:03.096Z",
-      "lastAttemptAt": "2026-11-23T07:39:03.096Z",
+      "checkedAt": "2026-11-23T21:25:19.042Z",
+      "lastAttemptAt": "2026-11-23T21:25:19.042Z",
       "items": [
         {
           "key": "0496e511060fa38c23fe",
@@ -592,8 +584,8 @@
       "name": "UST 연구인턴십",
       "url": "https://intern.ust.ac.kr/home",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:39:09.958Z",
-      "lastAttemptAt": "2026-11-23T07:39:09.958Z",
+      "checkedAt": "2026-11-23T21:25:26.922Z",
+      "lastAttemptAt": "2026-11-23T21:25:26.922Z",
       "items": [
         {
           "key": "550294c3bc6a5b5b3ba6",
@@ -1045,8 +1037,8 @@
       "name": "SEMI Korea 교육 프로그램",
       "url": "https://semikrprogram.com/",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:38:29.012Z",
-      "lastAttemptAt": "2026-11-23T07:38:29.012Z",
+      "checkedAt": "2026-11-23T21:24:43.259Z",
+      "lastAttemptAt": "2026-11-23T21:24:43.259Z",
       "items": [
         {
           "key": "fb6f6bd41d134ab3f2ef",
@@ -1299,8 +1291,8 @@
       "name": "링커리어 국내 단기 인턴 (재학생 지원 가능)",
       "url": "https://linkareer.com/list/intern?orderBy_direction=DESC&orderBy_field=RECENT&page=1",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:38:25.401Z",
-      "lastAttemptAt": "2026-11-23T07:38:25.401Z",
+      "checkedAt": "2026-11-23T21:24:39.420Z",
+      "lastAttemptAt": "2026-11-23T21:24:39.420Z",
       "items": [],
       "knownIds": [
         "364846",
@@ -2551,16 +2543,32 @@
         "366155",
         "366142",
         "360464",
-        "344845"
+        "344845",
+        "366478",
+        "366468",
+        "366452",
+        "366443",
+        "366441",
+        "366439",
+        "366433",
+        "366428",
+        "366424",
+        "366422",
+        "366420",
+        "366409",
+        "366404",
+        "366388",
+        "366285",
+        "366274",
+        "366082"
       ],
       "filterStats": {
-        "listed": 1037,
-        "examined": 32,
+        "listed": 1017,
+        "examined": 17,
         "matched": 0,
         "rejected": {
-          "희망 분야 확인 불가": 25,
-          "국내 근무 확인 불가": 6,
-          "재학생 지원 가능 확인 불가": 1
+          "희망 분야 확인 불가": 16,
+          "3개월 이내 근무기간 확인 불가": 1
         },
         "deferred": 0
       },
@@ -2570,13 +2578,13 @@
       "name": "고용24 반도체 KDT (달력 70일 이하)",
       "url": "https://m.work24.go.kr/hr/a/a/1100/trnnCrsInf2.do?keyword=%EB%B0%98%EB%8F%84%EC%B2%B4",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:36:56.620Z",
-      "lastAttemptAt": "2026-11-23T07:36:56.620Z",
+      "checkedAt": "2026-11-23T21:23:09.284Z",
+      "lastAttemptAt": "2026-11-23T21:23:09.284Z",
       "items": [],
       "filterStats": {
         "totalCourses": 13,
-        "searchStart": "2026-11-23",
-        "searchEnd": "2027-11-23",
+        "searchStart": "2026-11-24",
+        "searchEnd": "2027-11-24",
         "listedRounds": 22,
         "eligible": 0,
         "excludedType": 0,
@@ -2589,9 +2597,9 @@
     "superookie_intern": {
       "name": "슈퍼루키 국내 단기 인턴 (선택 직무·재학생)",
       "url": "https://www.superookie.com/jobs/search?job_type=job&job_level%5B%5D=579f18168b129f673b4efebe&duty_group%5B%5D=661de91a8b129f42ef6c2587&duty_group%5B%5D=661de91a8b129f42ef6c2589&duty_group%5B%5D=661de91a8b129f42ef6c25a1&duty_group%5B%5D=661de91a8b129f42ef6c25a5&duty_group%5B%5D=661de91a8b129f42ef6c25a6&duty_group%5B%5D=661de91a8b129f42ef6c25a8&duty_group%5B%5D=661de91a8b129f42ef6c25a9&city%5B%5D=579f18168b129f673b4efead&city%5B%5D=579f18168b129f673b4efeae&city%5B%5D=579f18168b129f673b4efeaf&city%5B%5D=579f18168b129f673b4efeb0&city%5B%5D=579f18168b129f673b4efeb1&city%5B%5D=579f18168b129f673b4efeb2&city%5B%5D=579f18168b129f673b4efeb3&city%5B%5D=579f18168b129f673b4efeb4&city%5B%5D=579f18168b129f673b4efeb5&city%5B%5D=579f18168b129f673b4efeb6&city%5B%5D=579f18168b129f673b4efeb7&city%5B%5D=579f18168b129f673b4efeb8&city%5B%5D=579f18168b129f673b4efeb9&city%5B%5D=579f18168b129f673b4efeba&city%5B%5D=579f18168b129f673b4efebb&city%5B%5D=579f18168b129f673b4efebc&city%5B%5D=579f18168b129f673b4efebd",
-      "failures": 1,
+      "failures": 2,
       "checkedAt": "2026-11-22T17:09:31.446Z",
-      "lastAttemptAt": "2026-11-23T07:36:52.639Z",
+      "lastAttemptAt": "2026-11-23T21:23:05.061Z",
       "items": [],
       "knownIds": [
         "6af65118d04a7d6eb638c842",
@@ -2625,8 +2633,8 @@
       "name": "슥삭 체험형 인턴 (개발·엔지니어링·제조/생산·재학생)",
       "url": "https://www.ssgsag.kr/intern?chip=intern_experience&jobs=103%2C104%2C109",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:36:53.532Z",
-      "lastAttemptAt": "2026-11-23T07:36:53.532Z",
+      "checkedAt": "2026-11-23T21:23:05.497Z",
+      "lastAttemptAt": "2026-11-23T21:23:05.497Z",
       "items": [],
       "knownIds": [
         "29442",
@@ -2638,7 +2646,7 @@
         "29516"
       ],
       "filterStats": {
-        "listed": 6,
+        "listed": 5,
         "examined": 0,
         "matched": 0,
         "rejected": {},
@@ -2651,8 +2659,8 @@
       "name": "차세대융합기술연구원 G-SPEC 공지",
       "url": "https://aict.snu.ac.kr/bbs/BBSMSTR_000000000001/list.do",
       "failures": 0,
-      "checkedAt": "2026-11-23T07:36:47.462Z",
-      "lastAttemptAt": "2026-11-23T07:36:47.462Z",
+      "checkedAt": "2026-11-23T21:22:59.792Z",
+      "lastAttemptAt": "2026-11-23T21:22:59.792Z",
       "items": [
         {
           "key": "f5900cfeb64c6c318585",
