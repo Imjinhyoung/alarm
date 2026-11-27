@@ -155,7 +155,7 @@ const sites = [
 ];
 
 const siteGroup = process.env.SITE_GROUP || "training";
-const activeSites = sites.filter(site => site.enabled !== false && (site.group || "training") === siteGroup);
+const activeSites = sites.filter(site => site.enabled !== false && (siteGroup === "all" || (site.group || "training") === siteGroup));
 
 const clean = value => String(value ?? "")
   .replace(/\s+/g, " ")
@@ -408,7 +408,8 @@ async function main() {
   }
 
   if (process.env.DRY_RUN !== "true") await fs.writeFile(STATE_PATH, `${JSON.stringify(next, null, 2)}\n`, "utf8");
-  const lines = [siteGroup === "school" ? "# 학교 공지사항 새 글 알림" : "# 교육·인턴 모집 변경 알림", ""];
+  const headings = { all: "# 교육·인턴 모집 및 성균관대 공지 알림", school: "# 학교 공지사항 새 글 알림" };
+  const lines = [headings[siteGroup] || "# 교육·인턴 모집 변경 알림", ""];
   for (const alert of alerts) {
     lines.push(`## ${alert.site.name}`, "");
     for (const { type, item } of alert.changes) {

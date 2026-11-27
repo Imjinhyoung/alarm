@@ -1,11 +1,9 @@
-name: 교육 및 인턴 모집 감시
+name: 교육·인턴 및 성균관대 공지 감시
 
 on:
-  push:
-    paths: [monitor.mjs, public-html.mjs, public-html.test.mjs, aict.mjs, aict.test.mjs, linkareer.mjs, linkareer.test.mjs, intern-sources.mjs, intern-sources.test.mjs, work24-kdt.mjs, work24-kdt.test.mjs, save-state.mjs, package.json, .github/workflows/monitor.yml]
   schedule:
-    # 09:17, 13:17, 18:17
-    - cron: "17 0,4,9 * * *"
+    # 08:00 KST (23:00 UTC the previous day).
+    - cron: "0 23 * * *"
   workflow_dispatch:
     inputs:
       send_test:
@@ -25,6 +23,8 @@ concurrency:
 jobs:
   monitor:
     runs-on: macos-15
+    env:
+      SITE_GROUP: all
     defaults:
       run:
         shell: bash
@@ -75,7 +75,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh issue create \
-            --title "새 교육·인턴 모집 알림 ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
+            --title "교육·인턴 및 성균관대 새 공지 알림 ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M'))" \
             --body-file alert.md \
             --assignee "${{ github.repository_owner }}"
 

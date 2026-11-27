@@ -15,7 +15,7 @@ for (let attempt = 1; attempt <= 3; attempt += 1) {
   const file = path.join(folder, "state.json");
   const current = JSON.parse(await fs.readFile(file, "utf8"));
   for (const [id, site] of Object.entries(pending.sites)) {
-    if ((id.startsWith("skku_") ? "school" : "training") === group) current.sites[id] = site;
+    if (group === "all" || (id.startsWith("skku_") ? "school" : "training") === group) current.sites[id] = site;
   }
   current.checkedAt = [current.checkedAt, pending.checkedAt].sort().at(-1);
   await fs.writeFile(file, `${JSON.stringify(current, null, 2)}\n`, "utf8");

@@ -1,11 +1,6 @@
 name: 성균관대 공지사항 감시
 
 on:
-  push:
-    paths: [monitor.mjs, public-html.mjs, public-html.test.mjs, save-state.mjs, package.json, .github/workflows/school-monitor.yml]
-  schedule:
-    # 한국시간 11:47, 15:47 (UTC 02:47, 06:47)
-    - cron: "47 2,6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,7 +8,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: school-alert-monitor
+  group: training-alert-monitor
   cancel-in-progress: false
 
 jobs:
