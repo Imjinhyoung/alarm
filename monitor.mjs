@@ -10,6 +10,15 @@ const STATE_PATH = new URL("./state.json", import.meta.url);
 const ALERT_PATH = new URL("./alert.md", import.meta.url);
 
 const sites = [
+  {
+    id: "kanc_education",
+    name: "한국나노기술원 교육 공지사항",
+    url: "https://css.kanc.re.kr/cgnb02/snb05.do?page=1&hcid=1995",
+    selectors: ['tbody a[href*="snb05.do?mode=view"][href*="&cid="][href*="&hcid=1995"]'],
+    accept: /./,
+    reject: /^$/,
+    newOnly: true
+  },
   { id: "aict_gspec", name: "차세대융합기술연구원 G-SPEC 공지", url: aictUrl, newOnly: true },
   { id: "superookie_intern", name: "슈퍼루키 국내 단기 인턴 (선택 직무·재학생)", url: superUrl.href, newOnly: true },
   { id: "ssgsag_intern", name: "슥삭 체험형 인턴 (개발·엔지니어링·제조/생산·재학생)", url: ssgUrl, newOnly: true },
@@ -202,9 +211,9 @@ async function collect(page, site, oldSite) {
   if (site.id === "linkareer_intern") return collectLinkareer(page, site, oldSite);
   if (["superookie_intern", "ssgsag_intern"].includes(site.id)) return collectInternSource(page, site, oldSite);
   if (site.id === "work24_winter") return collectWork24(page, site);
-  if (site.group === "school" || ["ksia", "semi", "suwon", "ekcdi", "postech"].includes(site.id)) {
+  if (site.group === "school" || ["kanc_education", "ksia", "semi", "suwon", "ekcdi", "postech"].includes(site.id)) {
     let html;
-    if (site.group === "school" || site.id === "ksia") {
+    if (site.group === "school" || ["ksia", "kanc_education"].includes(site.id)) {
       html = await fetchPublicHtml(page, site.url);
     } else {
       const response = await page.request.get(site.url, { timeout: 45000 });
