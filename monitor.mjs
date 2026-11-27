@@ -396,8 +396,9 @@ async function main() {
         const failures = (oldSite.failures ?? 0) + 1;
         console.error(`${site.id}: ERROR ${String(error.message ?? error)}`);
         next.sites[site.id] = { ...oldSite, name: site.name, url: site.url, failures, lastAttemptAt: new Date().toISOString(), lastError: String(error.message ?? error) };
-        if (siteInitialized && failures === 3) {
-          alerts.push({ site, changes: [{ type: "연속 3회 확인 실패", item: { title: String(error.message ?? error), url: site.url, status: "점검 필요", period: "" } }] });
+        if (failures >= 5 && !oldSite.failureAlerted) {
+          next.sites[site.id].failureAlerted = true;
+          alerts.push({ site, changes: [{ type: `연속 ${failures}회 확인 실패`, item: { title: String(error.message ?? error), url: site.url, status: "점검 필요", period: "" } }] });
         }
       } finally {
         await page.close();
@@ -429,7 +430,9 @@ async function main() {
   }
   console.log(previous.initialized ? `확인 완료: ${alerts.length}개 사이트에서 변경 감지` : "첫 실행 기준선 저장 완료");
   const failed = activeSites.filter(site => next.sites[site.id].failures > 0);
-  if (failed.length) process.exitCode = 1;
+  if (failed.length === activeSites.length || (process.env.DRY_RUN === "true" && failed.length)) {
+    process.exitCode = 1;
+  }
 }
 
 await main();
